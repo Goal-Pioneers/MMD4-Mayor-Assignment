@@ -3,6 +3,7 @@
         </footer>
     </body> 
 
+    <script src="https://kit.fontawesome.com/fe9e4fceae.js" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.js" integrity="sha256-N8dNe7UvR0kSfEBSJiwOPLBEyfWCd/aaQL2pdWqDJwE=" crossorigin="anonymous"></script>
 
