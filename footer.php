@@ -1,8 +1,53 @@
-        <footer> 
+    <footer> 
+        <?php 
+        
+        if ( has_nav_menu( 'footer-menu' ) )
+        {
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'footer-menu',
+                    'menu_class' => 'nav',
+                    'item_spacing' => 'preserve'
+                )
+            );  
+        };
 
-        </footer>
-    </body> 
+    ?>
 
+        <?php 
+            
+            if ( has_nav_menu( 'social-menu' ) )
+            {
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'social-menu',
+                        'menu_class' => 'nav',
+                        'item_spacing' => 'preserve'
+                    )
+                );  
+            };
+
+        ?>
+
+<?php 
+            
+            if ( has_nav_menu( 'misc-menu' ) )
+            {
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'misc-menu',
+                        'menu_class' => 'nav',
+                        'item_spacing' => 'preserve'
+                    )
+                );  
+            };
+
+        ?>
+    </footer>
+</body> 
+
+
+    <!-- Too be removed, in production -->
     <script src="https://kit.fontawesome.com/fe9e4fceae.js" crossorigin="anonymous">
     </script>
 
@@ -18,7 +63,6 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin>
     </script>
 
-    <!-- Too be removed, in production -->
     <script href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
     </script>
 

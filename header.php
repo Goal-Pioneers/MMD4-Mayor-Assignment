@@ -8,6 +8,16 @@
 
     <body>
         <header> 
-        
-        
+        <?php 
+            if ( has_nav_menu( 'header-menu' ) )
+            {
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'header-menu',
+                        'menu_class' => 'nav',
+                        'item_spacing' => 'preserve'
+                    )
+                );  
+            };
+        ?>
         </header>
