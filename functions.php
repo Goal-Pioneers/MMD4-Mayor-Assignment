@@ -20,6 +20,12 @@ function goalpioneers_theme_support()
 function goalpioneers_register_styles() 
 {
 
+    wp_enqueue_style( 'style', 
+                        get_stylesheet_uri(), 
+                        null, 
+                        null, 
+                        null );
+
 };
 
 function register_widget_init()
@@ -40,7 +46,6 @@ function register_menus()
 // Setup Widget Areas
 add_action('widgets_init', 'register_widget_init');
 add_action( 'after_setup_theme', 'goalpioneers_theme_support' );
-
 add_action( 'wp_enqueue_scripts', 'goalpioneers_register_styles' );
 
 ?>
