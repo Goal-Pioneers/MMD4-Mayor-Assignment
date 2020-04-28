@@ -9,15 +9,26 @@
 
         <link rel="profile" href="http://gmpg.org/xfn/11">
 
+        <meta name="description"
+              content=""/>
+
+        <meta name="keywords"
+              content=""/>
+
+        <meta name="author"
+              content="Goal Pioneers, "/>
+
+        <meta name="robots"
+              content="index, follow"/>
+
         <?php 
             wp_head();
         ?>
-
     </head>
 
     <body>
         <header>
-            <?php 
+            <?php /* 
                 if ( has_nav_menu( 'header-menu' ) )
                 {
                     wp_nav_menu(
@@ -27,6 +38,6 @@
                             'item_spacing' => 'preserve'
                         )
                     );  
-                };
+                }; */
             ?>
         </header>
