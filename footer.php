@@ -1,66 +1,58 @@
-    <footer class=""> 
+    <footer> 
         <?php 
             wp_footer();
         ?>
 
-        <div> 
-            <?php     
-                if ( has_nav_menu( 'footer-menu' ) )
+        <?php if(has_nav_menu('ui-navigation-footer-menu')): ?>
+            <div id="footer-navigation"> 
+                <?php     
+                if ( has_nav_menu( 'ui-navigation-footer-menu' ) )
                 {
                     wp_nav_menu(
                         array(
                             'theme_location' => 'footer-menu',
                             'menu_class' => 'nav',
-                            'item_spacing' => 'preserve'
-                        )
-                    );  
-                };
-            ?>
+                            'item_spacing' => 'preserve',
+                            'walker' => new ui_menu_walker_footer_walker()
+                            )
+                        );  
+                    };
+                ?>
+            </div>  
+        <?php endif; ?>
 
+        <?php if(has_nav_menu('ui-navigation-misc-menu')): ?>
+            <div class="area-footer-copyright"> 
+                <div class="container">
+                    <div>
+                        <p> 
+                            <?php 
+                                $year = date("Y");
+                                echo '© ';
+                                echo $year;
+                                echo ' Goal Pioneers'
+                            ?>
+                        </p>
+                    </div>
 
-            <?php 
-                if ( has_nav_menu( 'social-menu' ) )
-                {
-                    wp_nav_menu(
-                        array(
-                            'theme_location' => 'social-menu',
-                            'menu_class' => 'nav',
-                            'item_spacing' => 'preserve'
-                        )
-                    );  
-                };
-            ?>
-        </div>
-
-        <div class="area-footer-copyright"> 
-            <div class="container">
-                <div>
-                    <p> 
-                        <?php 
-                            $year = date("Y");
-                            echo '© ';
-                            echo $year;
-                            echo ' Goal Pioneers'
+                    <div id="">
+                        <?php     
+                            if ( has_nav_menu( 'ui-navigation-misc-menu' ) )
+                            {
+                                wp_nav_menu(
+                                    array(
+                                        'theme_location' => 'ui-navigation-misc-menu',
+                                        'menu_class' => 'nav',
+                                        'item_spacing' => 'preserve',
+                                        'walker' => new ui_menu_walker_misc_walker()
+                                    )
+                                );  
+                            };
                         ?>
-                    </p>
-                </div>
-
-                <div id="">
-                    <?php     
-                        if ( has_nav_menu( 'misc-menu' ) )
-                        {
-                            wp_nav_menu(
-                                array(
-                                    'theme_location' => 'misc-menu',
-                                    'menu_class' => 'nav',
-                                    'item_spacing' => 'preserve'
-                                )
-                            );  
-                        };
-                    ?>
+                    </div>
                 </div>
             </div>
-        </div>
+        <?php endif;?>
     </footer>
 </body>
 

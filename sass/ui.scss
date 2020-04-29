@@ -1,0 +1,22 @@
+#header-navigation a 
+{
+}
+
+#header-navigation a:hover
+{
+}
+
+#header-navigation a:active
+{
+}
+
+.ui-menu-button-area
+{
+    @extend .nav-item;
+}
+
+
+.ui-menu-link
+{
+    @extend .nav-link;
+}

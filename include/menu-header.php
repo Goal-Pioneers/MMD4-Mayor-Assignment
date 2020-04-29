@@ -13,7 +13,7 @@ class ui_menu_walker_header_walker extends Walker_Nav_Menu
         $title = $item->title;
         $description = $item->description;
         $permalink = $item->url;
-        $output .= "<li class='" . 'nav-item '.  implode(" ", $item->classes) . "'>";
+        $output .= "<li class='" . 'ui-menu-button-area'. "'>";
         
         //Add SPAN if no Permalink
         if( $permalink && $permalink != '#' ) 
@@ -21,11 +21,11 @@ class ui_menu_walker_header_walker extends Walker_Nav_Menu
             
             if(in_array("menu-item-has-children", $item->classes, true))
             {
-                $output .= "<a class='nav-link' href='" . $permalink . "' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>";
+                $output .= "<a class='ui-menu-link' href='" . $permalink . ">";
             }
             else 
             {
-                $output .= "<a class='nav-link' href='" . $permalink . "'>";
+                $output .= "<a class='ui-menu-link' href='" . $permalink . "'>";
             }
         } 
         else 
@@ -38,6 +38,7 @@ class ui_menu_walker_header_walker extends Walker_Nav_Menu
         {
             $output .= '<small class="description">' . $description . '</small>';
         }
+
         if( $permalink && $permalink != '#' ) 
         {
             $output .= '</a>';
@@ -54,7 +55,7 @@ class ui_menu_walker_header_walker extends Walker_Nav_Menu
     {
         
         $output .= "\n<ul class='sub-menu'>\n";
-        $output .= '<div class="dropdown-menu" aria-labelledby="navbarDropdown">';
+        $output .= '<div class="">';
     
     }
 

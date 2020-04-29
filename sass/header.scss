@@ -1,0 +1,12 @@
+header 
+{
+    display: block;
+}
+
+#header-navigation
+{
+    @extend .navbar;
+    @extend .navbar-expand-lg;
+    @extend .navbar-light;
+    @extend .bg-dark;
+}

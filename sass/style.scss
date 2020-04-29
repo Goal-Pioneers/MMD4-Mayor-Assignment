@@ -19,15 +19,8 @@ body
     min-width: 100%;
 }
 
-header 
-{
-    display: block;
-}
-
-#header-navigation
-{
-
-}
+@import './header.scss';
+@import './ui.scss';
 
 main 
 {
@@ -50,6 +43,7 @@ footer
 
 #footer-navigation
 {
+    @extend .bg-dark;
     
 }
 
