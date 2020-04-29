@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-        <main> </main>
+        <main> 
+        page 404
+        </main>
 
-        <?php get_footer(); ?>
+<?php get_footer(); ?>
     

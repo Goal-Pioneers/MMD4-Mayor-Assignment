@@ -1,6 +1,11 @@
 <?php
- 
- 
+
+require get_parent_theme_file_path('/include/menu-header.php');
+require get_parent_theme_file_path('/include/menu-base.php');
+//require get_parent_theme_file_path('/include/menu-footer.php');
+//require get_parent_theme_file_path('/include/menu-some.php');
+//require get_parent_theme_file_path('/include/menu-misc.php');
+
 function goalpioneers_theme_support() 
 {
     // Allows wordpress to set the <title> area
@@ -35,7 +40,7 @@ function register_widget_init()
 
 function register_menus()
 {
-    register_nav_menus( array( 'header-menu' => __( 'Header Main Area Menu', 'theme-menu' ),
+    register_nav_menus( array( 'ui-navigation-header-menu' => __( 'Header Main Area Menu', 'theme-menu' ),
                                'footer-menu' => __( 'Footer Main Area Menu', 'theme-menu' ),
                                'social-menu' => __( 'Social media menu', 'theme-menu' ), 
                                'misc-menu' => __( 'Misc menu', 'theme-menu' ), ) );
@@ -45,7 +50,9 @@ function register_menus()
 
 // Setup Widget Areas
 add_action('widgets_init', 'register_widget_init');
+
 add_action( 'after_setup_theme', 'goalpioneers_theme_support' );
+
 add_action( 'wp_enqueue_scripts', 'goalpioneers_register_styles' );
 
 ?>

@@ -1,8 +1,38 @@
 <?php get_header(); ?>
 
         <main> 
-        Placeholder
+
+        <?php 
+                   if ( is_front_page()):
+        ?>
+        
+
+                <?php 
+                        while( have_posts() ):
+                ?>
+                        <?php 
+                            the_post();
+                        ?>
+
+                        <!-- Actully page content -->
+                        <div> 
+                            <h1> 
+                                <?php the_title(); ?>
+                            </h1>
+                                        
+                            <?php
+                              the_content();
+                            ?>
+                        </div>
+                <?php 
+                    endwhile;
+                ?>
+
+        <?php 
+           endif;
+        ?>
+
         </main>
 
-        <?php get_footer(); ?>
+<?php get_footer(); ?>
     
