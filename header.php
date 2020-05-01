@@ -23,12 +23,14 @@
               content="Goal Pioneers, "/>
 
         <META NAME="contactName" CONTENT="fx. Hr. Jensen">
-        <META NAME="contactOrganization" CONTENT="Jensen aps">
-        <META NAME="contactStreetAddress1" CONTENT="Adresse">
-        <META NAME="contactZipcode" CONTENT="Postnr.">
-        <META NAME="contactCity" CONTENT="By fx København">
-        <META NAME="contactCountry" CONTENT="Land fx. Danmark">
-        <META NAME="contactPhoneNumber" CONTENT="+45 00 00 00 00">
+
+        <META NAME="contactOrganization" CONTENT="Goal pioneers">
+        <META NAME="contactStreetAddress1" CONTENT="Niels bohrs vej 2">
+
+        <META NAME="contactZipcode" CONTENT="6700">
+        <META NAME="contactCity" CONTENT="Esbjerg">
+        <META NAME="contactCountry" CONTENT="Danmark">
+        <META NAME="contactPhoneNumber" CONTENT="+45 51 90 29 14">
 
         <!-- Fortæller google den ikke skal lave et link, til at oversætte siden. -->
         <meta name="google" content="notranslate" />

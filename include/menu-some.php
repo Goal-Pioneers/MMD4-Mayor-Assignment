@@ -14,41 +14,20 @@ class ui_menu_walker_some_walker
         $title = $item->title;
         $description = $item->description;
         $permalink = $item->url;
-        $output .= "<li class='" . 'ui-menu-button-area'.  implode(" ", $item->classes) . "'>";
+        $output .= "<li class='" . 'ui-menu-button-area'. "'>";
         
         //Add SPAN if no Permalink
         if( $permalink && $permalink != '#' ) 
         {
-            
-            if(in_array("menu-item-has-children", $item->classes, true))
-            {
-                $output .= "<a class='ui-menu-link' href='" . $permalink . "' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>";
-            }
-            else 
-            {
                 $output .= "<a class='ui-menu-link' href='" . $permalink . "'>";
-            }
         } 
-        else 
-        {
-            $output .= '<span>';
-        }
         
         $output .= $title;
-        if( $description != '' && $depth == 0 ) 
-        {
-            $output .= '<small class="description">' . $description . '</small>';
-        }
+        
         if( $permalink && $permalink != '#' ) 
         {
             $output .= '</a>';
         } 
-        else 
-        {
-            $output .= '</span>';
-        }
-        
-        
     }
     
     function start_lvl( &$output, $depth = 0, $arg = Array() )

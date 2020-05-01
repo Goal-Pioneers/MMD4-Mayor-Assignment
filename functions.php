@@ -44,9 +44,10 @@ function register_menus()
                                'ui-navigation-footer-menu' => __( 'Footer Main Area Menu', 'theme-menu' ),
                                'ui-navigation-social-menu' => __( 'Social media menu', 'theme-menu' ), 
                                'ui-navigation-misc-menu' => __( 'Misc menu', 'theme-menu' ), ) );
-
     
 };
+
+
 
 // Setup Widget Areas
 add_action('widgets_init', 'register_widget_init');

@@ -88,4 +88,7 @@
     <?php 
         include 'development.php';
     ?>
+
+    <script type="text/babel" src= <?php echo "./content/javascript-react/some-label.jsx"; ?>>
+    </script>
 </html>

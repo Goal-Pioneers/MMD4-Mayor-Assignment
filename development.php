@@ -1,12 +1,14 @@
 
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+
+
     <!-- Too be removed, in production -->
     <script src="https://kit.fontawesome.com/fe9e4fceae.js" crossorigin="anonymous">
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.js" integrity="sha256-N8dNe7UvR0kSfEBSJiwOPLBEyfWCd/aaQL2pdWqDJwE=" crossorigin="anonymous">
-    </script>
-
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
     </script>
 
     <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin>
