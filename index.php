@@ -3,10 +3,10 @@
             
 
         <?php 
-                   if ( is_front_page()):
+        if ( is_front_page()):
         ?>
-        
-
+            <div id="presentation-cover">
+            </div>
         <?php 
            endif;
         ?>

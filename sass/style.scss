@@ -28,6 +28,16 @@ main
     display: block;
 }
 
+#presentation-cover
+{
+    width: 100%;
+    min-height: 500px;
+
+    background-color: gray;
+    border-color: black;
+}
+
+
 @import './footer.scss';
 
 @import './heading.scss';
