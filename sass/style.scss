@@ -24,30 +24,13 @@ body
 
 main 
 {
-    min-height: 200px;
-    display: block;
-
-}
-
-#presentation
-{
-    
-}
-
-footer 
-{
-    
-
+    min-height: 400px;
     display: block;
 }
 
-#footer-navigation
-{
-    @extend .bg-dark;
-    
-}
+@import './footer.scss';
 
 @import './heading.scss';
 @import './padding.scss';
 
-@import './framework/bootstrap/scss/bootstrap.scss';
+@import './framework/bootstrap/bootstrap.scss';

@@ -14,6 +14,7 @@ class ui_menu_walker_some_walker
         $title = $item->title;
         $description = $item->description;
         $permalink = $item->url;
+        
         $output .= "<li class='" . 'ui-menu-button-area'. "'>";
         
         //Add SPAN if no Permalink

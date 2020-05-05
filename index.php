@@ -1,25 +1,16 @@
 <?php get_header(); ?>
         <main> 
-            <nav> 
-                <?php 
-                    if ( has_nav_menu( 'ui-navigation-social-menu' ) )
-                    {
-                        wp_nav_menu(
-                            array(
-                                'theme_location' => 'ui-navigation-social-menu',
-                                'menu_class' => 'nav',
-                                'item_spacing' => 'preserve',
-                                'walker' => new ui_menu_walker_some_walker()
-                            )
-                        );  
-                    };
-                ?>
-            </nav>
+            
 
         <?php 
                    if ( is_front_page()):
         ?>
         
+
+        <?php 
+           endif;
+        ?>
+
 
                 <?php 
                         while( have_posts() ):
@@ -42,9 +33,6 @@
                     endwhile;
                 ?>
 
-        <?php 
-           endif;
-        ?>
 
         </main>
 

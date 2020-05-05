@@ -3,6 +3,12 @@ header
     display: block;
 }
 
+header .main-section 
+{
+    @extend .bg-dark;
+
+}
+
 #header-navigation
 {
     @extend .navbar;
