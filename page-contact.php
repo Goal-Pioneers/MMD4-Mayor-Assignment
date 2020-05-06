@@ -1,17 +1,6 @@
 <?php get_header(); ?>
         <main> 
-            
-
-        <?php 
-        if ( is_front_page()):
-        ?>
-            <div id="presentation-cover">
-            </div>
-        <?php 
-           endif;
-        ?>
-
-
+            <p> Contact </p>
                 <?php 
                         while( have_posts() ):
                 ?>

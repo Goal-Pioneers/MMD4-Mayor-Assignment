@@ -54,7 +54,7 @@
 
     <body>
         <header>
-            <div>
+            <div class="main-section">
                 <?php  
                     if ( has_nav_menu( 'ui-navigation-header-menu' ) )
                     {
@@ -71,16 +71,5 @@
                 ?>
             </div>
 
-            <nav> 
-                <ol class="breadcrumb" aria-label="breadcrumb"> 
-                    <li> 
-                        Home
-                    </li>
-                    
-                    <li> 
-                        Page
-                    </li>
-                </ol>
-            </nav>
-            
+          
         </header>

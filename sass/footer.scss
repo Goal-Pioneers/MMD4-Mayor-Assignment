@@ -1,0 +1,43 @@
+footer 
+{
+
+}
+
+footer .main-section
+{
+    @extend .bg-dark;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 64px;
+
+    padding-left: 64px;
+    padding-right: 64px;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+footer .main-section .widgetizedArea
+{
+    padding-left: 16px;    
+    padding-right: 16px;
+}
+
+.ui-social-navigation
+{
+
+}
+
+#menu-social
+{
+    justify-content: center !important;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#menu-social li a
+{
+    font-size: 28px !important;
+}

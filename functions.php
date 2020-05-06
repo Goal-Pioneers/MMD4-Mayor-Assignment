@@ -33,8 +33,32 @@ function goalpioneers_register_styles()
 
 };
 
+function apply_some_ui_logo_filter( $items, $args )
+{
+    foreach( $items as &$item )
+    {
+        $icon = get_field('ui-some-icons', $item);
+    
+        if ($icon)
+        {
+            $item->title = '<i class="' . $icon . '"></i>';
+        }
+    }
+
+    return $items;
+};
+
+add_filter('wp_nav_menu_objects', 'apply_some_ui_logo_filter', 10, 2);
+
 function register_widget_init()
 {
+    register_sidebar(array(
+        'name' => 'footer-area',
+        'before_widget' => '<div class = "widgetizedArea">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    ) );
 
 };
 
@@ -46,6 +70,7 @@ function register_menus()
                                'ui-navigation-misc-menu' => __( 'Misc menu', 'theme-menu' ), ) );
     
 };
+
 
 
 

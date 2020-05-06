@@ -2,6 +2,26 @@
         <?php 
             wp_footer();
         ?>
+        <nav class="ui-social-navigation"> 
+                <?php 
+                    if ( has_nav_menu( 'ui-navigation-social-menu' ) )
+                    {
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'ui-navigation-social-menu',
+                                'menu_class' => 'nav',
+                                'item_spacing' => 'preserve',
+                                'walker' => new ui_menu_walker_some_walker()
+                            )
+                        );  
+                    };
+                ?>
+        </nav>
+
+        <div class="main-section"> 
+            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer-area") ) : ?>
+            <?php endif;?>
+        </div>
 
         <?php if(has_nav_menu('ui-navigation-footer-menu')): ?>
             <div id="footer-navigation"> 
@@ -88,7 +108,4 @@
     <?php 
         include 'development.php';
     ?>
-
-    <script type="text/babel" src= <?php echo "./content/javascript-react/some-label.jsx"; ?>>
-    </script>
 </html>
