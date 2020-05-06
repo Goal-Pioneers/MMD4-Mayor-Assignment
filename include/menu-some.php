@@ -20,7 +20,7 @@ class ui_menu_walker_some_walker
         //Add SPAN if no Permalink
         if( $permalink && $permalink != '#' ) 
         {
-                $output .= "<a class='ui-menu-link' href='" . $permalink . "'>";
+                $output .= "<a class='ui-menu-link' href='" . $permalink . "' alt='" . "'>";
         } 
         
         $output .= $title;
