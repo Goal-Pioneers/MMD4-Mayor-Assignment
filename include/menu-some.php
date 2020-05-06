@@ -20,16 +20,55 @@ class ui_menu_walker_some_walker
         //Add SPAN if no Permalink
         if( $permalink && $permalink != '#' ) 
         {
-                $output .= "<a class='ui-menu-link' href='" . $permalink . "' alt='" . "'>";
+                $output .= "<a class='ui-menu-link' href='" . $permalink . "' alt='" . $title . "'>";
         } 
         
-        $output .= $title;
+        #$output .= $title;
+        $parsed = parse_url( $permalink );
+
+        $applied = false;
+
+        if($parsed['host'] == 'www.facebook.com')
+        {
+            $applied = true;
+            $output .= '<i class="fab fa-facebook-square"></i>';
+        }
+
+        if($parsed['host'] == 'twitter.com')
+        {
+            $applied = true;
+            $output .= '<i class="fab fa-twitter-square"></i>';
+        }
+
+        if($parsed['host'] == 'www.tumblr.com')
+        {
+            $applied = true;
+            $output .= '<i class="fab fa-tumblr-square"></i>';
+        }
+
+        if($parsed['host'] == 'www.linkedin.com')
+        {
+            $applied = true;
+            $output .= '<i class="fab fa-linkedin"></i>';
+        }
+
+        if($parsed['host'] == 'medium.com')
+        {
+            $applied = true;
+            $output .= '<i class="fab fa-medium"></i>';
+        }
+
+        if( $applied == false )
+        {
+            $output .= '<i class="fas fa-link"></i>';
+        }
         
         if( $permalink && $permalink != '#' ) 
         {
             $output .= '</a>';
         } 
     }
+
     
     function start_lvl( &$output, $depth = 0, $arg = Array() )
     {

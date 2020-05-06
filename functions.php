@@ -33,23 +33,6 @@ function goalpioneers_register_styles()
 
 };
 
-function apply_some_ui_logo_filter( $items, $args )
-{
-    foreach( $items as &$item )
-    {
-        $icon = get_field('ui-some-icons', $item);
-    
-        if ($icon)
-        {
-            $item->title = '<i class="' . $icon . '"></i>';
-        }
-    }
-
-    return $items;
-};
-
-add_filter('wp_nav_menu_objects', 'apply_some_ui_logo_filter', 10, 2);
-
 function register_widget_init()
 {
     register_sidebar(array(

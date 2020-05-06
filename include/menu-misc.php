@@ -14,7 +14,8 @@ class ui_menu_walker_misc_walker
         $title = $item->title;
         $description = $item->description;
         $permalink = $item->url;
-        $output .= "<li class='" . 'ui-menu-button-area '.  implode(" ", $item->classes) . "'>";
+        
+        $output .= "<li class='" . 'miscellaneous-button ' . "'>";
         
         //Add SPAN if no Permalink
         if( $permalink && $permalink != '#' ) 
@@ -22,11 +23,11 @@ class ui_menu_walker_misc_walker
             
             if(in_array("menu-item-has-children", $item->classes, true))
             {
-                $output .= "<a class='ui-menu-link' href='" . $permalink . "' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>";
+                $output .= "<a class='miscellaneous-link' href='" . $permalink . "' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>";
             }
             else 
             {
-                $output .= "<a class='ui-menu-link' href='" . $permalink . "'>";
+                $output .= "<a class='miscellaneous-link' href='" . $permalink . "'>";
             }
         } 
         else 

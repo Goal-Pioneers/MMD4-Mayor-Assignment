@@ -1,8 +1,5 @@
-    <footer> 
-        <?php 
-            wp_footer();
-        ?>
-        <nav class="ui-social-navigation"> 
+    
+    <nav class="ui-social-navigation"> 
                 <?php 
                     if ( has_nav_menu( 'ui-navigation-social-menu' ) )
                     {
@@ -16,7 +13,12 @@
                         );  
                     };
                 ?>
-        </nav>
+    </nav>
+
+    <footer> 
+        <?php 
+            wp_footer();
+        ?>
 
         <div class="main-section"> 
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer-area") ) : ?>
@@ -42,35 +44,20 @@
         <?php endif; ?>
 
         <?php if(has_nav_menu('ui-navigation-misc-menu')): ?>
-            <div class="area-footer-copyright"> 
-                <div class="container">
-                    <div>
-                        <p> 
-                            <?php 
-                                $year = date("Y");
-                                echo '© ';
-                                echo $year;
-                                echo ' Goal Pioneers'
-                            ?>
-                        </p>
-                    </div>
-
-                    <div id="">
+            <div id="miscellaneous">
                         <?php     
                             if ( has_nav_menu( 'ui-navigation-misc-menu' ) )
                             {
                                 wp_nav_menu(
                                     array(
                                         'theme_location' => 'ui-navigation-misc-menu',
-                                        'menu_class' => 'nav',
+                                        'menu_class' => 'miscellaneous-menu',
                                         'item_spacing' => 'preserve',
                                         'walker' => new ui_menu_walker_misc_walker()
                                     )
                                 );  
                             };
                         ?>
-                    </div>
-                </div>
             </div>
         <?php endif;?>
     </footer>
