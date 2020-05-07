@@ -1,6 +1,6 @@
 <?php get_header(); ?>
         <main> 
-            <p> About us </p>
+        
                 <?php 
                         while( have_posts() ):
                 ?>

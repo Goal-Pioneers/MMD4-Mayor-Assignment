@@ -1,6 +1,6 @@
 <?php get_header(); ?>
         <main> 
-            <p> Services </p>
+        
                 <?php 
                         while( have_posts() ):
                 ?>

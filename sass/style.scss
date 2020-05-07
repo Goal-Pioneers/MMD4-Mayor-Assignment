@@ -28,6 +28,30 @@ main
     display: block;
 }
 
+#page-contact .contact-form
+{
+    width: 100%;
+    @extend .row;
+
+}
+
+#page-contact .contact-form ul
+{
+    @extend .col-md;
+    list-style: none;
+}
+
+#page-contact .contact-form ul li
+{
+    
+}
+
+#page-contact .contact-form div
+{
+    @extend .col-md;
+
+}
+
 #presentation-cover
 {
     width: 100%;
