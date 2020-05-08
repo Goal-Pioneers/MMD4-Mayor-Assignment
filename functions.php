@@ -1,10 +1,10 @@
 <?php
 
-require get_parent_theme_file_path('/include/menu-header.php');
-require get_parent_theme_file_path('/include/menu-base.php');
-require get_parent_theme_file_path('/include/menu-footer.php');
-require get_parent_theme_file_path('/include/menu-some.php');
-require get_parent_theme_file_path('/include/menu-misc.php');
+require get_parent_theme_file_path('/include/menu/menu-header.php');
+require get_parent_theme_file_path('/include/menu/menu-base.php');
+require get_parent_theme_file_path('/include/menu/menu-footer.php');
+require get_parent_theme_file_path('/include/menu/menu-some.php');
+require get_parent_theme_file_path('/include/menu/menu-misc.php');
 
 function goalpioneers_theme_support() 
 {
