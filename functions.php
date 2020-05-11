@@ -4,7 +4,6 @@ require get_parent_theme_file_path('/include/menu/menu-header.php');
 require get_parent_theme_file_path('/include/menu/menu-base.php');
 require get_parent_theme_file_path('/include/menu/menu-footer.php');
 require get_parent_theme_file_path('/include/menu/menu-some.php');
-require get_parent_theme_file_path('/include/menu/menu-misc.php');
 
 function goalpioneers_theme_support() 
 {
@@ -49,8 +48,7 @@ function register_menus()
 {
     register_nav_menus( array( 'ui-navigation-header-menu' => __( 'Header Main Area Menu', 'theme-menu' ),
                                'ui-navigation-footer-menu' => __( 'Footer Main Area Menu', 'theme-menu' ),
-                               'ui-navigation-social-menu' => __( 'Social media menu', 'theme-menu' ), 
-                               'ui-navigation-misc-menu' => __( 'Misc menu', 'theme-menu' ), ) );
+                               'ui-navigation-social-menu' => __( 'Social media menu', 'theme-menu' ) ) );
     
 };
 

@@ -43,23 +43,7 @@
             </div>  
         <?php endif; ?>
 
-        <?php if(has_nav_menu('ui-navigation-misc-menu')): ?>
-            <div id="miscellaneous">
-                        <?php     
-                            if ( has_nav_menu( 'ui-navigation-misc-menu' ) )
-                            {
-                                wp_nav_menu(
-                                    array(
-                                        'theme_location' => 'ui-navigation-misc-menu',
-                                        'menu_class' => 'miscellaneous-menu',
-                                        'item_spacing' => 'preserve',
-                                        'walker' => new ui_menu_walker_misc_walker()
-                                    )
-                                );  
-                            };
-                        ?>
-            </div>
-        <?php endif;?>
+        <miscfooter id="misc" /> 
     </footer>
 </body>
 
@@ -69,6 +53,6 @@
 </html>
 
 <?php 
-require get_parent_theme_file_path('/include/analytics/google-analytics.php');
-require get_parent_theme_file_path('/include/analytics/matomo-analytics.php');
+    require get_parent_theme_file_path('/include/analytics/google-analytics.php');
+    require get_parent_theme_file_path('/include/analytics/matomo-analytics.php');
 ?>
