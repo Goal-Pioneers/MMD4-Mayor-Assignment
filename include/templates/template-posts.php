@@ -6,7 +6,7 @@
                         ?>
 
                         <!-- Actully page content -->
-                        <div> 
+                        <div class="page-main-textual-area"> 
                             <h1> 
                                 <?php the_title(); ?>
                             </h1>

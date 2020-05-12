@@ -9,11 +9,7 @@
 
                         <!-- Actully page content -->
                         <div id="page-contact"> 
-                            <h1> 
-                                <?php the_title(); ?>
-                            </h1>
-
-                            <div class="contact-form"> 
+                            <div> 
                                 <?php
                                     the_content();
                                 ?>
