@@ -12,85 +12,51 @@
                         endif;
                 ?>
 
-                
-                <!-- Products -->
-                <?php 
-                        if ( is_front_page()):
-                ?>
-                        <div id="products">
-                                <h1> 
-                                        Produkter
-                                </h1>
-                        </div>
-                <?php 
-                        endif;
-                ?>
-
                 <!-- Services -->
                 <?php 
                         if ( is_front_page()):
                 ?>
-                
+                <section> 
                         <div id="services">
                                 <h1> 
                                         Ydelser
                                 </h1>
                         </div>
+                </section>
                 <?php 
                         endif;
-                ?>
-
-
-                <!-- Base page -->
-                <?php 
-                        require get_parent_theme_file_path('/include/templates/template-posts.php');
                 ?>
 
                 <!-- About us -->
                  <?php 
                         if ( is_front_page()):
                 ?>
+                
+                <section> 
                         <div id="about-us">
                                 <h1> 
                                         Om os
                                 </h1>
                         </div>
+                </section>
                 <?php 
                         endif;
                 ?>
 
                 <!-- Press -->
                 <?php 
-                        if ( is_front_page()):
+                        if ( is_front_page() ):
                 ?>
-                <div> 
-                        <h1> 
-                                Press
-                        </h1>       
-
-                        <div id="frontpage-press">
-                                <!-- 1 -->
-                                <div class="frontpage-container test1"> 
-
-                                </div>
+                
+                <section> 
+                        <div> 
+                                <h1> 
+                                        Artikler
+                                </h1>       
                                 
-                                <!-- 2 -->
-                                <div class="frontpage-container test2"> 
-
-                                </div>
-
-                                <!-- 3 -->
-                                <div class="frontpage-container test3"> 
-
-                                </div>
-
-                                <!-- 4 -->
-                                <div class="frontpage-container test4"> 
-
-                                </div>
                         </div>
-                        
-                </div>         
+                </section>
+
                 <?php 
                         endif;
                 ?>
