@@ -6,7 +6,27 @@ header
 header .main-section 
 {
     @extend .bg-dark;
+    display: grid;
 
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+
+    align-items: center;
+}
+
+header .main-section .logo-area
+{
+    @extend .py-1;
+    @extend .px-2;
+}
+
+#header-main-logo
+{
+    
+    background-color: black;
+
+    width: 25px;
+    height: 25px;
 }
 
 #header-navigation
@@ -14,5 +34,4 @@ header .main-section
     @extend .navbar;
     @extend .navbar-expand-lg;
     @extend .navbar-light;
-    @extend .bg-dark;
 }

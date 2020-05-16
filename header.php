@@ -23,7 +23,14 @@
     <body>
         <header>
             <div class="main-section">
-                
+                <div class="logo-area"> 
+                    <a href="<?php echo get_home_url(); ?>"> 
+                        <div id="header-main-logo"> 
+                            
+                        </div>
+                    </a>
+                </div>
+
                 <?php  
                     if ( has_nav_menu( 'ui-navigation-header-menu' ) )
                     {
