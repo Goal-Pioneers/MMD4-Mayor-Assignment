@@ -1,6 +1,5 @@
 <?php get_header(); ?>
         <main> 
-            <p> Contact </p>
                 <?php 
                         while( have_posts() ):
                 ?>
@@ -9,14 +8,12 @@
                         ?>
 
                         <!-- Actully page content -->
-                        <div> 
-                            <h1> 
-                                <?php the_title(); ?>
-                            </h1>
-                                        
-                            <?php
-                              the_content();
-                            ?>
+                        <div id="page-contact"> 
+                            <div> 
+                                <?php
+                                    the_content();
+                                ?>
+                            </div>
                         </div>
                 <?php 
                     endwhile;

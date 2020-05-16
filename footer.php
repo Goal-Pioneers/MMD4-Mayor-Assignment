@@ -1,8 +1,5 @@
-    <footer> 
-        <?php 
-            wp_footer();
-        ?>
-        <nav class="ui-social-navigation"> 
+    
+    <nav class="ui-social-navigation"> 
                 <?php 
                     if ( has_nav_menu( 'ui-navigation-social-menu' ) )
                     {
@@ -16,7 +13,12 @@
                         );  
                     };
                 ?>
-        </nav>
+    </nav>
+
+    <footer> 
+        <?php 
+            wp_footer();
+        ?>
 
         <div class="main-section"> 
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer-area") ) : ?>
@@ -40,72 +42,38 @@
                 ?>
             </div>  
         <?php endif; ?>
+        <div id="ui-footer-misc"> 
+            <div> 
+                <p> 
+                    {{copyright.content}}
+                    {{copyright.year}}
+                    {{copyright.company}}
+                </p> 
+            </div>   
 
-        <?php if(has_nav_menu('ui-navigation-misc-menu')): ?>
-            <div class="area-footer-copyright"> 
-                <div class="container">
-                    <div>
-                        <p> 
-                            <?php 
-                                $year = date("Y");
-                                echo '© ';
-                                echo $year;
-                                echo ' Goal Pioneers'
-                            ?>
-                        </p>
-                    </div>
+            <ul>
+                <span v-for="link in links"> 
+                    
+                    <li>
+                        <a v-bind:href="link.uri"> 
+                            {{link.name}}
+                        </a>
+                    </li>
 
-                    <div id="">
-                        <?php     
-                            if ( has_nav_menu( 'ui-navigation-misc-menu' ) )
-                            {
-                                wp_nav_menu(
-                                    array(
-                                        'theme_location' => 'ui-navigation-misc-menu',
-                                        'menu_class' => 'nav',
-                                        'item_spacing' => 'preserve',
-                                        'walker' => new ui_menu_walker_misc_walker()
-                                    )
-                                );  
-                            };
-                        ?>
-                    </div>
-                </div>
-            </div>
-        <?php endif;?>
+                    <li> | </li>
+                </span> 
+
+            </ul>
+        </div>
     </footer>
 </body>
 
-<!-- Matomo -->
-<script type="text/javascript">
-    var _paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-        var u="//matomo.goalpioneers.dk/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '1']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-</script>
-<!-- End Matomo Code -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160026683-1">
-</script>
-
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-160026683-1');
-    </script>
-
-
-    <?php 
+<?php 
         include 'development.php';
-    ?>
+?>
 </html>
+
+<?php 
+    require get_parent_theme_file_path('/include/analytics/google-analytics.php');
+    require get_parent_theme_file_path('/include/analytics/matomo-analytics.php');
+?>

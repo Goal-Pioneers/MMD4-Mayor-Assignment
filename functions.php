@@ -1,10 +1,9 @@
 <?php
 
-require get_parent_theme_file_path('/include/menu-header.php');
-require get_parent_theme_file_path('/include/menu-base.php');
-require get_parent_theme_file_path('/include/menu-footer.php');
-require get_parent_theme_file_path('/include/menu-some.php');
-require get_parent_theme_file_path('/include/menu-misc.php');
+require get_parent_theme_file_path('/include/menu/menu-header.php');
+require get_parent_theme_file_path('/include/menu/menu-base.php');
+require get_parent_theme_file_path('/include/menu/menu-footer.php');
+require get_parent_theme_file_path('/include/menu/menu-some.php');
 
 function goalpioneers_theme_support() 
 {
@@ -33,23 +32,6 @@ function goalpioneers_register_styles()
 
 };
 
-function apply_some_ui_logo_filter( $items, $args )
-{
-    foreach( $items as &$item )
-    {
-        $icon = get_field('ui-some-icons', $item);
-    
-        if ($icon)
-        {
-            $item->title = '<i class="' . $icon . '"></i>';
-        }
-    }
-
-    return $items;
-};
-
-add_filter('wp_nav_menu_objects', 'apply_some_ui_logo_filter', 10, 2);
-
 function register_widget_init()
 {
     register_sidebar(array(
@@ -66,8 +48,7 @@ function register_menus()
 {
     register_nav_menus( array( 'ui-navigation-header-menu' => __( 'Header Main Area Menu', 'theme-menu' ),
                                'ui-navigation-footer-menu' => __( 'Footer Main Area Menu', 'theme-menu' ),
-                               'ui-navigation-social-menu' => __( 'Social media menu', 'theme-menu' ), 
-                               'ui-navigation-misc-menu' => __( 'Misc menu', 'theme-menu' ), ) );
+                               'ui-navigation-social-menu' => __( 'Social media menu', 'theme-menu' ) ) );
     
 };
 

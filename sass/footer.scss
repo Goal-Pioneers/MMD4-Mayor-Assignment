@@ -1,15 +1,12 @@
 footer 
 {
-
+    @extend .bg-dark;
 }
 
 footer .main-section
 {
-    @extend .bg-dark;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 64px;
+    @extend .row;
+    width: 100%;
 
     padding-left: 64px;
     padding-right: 64px;
@@ -20,9 +17,41 @@ footer .main-section
 
 footer .main-section .widgetizedArea
 {
+    @extend .col-md-3;
+
     padding-left: 16px;    
     padding-right: 16px;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
+
+footer .main-section .widgetizedArea h3 
+{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer .main-section .widgetizedArea p
+{
+    color: white;
+}
+
+footer .main-section .widgetizedArea ul
+{
+    padding:0px;
+    margin:0px;
+    list-style: none;
+}
+
+footer .main-section .widgetizedArea ul li 
+{
+    color:white;
+}
+
+
 
 .ui-social-navigation
 {
@@ -40,4 +69,28 @@ footer .main-section .widgetizedArea
 #menu-social li a
 {
     font-size: 28px !important;
+}
+
+#miscellaneous
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+.miscellaneous-menu
+{
+    @extend .nav;
+
+}
+
+.miscellaneous-menu .miscellaneous-button
+{
+    @extend .nav-item;
+}
+
+.miscellaneous-menu .miscellaneous-button .miscellaneous-link
+{
+    @extend .nav-link;
+    font-size: 12px;
 }

@@ -1,6 +1,7 @@
 h1 
 {
     font-family: $title_font;
+    text-align: center;
 
 }
 
@@ -11,6 +12,16 @@ h2
 }
 
 h3 
+{
+    font-family: $title_font;
+}
+
+h4
+{
+    font-family: $title_font;
+}
+
+h5 
 {
     font-family: $title_font;
 }
