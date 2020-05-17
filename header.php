@@ -23,13 +23,6 @@
     <body>
         <header>
             <div class="main-section">
-                <div class="logo-area"> 
-                    <a href="<?php echo get_home_url(); ?>"> 
-                        <div id="header-main-logo"> 
-                            
-                        </div>
-                    </a>
-                </div>
 
                 <?php  
                     if ( has_nav_menu( 'ui-navigation-header-menu' ) )
@@ -46,6 +39,26 @@
                     }
                 ?>
             </div>
+
+            <?php if(is_front_page()): ?>
+                <div id="introduction-page-cover">
+                    
+                <?php if(has_post_thumbnail()): ?> 
+                        <?php the_post_thumbnail( 'full', array('class' => 'header-cover-image') ); ?>
+                    <?php endif;?>
+                
+                    <div class="elements"> 
+                        <div class="introduction aligns-items-center">
+                            <div class="header">
+                                <h1 class="title"><?php echo get_bloginfo('name'); ?></h1>
+                                <p class="description"><?php echo get_bloginfo('description'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                     
+                </div>
+
+            <?php endif; ?>
 
           
         </header>

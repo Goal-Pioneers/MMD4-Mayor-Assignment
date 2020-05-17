@@ -27,47 +27,62 @@ main
     display: block;
 }
 
-#page-contact .contact-form
+#introduction-page-cover
 {
-    width: 100%;
-    @extend .row;
+    position: relative;
 
-}
-
-#page-contact .contact-form ul
-{
-    @extend .col-md;
-    list-style: none;
-}
-
-#page-contact .contact-form ul li
-{
-    
-}
-
-#page-contact .contact-form div
-{
-    @extend .col-md;
-
-}
-
-#presentation-cover
-{
-    max-width: 100%;
-    min-height: 400px;
-
+    height: 500px;
     background-color: gray;
-    border-color: black;
 }
 
+#introduction-page-cover .elements
+{
+    @extend .container;
+    height: 100% !important;
+}
+
+#introduction-page-cover .elements .introduction
+{
+    @extend .row;
+    @extend .h-100;
+    align-content: center !important;
+}
+
+#introduction-page-cover .elements .introduction .header 
+{
+    @extend .col-12;
+    @extend .text-center;
+}
+
+#introduction-page-cover .elements .introduction .header .title
+{
+    @extend .font-weight-light;
+    color: white;
+}
+
+#introduction-page-cover .elements .introduction .header .description
+{
+    @extend .lead;
+    color: white;
+}
+
+.header-cover-image
+{
+    opacity: 0.25;
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    position: absolute;
+
+    top: 0px;
+}
+
+ 
 
 @import './footer.scss';
 
 @import './heading.scss';
-@import './padding.scss';
-@import './sidebar.scss';
 @import './page.scss';
-
-@import './frontpage/press.scss';
 
 @import './framework/bootstrap/bootstrap.scss';
