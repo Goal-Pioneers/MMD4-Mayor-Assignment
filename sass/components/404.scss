@@ -1,0 +1,42 @@
+#component-info-404
+{
+    min-height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+#component-info-404 div
+{
+    height: 100% !important;
+    align-items: center;
+    
+}
+
+#component-info-404 div h1
+{
+    font-size: 64px;
+
+}
+
+#component-info-404 div p
+{
+    text-align: center;
+}
+
+#component-info-404 div .options-menu
+{
+    display: flex;
+    justify-content: center;
+}
+
+#component-info-404 div .options-menu a
+{
+    @extend .btn;
+    @extend .btn-primary;
+    @extend .mx-3;
+}
