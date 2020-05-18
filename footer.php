@@ -21,11 +21,12 @@
         ?>
 
         <div class="main-section"> 
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer-area") ) : ?>
+            <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( "footer-area" ) ) : ?>
             <?php endif;?>
         </div>
 
-        <?php if(has_nav_menu('ui-navigation-footer-menu')): ?>
+        <?php if( has_nav_menu( 'ui-navigation-footer-menu' ) ): ?>
+
             <div id="footer-navigation"> 
                 <?php     
                 if ( has_nav_menu( 'ui-navigation-footer-menu' ) )
@@ -42,6 +43,7 @@
                 ?>
             </div>  
         <?php endif; ?>
+
         <div id="ui-footer-misc"> 
             <ul>
                     <li v-for="link in links">
