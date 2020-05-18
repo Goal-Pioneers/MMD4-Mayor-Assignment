@@ -1,9 +1,128 @@
-section
+.base-section
+{
+    @extend .py-5;
+    @extend .px-3;
+}
+
+.cover-section
+{
+    @extend .bg-dark;
+}
+
+.cover-section h2 
+{
+    color: white;
+}
+
+
+.cover-section p
+{
+    color: white;
+}
+
+section h2 
+{
+    @extend .text-center;
+}
+
+.shortcuts
 {
     @extend .py-4;
+    @extend .px-2;
+}
+
+.shortcuts ul 
+{
+    list-style: none;
+    display: flex;
+
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    
+    justify-content: center;
+}
+
+.shortcuts ul li
+{
+    @extend .px-3;
+    margin: 0px;
+    
+}
+
+.shortcut-section p 
+{
+    @extend .py-2;
+    text-align: center;
 }
 
 p
 {
     font-family: $body_font;
+}
+
+#news-component
+{
+
+}
+
+#news-component ul 
+{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+
+    width: 100%;
+    display: grid;
+    grid-gap: 32px;
+}
+
+#news-component ul .latest
+{
+    width: 100%;
+    background-color: gray;
+}
+
+
+#news-component ul .latest li
+{
+    height: 300px;
+    
+}
+
+#news-component ul .listed
+{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-gap: 16px;
+}
+
+#news-component ul .listed li
+{
+    height: 400px;
+    
+}
+
+#news-component ul .listed li:nth-child(2) 
+{
+    background-color: gray;
+}
+
+#news-component ul .listed li:nth-child(3) 
+{
+    background-color: gray;
+}
+
+#news-component ul li
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.articles-container
+{
+    @extend .py-3;   
 }
