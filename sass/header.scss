@@ -14,7 +14,6 @@ header .main-section
     align-items: center;
 }
 
-
 #header-navigation
 {
     @extend .navbar;
@@ -27,4 +26,15 @@ header .main-section
 #header-navigation li 
 {
     @extend .mx-1;
+}
+
+.component-navigation-breadcrumb ol
+{
+    @extend .breadcrumb;
+
+}
+
+.component-navigation-breadcrumb ol li 
+{
+    @extend .breadcrumb-item;
 }
