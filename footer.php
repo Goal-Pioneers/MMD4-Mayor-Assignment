@@ -43,7 +43,15 @@
             </div>  
         <?php endif; ?>
         <div id="ui-footer-misc"> 
-            <div> 
+            <ul>
+                    <li v-for="link in links">
+                        <a v-bind:href="link.uri"> 
+                            {{link.name}}
+                        </a>
+                    </li>
+            </ul>
+
+            <div id="ui-footer-copyright"> 
                 <p> 
                     {{copyright.content}}
                     {{copyright.year}}
@@ -51,19 +59,6 @@
                 </p> 
             </div>   
 
-            <ul>
-                <span v-for="link in links"> 
-                    
-                    <li>
-                        <a v-bind:href="link.uri"> 
-                            {{link.name}}
-                        </a>
-                    </li>
-
-                    <li> | </li>
-                </span> 
-
-            </ul>
         </div>
     </footer>
 </body>

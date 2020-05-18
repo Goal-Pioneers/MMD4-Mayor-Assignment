@@ -1,5 +1,6 @@
 $primary-color: #6ad1ff !default;
 $secondary-color: #344656 !default;
+$background-color: #ecf0f1;
 
 $title_font: 'comfortaa', sans-serif;
 $body_font: 'open sans', sans-serif;
@@ -10,6 +11,8 @@ body
 
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
+
+    background-color: $background-color;
 
     grid-gap: 0px;
 
@@ -27,47 +30,129 @@ main
     display: block;
 }
 
-#page-contact .contact-form
+#introduction-page-cover
 {
-    width: 100%;
+    
+    @extend .bg-dark;
+    position: relative;
+
+    height: 500px;
+}
+
+#introduction-page-cover .elements
+{
+    @extend .container;
+    height: 100% !important;
+}
+
+#introduction-page-cover .elements .introduction
+{
     @extend .row;
+    @extend .h-100;
+    
+    align-content: center !important;
+}
+
+#introduction-page-cover .elements .introduction .header 
+{
+    @extend .col-12;
+    @extend .text-center;
+}
+
+#introduction-page-cover .elements .introduction .header .title
+{
+    @extend .font-weight-light;
+    color: white;
+    font-size: 3.0rem;
+}
+
+#introduction-page-cover .elements .introduction .header .description
+{
+    @extend .lead;
+    color: white;
+    font-size: 2.0rem;
+}
+
+.header-cover-image
+{
+    opacity: 0.25;
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    position: absolute;
+
+    top: 0px;
+}
+
+.short-button
+{
+    @extend .btn;
+    @extend .btn-primary;
+}
+
+#component-frontpage-showcase
+{
 
 }
 
-#page-contact .contact-form ul
+#component-frontpage-showcase .tabs 
 {
-    @extend .col-md;
+
+}
+
+
+#component-frontpage-showcase .component-container .tabs ul
+{
+    @extend .py-3;
+
     list-style: none;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
 }
 
-#page-contact .contact-form ul li
+#component-frontpage-showcase .component-container .tabs ul li 
 {
+    @extend .px-4;
     
 }
 
-#page-contact .contact-form div
+#component-frontpage-showcase .component-container .tabs .tab
 {
-    @extend .col-md;
+    
 
 }
 
-#presentation-cover
+.clickable
 {
-    max-width: 100%;
-    min-height: 200px;
-
-    background-color: gray;
-    border-color: black;
+    cursor: pointer;
 }
 
+.active
+{
+    text-decoration: underline;
+}
+
+.component-tab-view
+{
+    width: 100%;
+    height: 400px;
+}
+
+.component-container
+{
+    
+    background-color: white;
+}
+
+ 
 
 @import './footer.scss';
 
 @import './heading.scss';
-@import './padding.scss';
-@import './sidebar.scss';
 @import './page.scss';
-
-@import './frontpage/press.scss';
 
 @import './framework/bootstrap/bootstrap.scss';

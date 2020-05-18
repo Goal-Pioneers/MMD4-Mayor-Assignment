@@ -6,13 +6,25 @@ header
 header .main-section 
 {
     @extend .bg-dark;
+    display: grid;
 
+    grid-template-columns: auto;
+    grid-gap: 16px;
+
+    align-items: center;
 }
+
 
 #header-navigation
 {
     @extend .navbar;
     @extend .navbar-expand-lg;
     @extend .navbar-light;
-    @extend .bg-dark;
+    @extend .justify-content-center;
+}
+
+
+#header-navigation li 
+{
+    @extend .mx-1;
 }

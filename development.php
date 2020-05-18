@@ -22,10 +22,17 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri() . '/content/javascript/ui.js'; ?>">
 </script>
 
+
+<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/content/javascript/news-component.js'; ?>">
+</script>
+
 <script type="text/javascript" src="<?php echo get_template_directory_uri() . '/content/javascript/navigation.js'; ?>">
 </script>
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri() . '/content/javascript/fix.js'; ?>">
+</script>
+
+<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/content/javascript/component/component-frontpage-showcase.js'; ?>">
 </script>
 
 
