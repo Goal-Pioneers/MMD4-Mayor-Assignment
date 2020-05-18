@@ -23,10 +23,6 @@
                         </div>
 
                 </section>
-                <!-- Search functionality -->
-                        <!-- Continue searching -->
-
-                <!-- Insert content that looks like what the user might be searching for -->
 
                 
         </main>
