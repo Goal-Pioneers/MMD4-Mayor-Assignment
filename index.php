@@ -5,23 +5,50 @@
                             the_post();
                         ?>
                         
-                <section class="base-section"> 
+                <section class="base-section index-products-showcase"> 
                         <h2> 
                             Produkter
                         </h2>
 
                         <ul> 
-                                <li> 
-                                        a
+                                <li class="product"> 
+                                        <a href="#">
+                                                <div class="product-container">
+                                                        <img src="" class="image" /> 
+                                                        <h3> A </h3>
+                                                        <p> description </p>
+                                                </div>
+                                        </a>
                                 </li>
-                                <li> 
-                                        b
+
+                                <li class="product"> 
+                                        <a href="#">
+                                                <div class="product-container"> 
+                                                        <img src="" class="image" />
+                                                        <h3> B </h3>
+                                                        <p> description </p>
+                                                </div>
+                                        </a>
                                 </li>
-                                <li> 
-                                        c
+                                
+                                <li class="product"> 
+                                        <a href="#">
+                                                <div class="product-container"> 
+                                                        <img src="" class="image" />
+                                                        <h3> C </h3>
+                                                        <p> description </p>
+                                                </div>
+                                        </a>
                                 </li>
-                                <li> 
-                                        d
+                                
+                                <li class="product"> 
+                                        <a href="#">    
+                                                <div class="product-container"> 
+                                                        <img src="" class="image" />
+                                                        <h3> D </h3>
+                                                        <p> description </p>
+                                                </div>
+                                        </a>
                                 </li>
                         </ul>
                 </section>
@@ -32,10 +59,33 @@
                         </h2>
 
                         <ul> 
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
+                                <li> 
+                                        <div> 
+                                                <h3> </h3>
+                                                <p> </p>
+                                        </div>
+                                </li>
+
+                                <li> 
+                                        <div> 
+                                                <h3> </h3>
+                                                <p> </p>  
+                                        </div>
+                                </li>
+                                
+                                <li> 
+                                        <div> 
+                                                <h3> </h3>
+                                                <p> </p>  
+                                        </div>
+                                </li>
+
+                                <li> 
+                                        <div> 
+                                                <h3> </h3>
+                                                <p> </p>  
+                                        </div>
+                                </li>
                         </ul>
 
                 </section>

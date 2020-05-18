@@ -126,3 +126,64 @@ p
 {
     @extend .py-3;   
 }
+
+.index-products-showcase
+{
+
+}
+
+.index-products-showcase ul 
+{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 32px;
+}
+
+.index-products-showcase ul li
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.product-container
+{
+    @extend .py-3;
+    @extend .px-2;
+
+    border: 1px solid black;
+    display: grid;
+
+    grid-template-rows: 200px auto auto;
+    grid-gap: 8px;
+}
+
+.product-container h3 
+{
+    text-align: center;
+
+}
+
+.product-container p 
+{
+    text-align: center;
+    
+}
+
+.product a
+{
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.image 
+{
+    border: 1px solid black;
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+}
