@@ -1,0 +1,33 @@
+#component-archive-pages
+{
+
+}
+
+#component-archive-pages ul
+{
+    @extend .list-group;
+    
+}
+
+#component-archive-pages ul li
+{
+    @extend .list-group-item;
+    
+}
+
+#component-archive-posts
+{
+
+}
+
+#component-archive-posts ul
+{
+    @extend .list-group;
+    
+}
+
+#component-archive-posts ul li
+{
+    @extend .list-group-item;
+    
+}
