@@ -4,7 +4,11 @@
                         <?php 
                             the_post();
                         ?>
-                        
+                
+                <?php 
+                        if(is_front_page()):
+                ?>
+
                 <section class="base-section index-products-showcase"> 
                         <h2> 
                             Produkter
@@ -53,6 +57,12 @@
                         </ul>
                 </section>
 
+                <?php endif; ?>
+
+                
+                <?php 
+                        if(is_front_page()):
+                ?>
                 <section class="base-section cover-section" 
                          id="component-frontpage-showcase"> 
                         <h2> 
@@ -80,48 +90,63 @@
                                 </div>
                        </div>
                 </section>
+                <?php endif; ?>
                 
-                <section id="news-component" class="base-section"> 
-                        <h2> 
-                            Artikler
-                        </h2>
-
-                        <ul class="articles-container"> 
-                                <span class="listed"> 
-                                        <li> 
-                                                2
-                                        
-                                        </li>
-                                        
-                                        <li> 
-                                                3
-                                        </li>
-                                        
-                                        <li> 
-                                                4
-                                        </li>
-
-                                        <li> 
-                                                5
-                                        </li>
-                                </span>
-                        </ul>
-
-                </section>
-
-                
-                <?php if( get_field('section-content-about-us')): ?>
-                        <section class="base-section cover-section"> 
+                <?php 
+                        if(is_front_page()):
+                ?>
+                        <section id="news-component" class="base-section"> 
                                 <h2> 
-                                        <?php the_field('section-title-about-us'); ?>
+                                Artikler
                                 </h2>
 
-                                <p> 
-                                        <?php the_field('section-content-about-us'); ?>
-                                </p>
-                        </section>
-                <?php endif; ?>
+                                <ul class="articles-container"> 
+                                        <span class="listed"> 
+                                                <li> 
+                                                        2
+                                                
+                                                </li>
+                                                
+                                                <li> 
+                                                        3
+                                                </li>
+                                                
+                                                <li> 
+                                                        4
+                                                </li>
 
+                                                <li> 
+                                                        5
+                                                </li>
+                                        </span>
+                                </ul>
+
+                        </section>
+                <?php 
+                endif;
+                ?>
+
+                
+                <?php 
+                        if(is_front_page()):
+                ?>
+                        <?php if( get_field('section-content-about-us')): ?>
+                                <section class="base-section cover-section"> 
+                                        <h2> 
+                                                <?php the_field('section-title-about-us'); ?>
+                                        </h2>
+
+                                        <p> 
+                                                <?php the_field('section-content-about-us'); ?>
+                                        </p>
+                                </section>
+                        <?php endif; ?>
+                <?php endif;?>
+
+                
+                <?php 
+                        if(is_front_page()):
+                ?>
                 <section class="base-section shortcut-section"> 
                         <h2> 
                                 Hvad kan <?php echo get_bloginfo('name'); ?> gøre for dig ? 
@@ -154,7 +179,7 @@
 
                         <!-- Cards - Måske -->
                 </section>                    
-               
+                <?php endif; ?>
                 <?php endwhile; ?>
         </main>
 
