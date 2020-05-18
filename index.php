@@ -53,41 +53,32 @@
                         </ul>
                 </section>
 
-                <section class="base-section cover-section"> 
+                <section class="base-section cover-section" 
+                         id="component-frontpage-showcase"> 
                         <h2> 
                             Ydelser   
                         </h2>
 
-                        <ul> 
-                                <li> 
-                                        <div> 
-                                                <h3> </h3>
-                                                <p> </p>
-                                        </div>
-                                </li>
+                       <div class="component-container"> 
+                                <!-- Options -->
+                                <div class="tabs"> 
+                                        <ul> 
+                                                <span v-for="tab in tabs"> 
+                                                        <a class="tab clickable" v-on:click="loadTab"> 
+                                                                <li v-bind:id="tab.tagId" v-bind:class="{ active: tab.isActive }"> 
+                                                                        {{ tab.title }}
+                                                                </li>
+                                                        </a>
+                                                </span>
+                                        </ul>
 
-                                <li> 
-                                        <div> 
-                                                <h3> </h3>
-                                                <p> </p>  
-                                        </div>
-                                </li>
-                                
-                                <li> 
-                                        <div> 
-                                                <h3> </h3>
-                                                <p> </p>  
-                                        </div>
-                                </li>
+                                </div>
 
-                                <li> 
-                                        <div> 
-                                                <h3> </h3>
-                                                <p> </p>  
-                                        </div>
-                                </li>
-                        </ul>
+                                <!-- Tabs -->
+                                <div class="component-tab-view">
 
+                                </div>
+                       </div>
                 </section>
                 
                 <section id="news-component" class="base-section"> 

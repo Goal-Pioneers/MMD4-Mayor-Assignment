@@ -91,6 +91,63 @@ main
     @extend .btn-primary;
 }
 
+#component-frontpage-showcase
+{
+
+}
+
+#component-frontpage-showcase .tabs 
+{
+
+}
+
+
+#component-frontpage-showcase .component-container .tabs ul
+{
+    @extend .py-3;
+
+    list-style: none;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+#component-frontpage-showcase .component-container .tabs ul li 
+{
+    @extend .px-4;
+    
+}
+
+#component-frontpage-showcase .component-container .tabs .tab
+{
+    
+
+}
+
+.clickable
+{
+    cursor: pointer;
+}
+
+.active
+{
+    text-decoration: underline;
+}
+
+.component-tab-view
+{
+    width: 100%;
+    height: 400px;
+}
+
+.component-container
+{
+    
+    background-color: white;
+}
+
  
 
 @import './footer.scss';
