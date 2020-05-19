@@ -1,5 +1,6 @@
 <!-- Too be removed, in production -->
-<script src="https://kit.fontawesome.com/fe9e4fceae.js" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/fe9e4fceae.js" 
+crossorigin="anonymous">
 </script>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 

@@ -1,19 +1,21 @@
     
-    <nav class="ui-social-navigation"> 
-                <?php 
-                    if ( has_nav_menu( 'ui-navigation-social-menu' ) )
-                    {
-                        wp_nav_menu(
-                            array(
-                                'theme_location' => 'ui-navigation-social-menu',
-                                'menu_class' => 'nav',
-                                'item_spacing' => 'preserve',
-                                'walker' => new ui_menu_walker_some_walker()
-                            )
-                        );  
-                    };
-                ?>
-    </nav>
+    <?php
+    if ( has_nav_menu( 'ui-navigation-social-menu' ) ): 
+    ?>
+        <nav class="ui-social-navigation"> 
+                    <?php 
+                            wp_nav_menu(
+                                array(
+                                    'theme_location' => 'ui-navigation-social-menu',
+                                    'menu_class' => 'nav',
+                                    'item_spacing' => 'preserve',
+                                    'walker' => new ui_menu_walker_some_walker()
+                                )
+                            );  
+                        
+                    ?>
+        </nav>
+    <?php endif; ?>
 
     <footer> 
         <?php 
