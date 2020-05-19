@@ -25,24 +25,6 @@
             <?php endif;?>
         </div>
 
-        <?php if( has_nav_menu( 'ui-navigation-footer-menu' ) ): ?>
-
-            <div id="footer-navigation"> 
-                <?php     
-                if ( has_nav_menu( 'ui-navigation-footer-menu' ) )
-                {
-                    wp_nav_menu(
-                        array(
-                            'theme_location' => 'footer-menu',
-                            'menu_class' => 'nav',
-                            'item_spacing' => 'preserve',
-                            'walker' => new ui_menu_walker_footer_walker()
-                            )
-                        );  
-                    };
-                ?>
-            </div>  
-        <?php endif; ?>
 
         <div id="ui-footer-misc"> 
             <ul>
