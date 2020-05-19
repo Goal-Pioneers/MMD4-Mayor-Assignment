@@ -1,0 +1,49 @@
+#page-contact 
+{
+    @extend .container;
+}
+
+#page-contact .ui-container
+{
+    @extend .row;   
+}
+
+#page-contact .ui-container .message
+{
+    @extend .col-lg;
+    @extend .my-3;
+
+}
+
+#page-contact .ui-container .contact-us-form
+{
+    @extend .col-lg;
+    @extend .my-3;
+}
+
+
+#page-contact .ui-container .contact-us-form label
+{
+    @extend .form-group;
+}
+
+#page-contact .ui-container .contact-us-form .wpcf7-text
+{
+    @extend .form-control;
+}
+
+#page-contact .ui-container .contact-us-form .wpcf7-submit
+{
+    @extend .btn;
+    @extend .btn-primary;
+}
+
+#page-contact .ui-container .contact-us-form .wpcf7-textarea
+{
+    @extend .form-control;
+}
+
+#page-contact .contact-us-list li
+{
+    @extend .my-1;
+}

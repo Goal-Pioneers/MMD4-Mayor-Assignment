@@ -9,7 +9,7 @@
 
                         <!-- Actully page content -->
                         <div id="page-contact"> 
-                            <div> 
+                            <div class="ui-container"> 
                                 <?php
                                     the_content();
                                 ?>
