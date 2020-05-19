@@ -1,6 +1,7 @@
 
 var componentFrontpageShowcase = null;
 
+/** 
 new Vue
 (
     {

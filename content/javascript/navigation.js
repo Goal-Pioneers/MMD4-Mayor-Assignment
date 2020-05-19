@@ -1,3 +1,4 @@
+/** 
 var navigation = new Vue(
     {
         el: '#ui-sidebar',
@@ -82,4 +83,4 @@ var navigation = new Vue(
             
         }
     }
-)
+) */
