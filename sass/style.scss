@@ -25,6 +25,12 @@ body
 @import './header.scss';
 @import './ui.scss';
 
+@import './footer.scss';
+
+@import './heading.scss';
+@import './page.scss';
+
+
 main 
 {
     display: block;
@@ -148,17 +154,11 @@ main
     background-color: white;
 }
 
- 
-
-@import './footer.scss';
 
 @import './components/contact-us.scss';
 
 @import './components/archive.scss';
 
 @import './components/404.scss';
-
-@import './heading.scss';
-@import './page.scss';
 
 @import './framework/bootstrap/bootstrap.scss';

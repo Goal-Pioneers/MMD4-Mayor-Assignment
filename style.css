@@ -21,67 +21,6 @@ header .main-section {
   align-items: center;
 }
 
-main {
-  display: block;
-}
-
-#introduction-page-cover {
-  position: relative;
-  height: 500px;
-}
-
-#introduction-page-cover .elements {
-  height: 100% !important;
-}
-
-#introduction-page-cover .elements .introduction {
-  align-content: center !important;
-}
-
-#introduction-page-cover .elements .introduction .header .title {
-  color: white;
-  font-size: 3rem;
-}
-
-#introduction-page-cover .elements .introduction .header .description {
-  color: white;
-  font-size: 2rem;
-}
-
-.header-cover-image {
-  opacity: 0.25;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0px;
-}
-
-#component-frontpage-showcase .component-container .tabs ul {
-  list-style: none;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  font-size: 18px;
-}
-
-.clickable {
-  cursor: pointer;
-}
-
-.active {
-  text-decoration: underline;
-}
-
-.component-tab-view {
-  width: 100%;
-  height: 400px;
-}
-
-.component-container {
-  background-color: white;
-}
-
 footer .main-section {
   width: 100%;
   padding-left: 64px;
@@ -164,32 +103,6 @@ footer .main-section .widgetizedArea ul li {
 
 .miscellaneous-menu .miscellaneous-button .miscellaneous-link {
   font-size: 12px;
-}
-
-#component-info-404 {
-  min-height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-#component-info-404 div {
-  height: 100% !important;
-  align-items: center;
-}
-
-#component-info-404 div h1 {
-  font-size: 64px;
-}
-
-#component-info-404 div p {
-  text-align: center;
-}
-
-#component-info-404 div .options-menu {
-  display: flex;
-  justify-content: center;
 }
 
 h1 {
@@ -333,6 +246,93 @@ p {
 
 .contact-us-list li {
   list-style: none;
+}
+
+main {
+  display: block;
+}
+
+#introduction-page-cover {
+  position: relative;
+  height: 500px;
+}
+
+#introduction-page-cover .elements {
+  height: 100% !important;
+}
+
+#introduction-page-cover .elements .introduction {
+  align-content: center !important;
+}
+
+#introduction-page-cover .elements .introduction .header .title {
+  color: white;
+  font-size: 3rem;
+}
+
+#introduction-page-cover .elements .introduction .header .description {
+  color: white;
+  font-size: 2rem;
+}
+
+.header-cover-image {
+  opacity: 0.25;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+}
+
+#component-frontpage-showcase .component-container .tabs ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.component-tab-view {
+  width: 100%;
+  height: 400px;
+}
+
+.component-container {
+  background-color: white;
+}
+
+#component-info-404 {
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#component-info-404 div {
+  height: 100% !important;
+  align-items: center;
+}
+
+#component-info-404 div h1 {
+  font-size: 64px;
+}
+
+#component-info-404 div p {
+  text-align: center;
+}
+
+#component-info-404 div .options-menu {
+  display: flex;
+  justify-content: center;
 }
 
 /*!
@@ -925,7 +925,7 @@ pre code {
     max-width: 1140px;
   }
 }
-.row, #introduction-page-cover .elements .introduction, footer .main-section {
+.row, footer .main-section, #introduction-page-cover .elements .introduction {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -6552,19 +6552,19 @@ button.bg-light:focus {
   background-color: #dae0e5 !important;
 }
 
-.bg-dark, header .main-section, #introduction-page-cover, footer, .cover-section {
+.bg-dark, header .main-section, footer, .cover-section, #introduction-page-cover {
   background-color: #343a40 !important;
 }
 
-a.bg-dark:hover, header a.main-section:hover, a#introduction-page-cover:hover, a.cover-section:hover, a.bg-dark:focus, header a.main-section:focus, a#introduction-page-cover:focus, a.cover-section:focus,
+a.bg-dark:hover, header a.main-section:hover, a.cover-section:hover, a#introduction-page-cover:hover, a.bg-dark:focus, header a.main-section:focus, a.cover-section:focus, a#introduction-page-cover:focus,
 button.bg-dark:hover,
 header button.main-section:hover,
-button#introduction-page-cover:hover,
 button.cover-section:hover,
+button#introduction-page-cover:hover,
 button.bg-dark:focus,
 header button.main-section:focus,
-button#introduction-page-cover:focus,
-button.cover-section:focus {
+button.cover-section:focus,
+button#introduction-page-cover:focus {
   background-color: #1d2124 !important;
 }
 
@@ -8113,9 +8113,9 @@ button.cover-section:focus {
 
 .pt-3,
 .py-3,
-#component-frontpage-showcase .component-container .tabs ul,
 .articles-container,
-.product-container {
+.product-container,
+#component-frontpage-showcase .component-container .tabs ul {
   padding-top: 1rem !important;
 }
 
@@ -8129,9 +8129,9 @@ button.cover-section:focus {
 
 .pb-3,
 .py-3,
-#component-frontpage-showcase .component-container .tabs ul,
 .articles-container,
-.product-container {
+.product-container,
+#component-frontpage-showcase .component-container .tabs ul {
   padding-bottom: 1rem !important;
 }
 
@@ -10103,7 +10103,7 @@ button.cover-section:focus {
   text-align: right !important;
 }
 
-.text-center, #introduction-page-cover .elements .introduction .header, section h2 {
+.text-center, section h2, #introduction-page-cover .elements .introduction .header {
   text-align: center !important;
 }
 
