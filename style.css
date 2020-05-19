@@ -306,6 +306,10 @@ main {
   background-color: white;
 }
 
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
 #page-contact h2 {
   text-align: center;
 }

@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html <?php language_attributes(); ?> >
-
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
 
@@ -35,6 +33,8 @@
                 <?php require get_parent_theme_file_path('/include/templates/post/component-introduction.php'); ?>
             <?php endif; ?>
 
-            <?php require get_parent_theme_file_path('/include/templates/header/breadcrumb.php'); ?>
+            <?php if( ! is_front_page() ): ?>
+                <?php require get_parent_theme_file_path('/include/templates/header/breadcrumb.php'); ?>
+            <?php endif; ?>
         </header>
         
