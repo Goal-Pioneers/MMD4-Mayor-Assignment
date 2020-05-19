@@ -44,17 +44,24 @@ function goalpioneers_register_styles()
 //
 function register_widget_init()
 {
-    register_sidebar(array(
-        'name' => 'footer-area',
-        'before_widget' => '<div class = "widgetizedArea">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-    ) );
+    register_sidebar(
+        array(
+            'name' => 'footer-area',
+            'before_widget' => '<div class = "widgetizedArea">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3>',
+            'after_title' => '</h3>',
+        ) 
+    );
 
 };
 
+$is_debugging = true;
 
+function getDebugState()
+{
+    return $GLOBALS["is_debugging"];
+}
 
 
 // Setup Widget Areas

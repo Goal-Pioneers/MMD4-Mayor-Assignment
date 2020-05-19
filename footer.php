@@ -48,11 +48,13 @@
         </div>
     </footer>
 </body>
-
-<?php 
-        include 'development.php';
-?>
 </html>
+
+<?php if( getDebugState() ): ?>
+    <?php 
+        include 'development.php';
+    ?>
+<?php endif;?>
 
 <?php 
     require get_parent_theme_file_path('/include/analytics/google-analytics.php');
