@@ -1,3 +1,4 @@
+
 var footer = new Vue(
     {
         el: '#ui-footer-misc',

@@ -1,3 +1,4 @@
+/**
 var componentSitemap = new Vue
 (
     {
