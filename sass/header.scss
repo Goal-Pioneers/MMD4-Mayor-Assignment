@@ -24,6 +24,9 @@ header .main-section
     @extend .mx-1;
 }
 
+
+$breadcrumb-divider: quote(">");
+
 .component-navigation-breadcrumb ol
 {
     @extend .breadcrumb;
@@ -33,6 +36,7 @@ header .main-section
 {
     @extend .breadcrumb-item;
 }
+
 
 .component-navigation-breadcrumb ol li a
 {

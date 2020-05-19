@@ -5138,7 +5138,7 @@ input[type=button].btn-block {
   display: inline-block;
   padding-right: 0.5rem;
   color: #6c757d;
-  content: "/";
+  content: ">";
 }
 .breadcrumb-item + .breadcrumb-item:hover::before, .component-navigation-breadcrumb ol li + .breadcrumb-item:hover::before, .component-navigation-breadcrumb ol .breadcrumb-item + li:hover::before, .component-navigation-breadcrumb ol li + li:hover::before {
   text-decoration: underline;
