@@ -27,10 +27,20 @@ header .main-section
 .component-navigation-breadcrumb ol
 {
     @extend .breadcrumb;
-
 }
 
 .component-navigation-breadcrumb ol li 
 {
     @extend .breadcrumb-item;
+}
+
+.component-navigation-breadcrumb ol li a
+{
+    text-decoration: none !important;       
+}
+
+.component-navigation-breadcrumb ol li .active-breadcrumb
+{
+    @extend .active;
+    text-decoration: none !important;
 }

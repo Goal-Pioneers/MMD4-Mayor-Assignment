@@ -30,6 +30,14 @@ header .main-section {
   align-items: center;
 }
 
+.component-navigation-breadcrumb ol li a {
+  text-decoration: none !important;
+}
+
+.component-navigation-breadcrumb ol li .active-breadcrumb {
+  text-decoration: none !important;
+}
+
 footer .main-section {
   width: 100%;
   padding-left: 64px;
@@ -292,7 +300,7 @@ p {
   cursor: pointer;
 }
 
-.active {
+.active, .component-navigation-breadcrumb ol li .active-breadcrumb {
   text-decoration: underline;
 }
 
@@ -2806,12 +2814,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   background-color: #007bff;
   border-color: #007bff;
 }
-.btn-primary:not(:disabled):not(.disabled):active, .short-button:not(:disabled):not(.disabled):active, #page-contact .ui-container .contact-us-form .wpcf7-submit:not(:disabled):not(.disabled):active, #component-info-404 div .options-menu a:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .short-button:not(:disabled):not(.disabled).active, #page-contact .ui-container .contact-us-form .wpcf7-submit:not(:disabled):not(.disabled).active, #component-info-404 div .options-menu a:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle, .show > .dropdown-toggle.short-button, #page-contact .ui-container .contact-us-form .show > .dropdown-toggle.wpcf7-submit, #component-info-404 div .options-menu .show > a.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled):active, .short-button:not(:disabled):not(.disabled):active, #page-contact .ui-container .contact-us-form .wpcf7-submit:not(:disabled):not(.disabled):active, #component-info-404 div .options-menu a:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .short-button:not(:disabled):not(.disabled).active, #page-contact .ui-container .contact-us-form .wpcf7-submit:not(:disabled):not(.disabled).active, #component-info-404 div .options-menu a:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-primary.active-breadcrumb:not(:disabled):not(.disabled), .component-navigation-breadcrumb ol li .short-button.active-breadcrumb:not(:disabled):not(.disabled), #page-contact .ui-container .contact-us-form .component-navigation-breadcrumb ol li .wpcf7-submit.active-breadcrumb:not(:disabled):not(.disabled), .component-navigation-breadcrumb ol li #page-contact .ui-container .contact-us-form .wpcf7-submit.active-breadcrumb:not(:disabled):not(.disabled), #component-info-404 div .options-menu .component-navigation-breadcrumb ol li a.active-breadcrumb:not(:disabled):not(.disabled), .component-navigation-breadcrumb ol li #component-info-404 div .options-menu a.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-primary.dropdown-toggle, .show > .dropdown-toggle.short-button, #page-contact .ui-container .contact-us-form .show > .dropdown-toggle.wpcf7-submit, #component-info-404 div .options-menu .show > a.dropdown-toggle {
   color: #fff;
   background-color: #0062cc;
   border-color: #005cbf;
 }
-.btn-primary:not(:disabled):not(.disabled):active:focus, .short-button:not(:disabled):not(.disabled):active:focus, #page-contact .ui-container .contact-us-form .wpcf7-submit:not(:disabled):not(.disabled):active:focus, #component-info-404 div .options-menu a:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .short-button:not(:disabled):not(.disabled).active:focus, #page-contact .ui-container .contact-us-form .wpcf7-submit:not(:disabled):not(.disabled).active:focus, #component-info-404 div .options-menu a:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus, .show > .dropdown-toggle.short-button:focus, #page-contact .ui-container .contact-us-form .show > .dropdown-toggle.wpcf7-submit:focus, #component-info-404 div .options-menu .show > a.dropdown-toggle:focus {
+.btn-primary:not(:disabled):not(.disabled):active:focus, .short-button:not(:disabled):not(.disabled):active:focus, #page-contact .ui-container .contact-us-form .wpcf7-submit:not(:disabled):not(.disabled):active:focus, #component-info-404 div .options-menu a:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .short-button:not(:disabled):not(.disabled).active:focus, #page-contact .ui-container .contact-us-form .wpcf7-submit:not(:disabled):not(.disabled).active:focus, #component-info-404 div .options-menu a:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-primary.active-breadcrumb:not(:disabled):not(.disabled):focus, .component-navigation-breadcrumb ol li .short-button.active-breadcrumb:not(:disabled):not(.disabled):focus, #page-contact .ui-container .contact-us-form .component-navigation-breadcrumb ol li .wpcf7-submit.active-breadcrumb:not(:disabled):not(.disabled):focus, .component-navigation-breadcrumb ol li #page-contact .ui-container .contact-us-form .wpcf7-submit.active-breadcrumb:not(:disabled):not(.disabled):focus, #component-info-404 div .options-menu .component-navigation-breadcrumb ol li a.active-breadcrumb:not(:disabled):not(.disabled):focus, .component-navigation-breadcrumb ol li #component-info-404 div .options-menu a.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-primary.dropdown-toggle:focus, .show > .dropdown-toggle.short-button:focus, #page-contact .ui-container .contact-us-form .show > .dropdown-toggle.wpcf7-submit:focus, #component-info-404 div .options-menu .show > a.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
@@ -2836,12 +2844,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   background-color: #6c757d;
   border-color: #6c757d;
 }
-.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-secondary.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-secondary.dropdown-toggle {
   color: #fff;
   background-color: #545b62;
   border-color: #4e555b;
 }
-.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-secondary.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
 
@@ -2866,12 +2874,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   background-color: #28a745;
   border-color: #28a745;
 }
-.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle {
+.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-success.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-success.dropdown-toggle {
   color: #fff;
   background-color: #1e7e34;
   border-color: #1c7430;
 }
-.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus {
+.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-success.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
 }
 
@@ -2896,12 +2904,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   background-color: #17a2b8;
   border-color: #17a2b8;
 }
-.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle {
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-info.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-info.dropdown-toggle {
   color: #fff;
   background-color: #117a8b;
   border-color: #10707f;
 }
-.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .show > .btn-info.dropdown-toggle:focus {
+.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-info.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-info.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
 }
 
@@ -2926,12 +2934,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   background-color: #ffc107;
   border-color: #ffc107;
 }
-.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle {
+.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-warning.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-warning.dropdown-toggle {
   color: #212529;
   background-color: #d39e00;
   border-color: #c69500;
 }
-.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-warning.dropdown-toggle:focus {
+.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-warning.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-warning.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
 }
 
@@ -2956,12 +2964,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   background-color: #dc3545;
   border-color: #dc3545;
 }
-.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle {
+.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-danger.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-danger.dropdown-toggle {
   color: #fff;
   background-color: #bd2130;
   border-color: #b21f2d;
 }
-.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus {
+.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-danger.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-danger.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
 }
 
@@ -2986,12 +2994,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
-.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle {
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-light.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-light.dropdown-toggle {
   color: #212529;
   background-color: #dae0e5;
   border-color: #d3d9df;
 }
-.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus {
+.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-light.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-light.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
@@ -3016,12 +3024,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   background-color: #343a40;
   border-color: #343a40;
 }
-.btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .show > .btn-dark.dropdown-toggle {
+.btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-dark.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-dark.dropdown-toggle {
   color: #fff;
   background-color: #1d2124;
   border-color: #171a1d;
 }
-.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus {
+.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-dark.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-dark.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
 }
 
@@ -3041,12 +3049,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   color: #007bff;
   background-color: transparent;
 }
-.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-outline-primary.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
 }
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-outline-primary.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
@@ -3066,12 +3074,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   color: #6c757d;
   background-color: transparent;
 }
-.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-outline-secondary.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-outline-secondary.dropdown-toggle {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;
 }
-.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-secondary.dropdown-toggle:focus {
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-outline-secondary.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-outline-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
@@ -3091,12 +3099,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   color: #28a745;
   background-color: transparent;
 }
-.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle {
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-outline-success.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-outline-success.dropdown-toggle {
   color: #fff;
   background-color: #28a745;
   border-color: #28a745;
 }
-.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-success.dropdown-toggle:focus {
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-outline-success.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-outline-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
@@ -3116,12 +3124,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   color: #17a2b8;
   background-color: transparent;
 }
-.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .show > .btn-outline-info.dropdown-toggle {
+.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-outline-info.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-outline-info.dropdown-toggle {
   color: #fff;
   background-color: #17a2b8;
   border-color: #17a2b8;
 }
-.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-info.dropdown-toggle:focus {
+.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-outline-info.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-outline-info.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
@@ -3141,12 +3149,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   color: #ffc107;
   background-color: transparent;
 }
-.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .show > .btn-outline-warning.dropdown-toggle {
+.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-outline-warning.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-outline-warning.dropdown-toggle {
   color: #212529;
   background-color: #ffc107;
   border-color: #ffc107;
 }
-.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-warning.dropdown-toggle:focus {
+.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-outline-warning.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-outline-warning.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
@@ -3166,12 +3174,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   color: #dc3545;
   background-color: transparent;
 }
-.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .show > .btn-outline-danger.dropdown-toggle {
+.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-outline-danger.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-outline-danger.dropdown-toggle {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
 }
-.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-danger.dropdown-toggle:focus {
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-outline-danger.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-outline-danger.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
@@ -3191,12 +3199,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   color: #f8f9fa;
   background-color: transparent;
 }
-.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .show > .btn-outline-light.dropdown-toggle {
+.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-outline-light.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-outline-light.dropdown-toggle {
   color: #212529;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
-.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-light.dropdown-toggle:focus {
+.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-outline-light.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-outline-light.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
@@ -3216,12 +3224,12 @@ fieldset:disabled #component-info-404 div .options-menu a,
   color: #343a40;
   background-color: transparent;
 }
-.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .show > .btn-outline-dark.dropdown-toggle {
+.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .component-navigation-breadcrumb ol li .btn-outline-dark.active-breadcrumb:not(:disabled):not(.disabled), .show > .btn-outline-dark.dropdown-toggle {
   color: #fff;
   background-color: #343a40;
   border-color: #343a40;
 }
-.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus {
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .component-navigation-breadcrumb ol li .btn-outline-dark.active-breadcrumb:not(:disabled):not(.disabled):focus, .show > .btn-outline-dark.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
@@ -3502,7 +3510,7 @@ input[type=button].btn-block {
   text-decoration: none;
   background-color: #f8f9fa;
 }
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active, .component-navigation-breadcrumb ol li .dropdown-item.active-breadcrumb, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
   background-color: #007bff;
@@ -3553,7 +3561,7 @@ input[type=button].btn-block {
 #component-info-404 div .options-menu .btn-group-vertical > a:hover {
   z-index: 1;
 }
-.btn-group > .btn:focus, .btn-group > .short-button:focus, #page-contact .ui-container .contact-us-form .btn-group > .wpcf7-submit:focus, #component-info-404 div .options-menu .btn-group > a:focus, .btn-group > .btn:active, .btn-group > .short-button:active, #page-contact .ui-container .contact-us-form .btn-group > .wpcf7-submit:active, #component-info-404 div .options-menu .btn-group > a:active, .btn-group > .btn.active, .btn-group > .active.short-button, #page-contact .ui-container .contact-us-form .btn-group > .active.wpcf7-submit, #component-info-404 div .options-menu .btn-group > a.active,
+.btn-group > .btn:focus, .btn-group > .short-button:focus, #page-contact .ui-container .contact-us-form .btn-group > .wpcf7-submit:focus, #component-info-404 div .options-menu .btn-group > a:focus, .btn-group > .btn:active, .btn-group > .short-button:active, #page-contact .ui-container .contact-us-form .btn-group > .wpcf7-submit:active, #component-info-404 div .options-menu .btn-group > a:active, .btn-group > .btn.active, .btn-group > .active.short-button, #page-contact .ui-container .contact-us-form .btn-group > .active.wpcf7-submit, #component-info-404 div .options-menu .btn-group > a.active, .component-navigation-breadcrumb ol li .btn-group > .btn.active-breadcrumb, .component-navigation-breadcrumb ol li .btn-group > .short-button.active-breadcrumb, #page-contact .ui-container .contact-us-form .component-navigation-breadcrumb ol li .btn-group > .wpcf7-submit.active-breadcrumb, .component-navigation-breadcrumb ol li #page-contact .ui-container .contact-us-form .btn-group > .wpcf7-submit.active-breadcrumb, #component-info-404 div .options-menu .component-navigation-breadcrumb ol li .btn-group > a.active-breadcrumb, .component-navigation-breadcrumb ol li #component-info-404 div .options-menu .btn-group > a.active-breadcrumb,
 .btn-group-vertical > .btn:focus,
 .btn-group-vertical > .short-button:focus,
 #page-contact .ui-container .contact-us-form .btn-group-vertical > .wpcf7-submit:focus,
@@ -3565,7 +3573,13 @@ input[type=button].btn-block {
 .btn-group-vertical > .btn.active,
 .btn-group-vertical > .active.short-button,
 #page-contact .ui-container .contact-us-form .btn-group-vertical > .active.wpcf7-submit,
-#component-info-404 div .options-menu .btn-group-vertical > a.active {
+#component-info-404 div .options-menu .btn-group-vertical > a.active,
+.component-navigation-breadcrumb ol li .btn-group-vertical > .btn.active-breadcrumb,
+.component-navigation-breadcrumb ol li .btn-group-vertical > .short-button.active-breadcrumb,
+#page-contact .ui-container .contact-us-form .component-navigation-breadcrumb ol li .btn-group-vertical > .wpcf7-submit.active-breadcrumb,
+.component-navigation-breadcrumb ol li #page-contact .ui-container .contact-us-form .btn-group-vertical > .wpcf7-submit.active-breadcrumb,
+#component-info-404 div .options-menu .component-navigation-breadcrumb ol li .btn-group-vertical > a.active-breadcrumb,
+.component-navigation-breadcrumb ol li #component-info-404 div .options-menu .btn-group-vertical > a.active-breadcrumb {
   z-index: 1;
 }
 
@@ -4369,7 +4383,7 @@ input[type=button].btn-block {
   background-color: transparent;
   border-color: transparent;
 }
-.nav-tabs .nav-link.active, .nav-tabs .active.ui-menu-link, .nav-tabs .miscellaneous-menu .miscellaneous-button .active.miscellaneous-link, .miscellaneous-menu .miscellaneous-button .nav-tabs .active.miscellaneous-link,
+.nav-tabs .nav-link.active, .nav-tabs .active.ui-menu-link, .nav-tabs .miscellaneous-menu .miscellaneous-button .active.miscellaneous-link, .miscellaneous-menu .miscellaneous-button .nav-tabs .active.miscellaneous-link, .nav-tabs .component-navigation-breadcrumb ol li .nav-link.active-breadcrumb, .component-navigation-breadcrumb ol li .nav-tabs .nav-link.active-breadcrumb, .nav-tabs .component-navigation-breadcrumb ol li .ui-menu-link.active-breadcrumb, .component-navigation-breadcrumb ol li .nav-tabs .ui-menu-link.active-breadcrumb, .nav-tabs .miscellaneous-menu .miscellaneous-button .component-navigation-breadcrumb ol li .miscellaneous-link.active-breadcrumb, .miscellaneous-menu .miscellaneous-button .component-navigation-breadcrumb ol li .nav-tabs .miscellaneous-link.active-breadcrumb, .nav-tabs .component-navigation-breadcrumb ol li .miscellaneous-menu .miscellaneous-button .miscellaneous-link.active-breadcrumb, .component-navigation-breadcrumb ol li .miscellaneous-menu .miscellaneous-button .nav-tabs .miscellaneous-link.active-breadcrumb,
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .show.ui-menu-button-area .nav-link,
 .nav-tabs .miscellaneous-menu .show.miscellaneous-button .nav-link,
@@ -4397,7 +4411,7 @@ input[type=button].btn-block {
 .nav-pills .nav-link, .nav-pills .ui-menu-link, .nav-pills .miscellaneous-menu .miscellaneous-button .miscellaneous-link, .miscellaneous-menu .miscellaneous-button .nav-pills .miscellaneous-link {
   border-radius: 0.25rem;
 }
-.nav-pills .nav-link.active, .nav-pills .active.ui-menu-link, .nav-pills .miscellaneous-menu .miscellaneous-button .active.miscellaneous-link, .miscellaneous-menu .miscellaneous-button .nav-pills .active.miscellaneous-link,
+.nav-pills .nav-link.active, .nav-pills .active.ui-menu-link, .nav-pills .miscellaneous-menu .miscellaneous-button .active.miscellaneous-link, .miscellaneous-menu .miscellaneous-button .nav-pills .active.miscellaneous-link, .nav-pills .component-navigation-breadcrumb ol li .nav-link.active-breadcrumb, .component-navigation-breadcrumb ol li .nav-pills .nav-link.active-breadcrumb, .nav-pills .component-navigation-breadcrumb ol li .ui-menu-link.active-breadcrumb, .component-navigation-breadcrumb ol li .nav-pills .ui-menu-link.active-breadcrumb, .nav-pills .miscellaneous-menu .miscellaneous-button .component-navigation-breadcrumb ol li .miscellaneous-link.active-breadcrumb, .miscellaneous-menu .miscellaneous-button .component-navigation-breadcrumb ol li .nav-pills .miscellaneous-link.active-breadcrumb, .nav-pills .component-navigation-breadcrumb ol li .miscellaneous-menu .miscellaneous-button .miscellaneous-link.active-breadcrumb, .component-navigation-breadcrumb ol li .miscellaneous-menu .miscellaneous-button .nav-pills .miscellaneous-link.active-breadcrumb,
 .nav-pills .show > .nav-link,
 .nav-pills .show > .ui-menu-link,
 .nav-pills .miscellaneous-menu .miscellaneous-button .show > .miscellaneous-link,
@@ -4420,7 +4434,7 @@ input[type=button].btn-block {
 .tab-content > .tab-pane {
   display: none;
 }
-.tab-content > .active {
+.tab-content > .active, .component-navigation-breadcrumb ol li .tab-content > .active-breadcrumb {
   display: block;
 }
 
@@ -4766,12 +4780,28 @@ input[type=button].btn-block {
 .navbar-light .navbar-nav .show > .nav-link, #header-navigation .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .show > .ui-menu-link, #header-navigation .navbar-nav .show > .ui-menu-link, .navbar-light .navbar-nav .miscellaneous-menu .miscellaneous-button .show > .miscellaneous-link, .miscellaneous-menu .miscellaneous-button .navbar-light .navbar-nav .show > .miscellaneous-link, #header-navigation .navbar-nav .miscellaneous-menu .miscellaneous-button .show > .miscellaneous-link, .miscellaneous-menu .miscellaneous-button #header-navigation .navbar-nav .show > .miscellaneous-link,
 .navbar-light .navbar-nav .active > .nav-link,
 #header-navigation .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .component-navigation-breadcrumb ol li .active-breadcrumb > .nav-link,
+.component-navigation-breadcrumb ol li .navbar-light .navbar-nav .active-breadcrumb > .nav-link,
+#header-navigation .navbar-nav .component-navigation-breadcrumb ol li .active-breadcrumb > .nav-link,
+.component-navigation-breadcrumb ol li #header-navigation .navbar-nav .active-breadcrumb > .nav-link,
 .navbar-light .navbar-nav .active > .ui-menu-link,
 #header-navigation .navbar-nav .active > .ui-menu-link,
+.navbar-light .navbar-nav .component-navigation-breadcrumb ol li .active-breadcrumb > .ui-menu-link,
+.component-navigation-breadcrumb ol li .navbar-light .navbar-nav .active-breadcrumb > .ui-menu-link,
+#header-navigation .navbar-nav .component-navigation-breadcrumb ol li .active-breadcrumb > .ui-menu-link,
+.component-navigation-breadcrumb ol li #header-navigation .navbar-nav .active-breadcrumb > .ui-menu-link,
 .navbar-light .navbar-nav .miscellaneous-menu .miscellaneous-button .active > .miscellaneous-link,
 .miscellaneous-menu .miscellaneous-button .navbar-light .navbar-nav .active > .miscellaneous-link,
 #header-navigation .navbar-nav .miscellaneous-menu .miscellaneous-button .active > .miscellaneous-link,
 .miscellaneous-menu .miscellaneous-button #header-navigation .navbar-nav .active > .miscellaneous-link,
+.navbar-light .navbar-nav .component-navigation-breadcrumb ol li .miscellaneous-menu .miscellaneous-button .active-breadcrumb > .miscellaneous-link,
+.miscellaneous-menu .miscellaneous-button .navbar-light .navbar-nav .component-navigation-breadcrumb ol li .active-breadcrumb > .miscellaneous-link,
+.component-navigation-breadcrumb ol li .navbar-light .navbar-nav .miscellaneous-menu .miscellaneous-button .active-breadcrumb > .miscellaneous-link,
+.miscellaneous-menu .miscellaneous-button .component-navigation-breadcrumb ol li .navbar-light .navbar-nav .active-breadcrumb > .miscellaneous-link,
+#header-navigation .navbar-nav .component-navigation-breadcrumb ol li .miscellaneous-menu .miscellaneous-button .active-breadcrumb > .miscellaneous-link,
+.miscellaneous-menu .miscellaneous-button #header-navigation .navbar-nav .component-navigation-breadcrumb ol li .active-breadcrumb > .miscellaneous-link,
+.component-navigation-breadcrumb ol li #header-navigation .navbar-nav .miscellaneous-menu .miscellaneous-button .active-breadcrumb > .miscellaneous-link,
+.miscellaneous-menu .miscellaneous-button .component-navigation-breadcrumb ol li #header-navigation .navbar-nav .active-breadcrumb > .miscellaneous-link,
 .navbar-light .navbar-nav .nav-link.show,
 #header-navigation .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show.ui-menu-link,
@@ -4787,7 +4817,23 @@ input[type=button].btn-block {
 .navbar-light .navbar-nav .miscellaneous-menu .miscellaneous-button .active.miscellaneous-link,
 .miscellaneous-menu .miscellaneous-button .navbar-light .navbar-nav .active.miscellaneous-link,
 #header-navigation .navbar-nav .miscellaneous-menu .miscellaneous-button .active.miscellaneous-link,
-.miscellaneous-menu .miscellaneous-button #header-navigation .navbar-nav .active.miscellaneous-link {
+.miscellaneous-menu .miscellaneous-button #header-navigation .navbar-nav .active.miscellaneous-link,
+.navbar-light .navbar-nav .component-navigation-breadcrumb ol li .nav-link.active-breadcrumb,
+.component-navigation-breadcrumb ol li .navbar-light .navbar-nav .nav-link.active-breadcrumb,
+#header-navigation .navbar-nav .component-navigation-breadcrumb ol li .nav-link.active-breadcrumb,
+.component-navigation-breadcrumb ol li #header-navigation .navbar-nav .nav-link.active-breadcrumb,
+.navbar-light .navbar-nav .component-navigation-breadcrumb ol li .ui-menu-link.active-breadcrumb,
+.component-navigation-breadcrumb ol li .navbar-light .navbar-nav .ui-menu-link.active-breadcrumb,
+#header-navigation .navbar-nav .component-navigation-breadcrumb ol li .ui-menu-link.active-breadcrumb,
+.component-navigation-breadcrumb ol li #header-navigation .navbar-nav .ui-menu-link.active-breadcrumb,
+.navbar-light .navbar-nav .miscellaneous-menu .miscellaneous-button .component-navigation-breadcrumb ol li .miscellaneous-link.active-breadcrumb,
+.miscellaneous-menu .miscellaneous-button .component-navigation-breadcrumb ol li .navbar-light .navbar-nav .miscellaneous-link.active-breadcrumb,
+#header-navigation .navbar-nav .miscellaneous-menu .miscellaneous-button .component-navigation-breadcrumb ol li .miscellaneous-link.active-breadcrumb,
+.miscellaneous-menu .miscellaneous-button .component-navigation-breadcrumb ol li #header-navigation .navbar-nav .miscellaneous-link.active-breadcrumb,
+.navbar-light .navbar-nav .component-navigation-breadcrumb ol li .miscellaneous-menu .miscellaneous-button .miscellaneous-link.active-breadcrumb,
+.component-navigation-breadcrumb ol li .miscellaneous-menu .miscellaneous-button .navbar-light .navbar-nav .miscellaneous-link.active-breadcrumb,
+#header-navigation .navbar-nav .component-navigation-breadcrumb ol li .miscellaneous-menu .miscellaneous-button .miscellaneous-link.active-breadcrumb,
+.component-navigation-breadcrumb ol li .miscellaneous-menu .miscellaneous-button #header-navigation .navbar-nav .miscellaneous-link.active-breadcrumb {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-toggler, #header-navigation .navbar-toggler {
@@ -4824,9 +4870,17 @@ input[type=button].btn-block {
 }
 .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .show > .ui-menu-link, .navbar-dark .navbar-nav .miscellaneous-menu .miscellaneous-button .show > .miscellaneous-link, .miscellaneous-menu .miscellaneous-button .navbar-dark .navbar-nav .show > .miscellaneous-link,
 .navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .component-navigation-breadcrumb ol li .active-breadcrumb > .nav-link,
+.component-navigation-breadcrumb ol li .navbar-dark .navbar-nav .active-breadcrumb > .nav-link,
 .navbar-dark .navbar-nav .active > .ui-menu-link,
+.navbar-dark .navbar-nav .component-navigation-breadcrumb ol li .active-breadcrumb > .ui-menu-link,
+.component-navigation-breadcrumb ol li .navbar-dark .navbar-nav .active-breadcrumb > .ui-menu-link,
 .navbar-dark .navbar-nav .miscellaneous-menu .miscellaneous-button .active > .miscellaneous-link,
 .miscellaneous-menu .miscellaneous-button .navbar-dark .navbar-nav .active > .miscellaneous-link,
+.navbar-dark .navbar-nav .component-navigation-breadcrumb ol li .miscellaneous-menu .miscellaneous-button .active-breadcrumb > .miscellaneous-link,
+.miscellaneous-menu .miscellaneous-button .navbar-dark .navbar-nav .component-navigation-breadcrumb ol li .active-breadcrumb > .miscellaneous-link,
+.component-navigation-breadcrumb ol li .navbar-dark .navbar-nav .miscellaneous-menu .miscellaneous-button .active-breadcrumb > .miscellaneous-link,
+.miscellaneous-menu .miscellaneous-button .component-navigation-breadcrumb ol li .navbar-dark .navbar-nav .active-breadcrumb > .miscellaneous-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .show.ui-menu-link,
 .navbar-dark .navbar-nav .miscellaneous-menu .miscellaneous-button .show.miscellaneous-link,
@@ -4834,7 +4888,15 @@ input[type=button].btn-block {
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .active.ui-menu-link,
 .navbar-dark .navbar-nav .miscellaneous-menu .miscellaneous-button .active.miscellaneous-link,
-.miscellaneous-menu .miscellaneous-button .navbar-dark .navbar-nav .active.miscellaneous-link {
+.miscellaneous-menu .miscellaneous-button .navbar-dark .navbar-nav .active.miscellaneous-link,
+.navbar-dark .navbar-nav .component-navigation-breadcrumb ol li .nav-link.active-breadcrumb,
+.component-navigation-breadcrumb ol li .navbar-dark .navbar-nav .nav-link.active-breadcrumb,
+.navbar-dark .navbar-nav .component-navigation-breadcrumb ol li .ui-menu-link.active-breadcrumb,
+.component-navigation-breadcrumb ol li .navbar-dark .navbar-nav .ui-menu-link.active-breadcrumb,
+.navbar-dark .navbar-nav .miscellaneous-menu .miscellaneous-button .component-navigation-breadcrumb ol li .miscellaneous-link.active-breadcrumb,
+.miscellaneous-menu .miscellaneous-button .component-navigation-breadcrumb ol li .navbar-dark .navbar-nav .miscellaneous-link.active-breadcrumb,
+.navbar-dark .navbar-nav .component-navigation-breadcrumb ol li .miscellaneous-menu .miscellaneous-button .miscellaneous-link.active-breadcrumb,
+.component-navigation-breadcrumb ol li .miscellaneous-menu .miscellaneous-button .navbar-dark .navbar-nav .miscellaneous-link.active-breadcrumb {
   color: #fff;
 }
 .navbar-dark .navbar-toggler {
@@ -5084,7 +5146,7 @@ input[type=button].btn-block {
 .breadcrumb-item + .breadcrumb-item:hover::before, .component-navigation-breadcrumb ol li + .breadcrumb-item:hover::before, .component-navigation-breadcrumb ol .breadcrumb-item + li:hover::before, .component-navigation-breadcrumb ol li + li:hover::before {
   text-decoration: none;
 }
-.breadcrumb-item.active, .component-navigation-breadcrumb ol li.active {
+.breadcrumb-item.active, .component-navigation-breadcrumb ol li.active, .component-navigation-breadcrumb ol li .breadcrumb-item.active-breadcrumb, .component-navigation-breadcrumb ol li li.active-breadcrumb {
   color: #6c757d;
 }
 
@@ -5127,7 +5189,7 @@ input[type=button].btn-block {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
-.page-item.active .page-link {
+.page-item.active .page-link, .component-navigation-breadcrumb ol li .page-item.active-breadcrumb .page-link {
   z-index: 3;
   color: #fff;
   background-color: #007bff;
@@ -5550,7 +5612,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   pointer-events: none;
   background-color: #fff;
 }
-.list-group-item.active, #component-archive-pages ul li.active, #component-archive-posts ul li.active {
+.list-group-item.active, #component-archive-pages ul li.active, #component-archive-posts ul li.active, .component-navigation-breadcrumb ol li .list-group-item.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul li.active-breadcrumb {
   z-index: 2;
   color: #fff;
   background-color: #007bff;
@@ -5559,7 +5621,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .list-group-item + .list-group-item, #component-archive-pages ul li + .list-group-item, #component-archive-posts ul li + .list-group-item, #component-archive-pages ul .list-group-item + li, #component-archive-pages ul li + li, #component-archive-posts ul .list-group-item + li, #component-archive-posts ul li + li {
   border-top-width: 0;
 }
-.list-group-item + .list-group-item.active, #component-archive-pages ul li + .list-group-item.active, #component-archive-posts ul li + .list-group-item.active, #component-archive-pages ul .list-group-item + li.active, #component-archive-pages ul li + li.active, #component-archive-posts ul .list-group-item + li.active, #component-archive-posts ul li + li.active {
+.list-group-item + .list-group-item.active, #component-archive-pages ul li + .list-group-item.active, #component-archive-posts ul li + .list-group-item.active, #component-archive-pages ul .list-group-item + li.active, #component-archive-pages ul li + li.active, #component-archive-posts ul .list-group-item + li.active, #component-archive-posts ul li + li.active, .component-navigation-breadcrumb ol li .list-group-item + .list-group-item.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul li + .list-group-item.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul li + .list-group-item.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-item + li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li li + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-item + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul li + li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-item + li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li li + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-item + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul li + li.active-breadcrumb {
   margin-top: -1px;
   border-top-width: 1px;
 }
@@ -5575,14 +5637,14 @@ a.badge-dark:focus, a.badge-dark.focus {
   border-top-right-radius: 0.25rem;
   border-bottom-left-radius: 0;
 }
-.list-group-horizontal .list-group-item.active, .list-group-horizontal #component-archive-pages ul li.active, #component-archive-pages ul .list-group-horizontal li.active, .list-group-horizontal #component-archive-posts ul li.active, #component-archive-posts ul .list-group-horizontal li.active {
+.list-group-horizontal .list-group-item.active, .list-group-horizontal #component-archive-pages ul li.active, #component-archive-pages ul .list-group-horizontal li.active, .list-group-horizontal #component-archive-posts ul li.active, #component-archive-posts ul .list-group-horizontal li.active, .list-group-horizontal .component-navigation-breadcrumb ol li .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal .list-group-item.active-breadcrumb, .list-group-horizontal #component-archive-pages ul .component-navigation-breadcrumb ol li li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal li.active-breadcrumb, .list-group-horizontal .component-navigation-breadcrumb ol li #component-archive-pages ul li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal li.active-breadcrumb, .list-group-horizontal #component-archive-posts ul .component-navigation-breadcrumb ol li li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal li.active-breadcrumb, .list-group-horizontal .component-navigation-breadcrumb ol li #component-archive-posts ul li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal li.active-breadcrumb {
   margin-top: 0;
 }
 .list-group-horizontal .list-group-item + .list-group-item, .list-group-horizontal #component-archive-pages ul li + .list-group-item, #component-archive-pages ul .list-group-horizontal li + .list-group-item, .list-group-horizontal #component-archive-posts ul li + .list-group-item, #component-archive-posts ul .list-group-horizontal li + .list-group-item, .list-group-horizontal #component-archive-pages ul .list-group-item + li, #component-archive-pages ul .list-group-horizontal .list-group-item + li, .list-group-horizontal #component-archive-pages ul li + li, #component-archive-pages ul .list-group-horizontal li + li, .list-group-horizontal #component-archive-posts ul .list-group-item + li, #component-archive-posts ul .list-group-horizontal .list-group-item + li, .list-group-horizontal #component-archive-posts ul li + li, #component-archive-posts ul .list-group-horizontal li + li {
   border-top-width: 1px;
   border-left-width: 0;
 }
-.list-group-horizontal .list-group-item + .list-group-item.active, .list-group-horizontal #component-archive-pages ul li + .list-group-item.active, #component-archive-pages ul .list-group-horizontal li + .list-group-item.active, .list-group-horizontal #component-archive-posts ul li + .list-group-item.active, #component-archive-posts ul .list-group-horizontal li + .list-group-item.active, .list-group-horizontal #component-archive-pages ul .list-group-item + li.active, #component-archive-pages ul .list-group-horizontal .list-group-item + li.active, .list-group-horizontal #component-archive-pages ul li + li.active, #component-archive-pages ul .list-group-horizontal li + li.active, .list-group-horizontal #component-archive-posts ul .list-group-item + li.active, #component-archive-posts ul .list-group-horizontal .list-group-item + li.active, .list-group-horizontal #component-archive-posts ul li + li.active, #component-archive-posts ul .list-group-horizontal li + li.active {
+.list-group-horizontal .list-group-item + .list-group-item.active, .list-group-horizontal #component-archive-pages ul li + .list-group-item.active, #component-archive-pages ul .list-group-horizontal li + .list-group-item.active, .list-group-horizontal #component-archive-posts ul li + .list-group-item.active, #component-archive-posts ul .list-group-horizontal li + .list-group-item.active, .list-group-horizontal #component-archive-pages ul .list-group-item + li.active, #component-archive-pages ul .list-group-horizontal .list-group-item + li.active, .list-group-horizontal #component-archive-pages ul li + li.active, #component-archive-pages ul .list-group-horizontal li + li.active, .list-group-horizontal #component-archive-posts ul .list-group-item + li.active, #component-archive-posts ul .list-group-horizontal .list-group-item + li.active, .list-group-horizontal #component-archive-posts ul li + li.active, #component-archive-posts ul .list-group-horizontal li + li.active, .list-group-horizontal .component-navigation-breadcrumb ol li .list-group-item + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal .list-group-item + .list-group-item.active-breadcrumb, .list-group-horizontal #component-archive-pages ul .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal #component-archive-pages ul li + .list-group-item.active-breadcrumb, #component-archive-pages ul .list-group-horizontal .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal li + .list-group-item.active-breadcrumb, .list-group-horizontal #component-archive-posts ul .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal #component-archive-posts ul li + .list-group-item.active-breadcrumb, #component-archive-posts ul .list-group-horizontal .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal li + .list-group-item.active-breadcrumb, .list-group-horizontal #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-item + li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal .list-group-item + li.active-breadcrumb, .list-group-horizontal #component-archive-pages ul .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-pages ul .list-group-horizontal .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal li + li.active-breadcrumb, .list-group-horizontal .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-item + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal .list-group-item + li.active-breadcrumb, .list-group-horizontal .component-navigation-breadcrumb ol li #component-archive-pages ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal #component-archive-pages ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal li + li.active-breadcrumb, .list-group-horizontal #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-item + li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal .list-group-item + li.active-breadcrumb, .list-group-horizontal #component-archive-posts ul .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-posts ul .list-group-horizontal .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal li + li.active-breadcrumb, .list-group-horizontal .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-item + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal .list-group-item + li.active-breadcrumb, .list-group-horizontal .component-navigation-breadcrumb ol li #component-archive-posts ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal #component-archive-posts ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal li + li.active-breadcrumb {
   margin-left: -1px;
   border-left-width: 1px;
 }
@@ -5599,14 +5661,14 @@ a.badge-dark:focus, a.badge-dark.focus {
     border-top-right-radius: 0.25rem;
     border-bottom-left-radius: 0;
   }
-  .list-group-horizontal-sm .list-group-item.active, .list-group-horizontal-sm #component-archive-pages ul li.active, #component-archive-pages ul .list-group-horizontal-sm li.active, .list-group-horizontal-sm #component-archive-posts ul li.active, #component-archive-posts ul .list-group-horizontal-sm li.active {
+  .list-group-horizontal-sm .list-group-item.active, .list-group-horizontal-sm #component-archive-pages ul li.active, #component-archive-pages ul .list-group-horizontal-sm li.active, .list-group-horizontal-sm #component-archive-posts ul li.active, #component-archive-posts ul .list-group-horizontal-sm li.active, .list-group-horizontal-sm .component-navigation-breadcrumb ol li .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-sm .list-group-item.active-breadcrumb, .list-group-horizontal-sm #component-archive-pages ul .component-navigation-breadcrumb ol li li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal-sm li.active-breadcrumb, .list-group-horizontal-sm .component-navigation-breadcrumb ol li #component-archive-pages ul li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-sm li.active-breadcrumb, .list-group-horizontal-sm #component-archive-posts ul .component-navigation-breadcrumb ol li li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal-sm li.active-breadcrumb, .list-group-horizontal-sm .component-navigation-breadcrumb ol li #component-archive-posts ul li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-sm li.active-breadcrumb {
     margin-top: 0;
   }
   .list-group-horizontal-sm .list-group-item + .list-group-item, .list-group-horizontal-sm #component-archive-pages ul li + .list-group-item, #component-archive-pages ul .list-group-horizontal-sm li + .list-group-item, .list-group-horizontal-sm #component-archive-posts ul li + .list-group-item, #component-archive-posts ul .list-group-horizontal-sm li + .list-group-item, .list-group-horizontal-sm #component-archive-pages ul .list-group-item + li, #component-archive-pages ul .list-group-horizontal-sm .list-group-item + li, .list-group-horizontal-sm #component-archive-pages ul li + li, #component-archive-pages ul .list-group-horizontal-sm li + li, .list-group-horizontal-sm #component-archive-posts ul .list-group-item + li, #component-archive-posts ul .list-group-horizontal-sm .list-group-item + li, .list-group-horizontal-sm #component-archive-posts ul li + li, #component-archive-posts ul .list-group-horizontal-sm li + li {
     border-top-width: 1px;
     border-left-width: 0;
   }
-  .list-group-horizontal-sm .list-group-item + .list-group-item.active, .list-group-horizontal-sm #component-archive-pages ul li + .list-group-item.active, #component-archive-pages ul .list-group-horizontal-sm li + .list-group-item.active, .list-group-horizontal-sm #component-archive-posts ul li + .list-group-item.active, #component-archive-posts ul .list-group-horizontal-sm li + .list-group-item.active, .list-group-horizontal-sm #component-archive-pages ul .list-group-item + li.active, #component-archive-pages ul .list-group-horizontal-sm .list-group-item + li.active, .list-group-horizontal-sm #component-archive-pages ul li + li.active, #component-archive-pages ul .list-group-horizontal-sm li + li.active, .list-group-horizontal-sm #component-archive-posts ul .list-group-item + li.active, #component-archive-posts ul .list-group-horizontal-sm .list-group-item + li.active, .list-group-horizontal-sm #component-archive-posts ul li + li.active, #component-archive-posts ul .list-group-horizontal-sm li + li.active {
+  .list-group-horizontal-sm .list-group-item + .list-group-item.active, .list-group-horizontal-sm #component-archive-pages ul li + .list-group-item.active, #component-archive-pages ul .list-group-horizontal-sm li + .list-group-item.active, .list-group-horizontal-sm #component-archive-posts ul li + .list-group-item.active, #component-archive-posts ul .list-group-horizontal-sm li + .list-group-item.active, .list-group-horizontal-sm #component-archive-pages ul .list-group-item + li.active, #component-archive-pages ul .list-group-horizontal-sm .list-group-item + li.active, .list-group-horizontal-sm #component-archive-pages ul li + li.active, #component-archive-pages ul .list-group-horizontal-sm li + li.active, .list-group-horizontal-sm #component-archive-posts ul .list-group-item + li.active, #component-archive-posts ul .list-group-horizontal-sm .list-group-item + li.active, .list-group-horizontal-sm #component-archive-posts ul li + li.active, #component-archive-posts ul .list-group-horizontal-sm li + li.active, .list-group-horizontal-sm .component-navigation-breadcrumb ol li .list-group-item + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-sm .list-group-item + .list-group-item.active-breadcrumb, .list-group-horizontal-sm #component-archive-pages ul .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-sm #component-archive-pages ul li + .list-group-item.active-breadcrumb, #component-archive-pages ul .list-group-horizontal-sm .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-sm li + .list-group-item.active-breadcrumb, .list-group-horizontal-sm #component-archive-posts ul .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-sm #component-archive-posts ul li + .list-group-item.active-breadcrumb, #component-archive-posts ul .list-group-horizontal-sm .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-sm li + .list-group-item.active-breadcrumb, .list-group-horizontal-sm #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-item + li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal-sm .list-group-item + li.active-breadcrumb, .list-group-horizontal-sm #component-archive-pages ul .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-pages ul .list-group-horizontal-sm .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal-sm li + li.active-breadcrumb, .list-group-horizontal-sm .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-item + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-sm .list-group-item + li.active-breadcrumb, .list-group-horizontal-sm .component-navigation-breadcrumb ol li #component-archive-pages ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-sm #component-archive-pages ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-sm li + li.active-breadcrumb, .list-group-horizontal-sm #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-item + li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal-sm .list-group-item + li.active-breadcrumb, .list-group-horizontal-sm #component-archive-posts ul .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-posts ul .list-group-horizontal-sm .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal-sm li + li.active-breadcrumb, .list-group-horizontal-sm .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-item + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-sm .list-group-item + li.active-breadcrumb, .list-group-horizontal-sm .component-navigation-breadcrumb ol li #component-archive-posts ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-sm #component-archive-posts ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-sm li + li.active-breadcrumb {
     margin-left: -1px;
     border-left-width: 1px;
   }
@@ -5623,14 +5685,14 @@ a.badge-dark:focus, a.badge-dark.focus {
     border-top-right-radius: 0.25rem;
     border-bottom-left-radius: 0;
   }
-  .list-group-horizontal-md .list-group-item.active, .list-group-horizontal-md #component-archive-pages ul li.active, #component-archive-pages ul .list-group-horizontal-md li.active, .list-group-horizontal-md #component-archive-posts ul li.active, #component-archive-posts ul .list-group-horizontal-md li.active {
+  .list-group-horizontal-md .list-group-item.active, .list-group-horizontal-md #component-archive-pages ul li.active, #component-archive-pages ul .list-group-horizontal-md li.active, .list-group-horizontal-md #component-archive-posts ul li.active, #component-archive-posts ul .list-group-horizontal-md li.active, .list-group-horizontal-md .component-navigation-breadcrumb ol li .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-md .list-group-item.active-breadcrumb, .list-group-horizontal-md #component-archive-pages ul .component-navigation-breadcrumb ol li li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal-md li.active-breadcrumb, .list-group-horizontal-md .component-navigation-breadcrumb ol li #component-archive-pages ul li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-md li.active-breadcrumb, .list-group-horizontal-md #component-archive-posts ul .component-navigation-breadcrumb ol li li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal-md li.active-breadcrumb, .list-group-horizontal-md .component-navigation-breadcrumb ol li #component-archive-posts ul li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-md li.active-breadcrumb {
     margin-top: 0;
   }
   .list-group-horizontal-md .list-group-item + .list-group-item, .list-group-horizontal-md #component-archive-pages ul li + .list-group-item, #component-archive-pages ul .list-group-horizontal-md li + .list-group-item, .list-group-horizontal-md #component-archive-posts ul li + .list-group-item, #component-archive-posts ul .list-group-horizontal-md li + .list-group-item, .list-group-horizontal-md #component-archive-pages ul .list-group-item + li, #component-archive-pages ul .list-group-horizontal-md .list-group-item + li, .list-group-horizontal-md #component-archive-pages ul li + li, #component-archive-pages ul .list-group-horizontal-md li + li, .list-group-horizontal-md #component-archive-posts ul .list-group-item + li, #component-archive-posts ul .list-group-horizontal-md .list-group-item + li, .list-group-horizontal-md #component-archive-posts ul li + li, #component-archive-posts ul .list-group-horizontal-md li + li {
     border-top-width: 1px;
     border-left-width: 0;
   }
-  .list-group-horizontal-md .list-group-item + .list-group-item.active, .list-group-horizontal-md #component-archive-pages ul li + .list-group-item.active, #component-archive-pages ul .list-group-horizontal-md li + .list-group-item.active, .list-group-horizontal-md #component-archive-posts ul li + .list-group-item.active, #component-archive-posts ul .list-group-horizontal-md li + .list-group-item.active, .list-group-horizontal-md #component-archive-pages ul .list-group-item + li.active, #component-archive-pages ul .list-group-horizontal-md .list-group-item + li.active, .list-group-horizontal-md #component-archive-pages ul li + li.active, #component-archive-pages ul .list-group-horizontal-md li + li.active, .list-group-horizontal-md #component-archive-posts ul .list-group-item + li.active, #component-archive-posts ul .list-group-horizontal-md .list-group-item + li.active, .list-group-horizontal-md #component-archive-posts ul li + li.active, #component-archive-posts ul .list-group-horizontal-md li + li.active {
+  .list-group-horizontal-md .list-group-item + .list-group-item.active, .list-group-horizontal-md #component-archive-pages ul li + .list-group-item.active, #component-archive-pages ul .list-group-horizontal-md li + .list-group-item.active, .list-group-horizontal-md #component-archive-posts ul li + .list-group-item.active, #component-archive-posts ul .list-group-horizontal-md li + .list-group-item.active, .list-group-horizontal-md #component-archive-pages ul .list-group-item + li.active, #component-archive-pages ul .list-group-horizontal-md .list-group-item + li.active, .list-group-horizontal-md #component-archive-pages ul li + li.active, #component-archive-pages ul .list-group-horizontal-md li + li.active, .list-group-horizontal-md #component-archive-posts ul .list-group-item + li.active, #component-archive-posts ul .list-group-horizontal-md .list-group-item + li.active, .list-group-horizontal-md #component-archive-posts ul li + li.active, #component-archive-posts ul .list-group-horizontal-md li + li.active, .list-group-horizontal-md .component-navigation-breadcrumb ol li .list-group-item + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-md .list-group-item + .list-group-item.active-breadcrumb, .list-group-horizontal-md #component-archive-pages ul .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-md #component-archive-pages ul li + .list-group-item.active-breadcrumb, #component-archive-pages ul .list-group-horizontal-md .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-md li + .list-group-item.active-breadcrumb, .list-group-horizontal-md #component-archive-posts ul .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-md #component-archive-posts ul li + .list-group-item.active-breadcrumb, #component-archive-posts ul .list-group-horizontal-md .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-md li + .list-group-item.active-breadcrumb, .list-group-horizontal-md #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-item + li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal-md .list-group-item + li.active-breadcrumb, .list-group-horizontal-md #component-archive-pages ul .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-pages ul .list-group-horizontal-md .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal-md li + li.active-breadcrumb, .list-group-horizontal-md .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-item + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-md .list-group-item + li.active-breadcrumb, .list-group-horizontal-md .component-navigation-breadcrumb ol li #component-archive-pages ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-md #component-archive-pages ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-md li + li.active-breadcrumb, .list-group-horizontal-md #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-item + li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal-md .list-group-item + li.active-breadcrumb, .list-group-horizontal-md #component-archive-posts ul .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-posts ul .list-group-horizontal-md .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal-md li + li.active-breadcrumb, .list-group-horizontal-md .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-item + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-md .list-group-item + li.active-breadcrumb, .list-group-horizontal-md .component-navigation-breadcrumb ol li #component-archive-posts ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-md #component-archive-posts ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-md li + li.active-breadcrumb {
     margin-left: -1px;
     border-left-width: 1px;
   }
@@ -5647,14 +5709,14 @@ a.badge-dark:focus, a.badge-dark.focus {
     border-top-right-radius: 0.25rem;
     border-bottom-left-radius: 0;
   }
-  .list-group-horizontal-lg .list-group-item.active, .list-group-horizontal-lg #component-archive-pages ul li.active, #component-archive-pages ul .list-group-horizontal-lg li.active, .list-group-horizontal-lg #component-archive-posts ul li.active, #component-archive-posts ul .list-group-horizontal-lg li.active {
+  .list-group-horizontal-lg .list-group-item.active, .list-group-horizontal-lg #component-archive-pages ul li.active, #component-archive-pages ul .list-group-horizontal-lg li.active, .list-group-horizontal-lg #component-archive-posts ul li.active, #component-archive-posts ul .list-group-horizontal-lg li.active, .list-group-horizontal-lg .component-navigation-breadcrumb ol li .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-lg .list-group-item.active-breadcrumb, .list-group-horizontal-lg #component-archive-pages ul .component-navigation-breadcrumb ol li li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal-lg li.active-breadcrumb, .list-group-horizontal-lg .component-navigation-breadcrumb ol li #component-archive-pages ul li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-lg li.active-breadcrumb, .list-group-horizontal-lg #component-archive-posts ul .component-navigation-breadcrumb ol li li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal-lg li.active-breadcrumb, .list-group-horizontal-lg .component-navigation-breadcrumb ol li #component-archive-posts ul li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-lg li.active-breadcrumb {
     margin-top: 0;
   }
   .list-group-horizontal-lg .list-group-item + .list-group-item, .list-group-horizontal-lg #component-archive-pages ul li + .list-group-item, #component-archive-pages ul .list-group-horizontal-lg li + .list-group-item, .list-group-horizontal-lg #component-archive-posts ul li + .list-group-item, #component-archive-posts ul .list-group-horizontal-lg li + .list-group-item, .list-group-horizontal-lg #component-archive-pages ul .list-group-item + li, #component-archive-pages ul .list-group-horizontal-lg .list-group-item + li, .list-group-horizontal-lg #component-archive-pages ul li + li, #component-archive-pages ul .list-group-horizontal-lg li + li, .list-group-horizontal-lg #component-archive-posts ul .list-group-item + li, #component-archive-posts ul .list-group-horizontal-lg .list-group-item + li, .list-group-horizontal-lg #component-archive-posts ul li + li, #component-archive-posts ul .list-group-horizontal-lg li + li {
     border-top-width: 1px;
     border-left-width: 0;
   }
-  .list-group-horizontal-lg .list-group-item + .list-group-item.active, .list-group-horizontal-lg #component-archive-pages ul li + .list-group-item.active, #component-archive-pages ul .list-group-horizontal-lg li + .list-group-item.active, .list-group-horizontal-lg #component-archive-posts ul li + .list-group-item.active, #component-archive-posts ul .list-group-horizontal-lg li + .list-group-item.active, .list-group-horizontal-lg #component-archive-pages ul .list-group-item + li.active, #component-archive-pages ul .list-group-horizontal-lg .list-group-item + li.active, .list-group-horizontal-lg #component-archive-pages ul li + li.active, #component-archive-pages ul .list-group-horizontal-lg li + li.active, .list-group-horizontal-lg #component-archive-posts ul .list-group-item + li.active, #component-archive-posts ul .list-group-horizontal-lg .list-group-item + li.active, .list-group-horizontal-lg #component-archive-posts ul li + li.active, #component-archive-posts ul .list-group-horizontal-lg li + li.active {
+  .list-group-horizontal-lg .list-group-item + .list-group-item.active, .list-group-horizontal-lg #component-archive-pages ul li + .list-group-item.active, #component-archive-pages ul .list-group-horizontal-lg li + .list-group-item.active, .list-group-horizontal-lg #component-archive-posts ul li + .list-group-item.active, #component-archive-posts ul .list-group-horizontal-lg li + .list-group-item.active, .list-group-horizontal-lg #component-archive-pages ul .list-group-item + li.active, #component-archive-pages ul .list-group-horizontal-lg .list-group-item + li.active, .list-group-horizontal-lg #component-archive-pages ul li + li.active, #component-archive-pages ul .list-group-horizontal-lg li + li.active, .list-group-horizontal-lg #component-archive-posts ul .list-group-item + li.active, #component-archive-posts ul .list-group-horizontal-lg .list-group-item + li.active, .list-group-horizontal-lg #component-archive-posts ul li + li.active, #component-archive-posts ul .list-group-horizontal-lg li + li.active, .list-group-horizontal-lg .component-navigation-breadcrumb ol li .list-group-item + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-lg .list-group-item + .list-group-item.active-breadcrumb, .list-group-horizontal-lg #component-archive-pages ul .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-lg #component-archive-pages ul li + .list-group-item.active-breadcrumb, #component-archive-pages ul .list-group-horizontal-lg .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-lg li + .list-group-item.active-breadcrumb, .list-group-horizontal-lg #component-archive-posts ul .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-lg #component-archive-posts ul li + .list-group-item.active-breadcrumb, #component-archive-posts ul .list-group-horizontal-lg .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-lg li + .list-group-item.active-breadcrumb, .list-group-horizontal-lg #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-item + li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal-lg .list-group-item + li.active-breadcrumb, .list-group-horizontal-lg #component-archive-pages ul .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-pages ul .list-group-horizontal-lg .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal-lg li + li.active-breadcrumb, .list-group-horizontal-lg .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-item + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-lg .list-group-item + li.active-breadcrumb, .list-group-horizontal-lg .component-navigation-breadcrumb ol li #component-archive-pages ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-lg #component-archive-pages ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-lg li + li.active-breadcrumb, .list-group-horizontal-lg #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-item + li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal-lg .list-group-item + li.active-breadcrumb, .list-group-horizontal-lg #component-archive-posts ul .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-posts ul .list-group-horizontal-lg .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal-lg li + li.active-breadcrumb, .list-group-horizontal-lg .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-item + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-lg .list-group-item + li.active-breadcrumb, .list-group-horizontal-lg .component-navigation-breadcrumb ol li #component-archive-posts ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-lg #component-archive-posts ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-lg li + li.active-breadcrumb {
     margin-left: -1px;
     border-left-width: 1px;
   }
@@ -5671,14 +5733,14 @@ a.badge-dark:focus, a.badge-dark.focus {
     border-top-right-radius: 0.25rem;
     border-bottom-left-radius: 0;
   }
-  .list-group-horizontal-xl .list-group-item.active, .list-group-horizontal-xl #component-archive-pages ul li.active, #component-archive-pages ul .list-group-horizontal-xl li.active, .list-group-horizontal-xl #component-archive-posts ul li.active, #component-archive-posts ul .list-group-horizontal-xl li.active {
+  .list-group-horizontal-xl .list-group-item.active, .list-group-horizontal-xl #component-archive-pages ul li.active, #component-archive-pages ul .list-group-horizontal-xl li.active, .list-group-horizontal-xl #component-archive-posts ul li.active, #component-archive-posts ul .list-group-horizontal-xl li.active, .list-group-horizontal-xl .component-navigation-breadcrumb ol li .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-xl .list-group-item.active-breadcrumb, .list-group-horizontal-xl #component-archive-pages ul .component-navigation-breadcrumb ol li li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal-xl li.active-breadcrumb, .list-group-horizontal-xl .component-navigation-breadcrumb ol li #component-archive-pages ul li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-xl li.active-breadcrumb, .list-group-horizontal-xl #component-archive-posts ul .component-navigation-breadcrumb ol li li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal-xl li.active-breadcrumb, .list-group-horizontal-xl .component-navigation-breadcrumb ol li #component-archive-posts ul li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-xl li.active-breadcrumb {
     margin-top: 0;
   }
   .list-group-horizontal-xl .list-group-item + .list-group-item, .list-group-horizontal-xl #component-archive-pages ul li + .list-group-item, #component-archive-pages ul .list-group-horizontal-xl li + .list-group-item, .list-group-horizontal-xl #component-archive-posts ul li + .list-group-item, #component-archive-posts ul .list-group-horizontal-xl li + .list-group-item, .list-group-horizontal-xl #component-archive-pages ul .list-group-item + li, #component-archive-pages ul .list-group-horizontal-xl .list-group-item + li, .list-group-horizontal-xl #component-archive-pages ul li + li, #component-archive-pages ul .list-group-horizontal-xl li + li, .list-group-horizontal-xl #component-archive-posts ul .list-group-item + li, #component-archive-posts ul .list-group-horizontal-xl .list-group-item + li, .list-group-horizontal-xl #component-archive-posts ul li + li, #component-archive-posts ul .list-group-horizontal-xl li + li {
     border-top-width: 1px;
     border-left-width: 0;
   }
-  .list-group-horizontal-xl .list-group-item + .list-group-item.active, .list-group-horizontal-xl #component-archive-pages ul li + .list-group-item.active, #component-archive-pages ul .list-group-horizontal-xl li + .list-group-item.active, .list-group-horizontal-xl #component-archive-posts ul li + .list-group-item.active, #component-archive-posts ul .list-group-horizontal-xl li + .list-group-item.active, .list-group-horizontal-xl #component-archive-pages ul .list-group-item + li.active, #component-archive-pages ul .list-group-horizontal-xl .list-group-item + li.active, .list-group-horizontal-xl #component-archive-pages ul li + li.active, #component-archive-pages ul .list-group-horizontal-xl li + li.active, .list-group-horizontal-xl #component-archive-posts ul .list-group-item + li.active, #component-archive-posts ul .list-group-horizontal-xl .list-group-item + li.active, .list-group-horizontal-xl #component-archive-posts ul li + li.active, #component-archive-posts ul .list-group-horizontal-xl li + li.active {
+  .list-group-horizontal-xl .list-group-item + .list-group-item.active, .list-group-horizontal-xl #component-archive-pages ul li + .list-group-item.active, #component-archive-pages ul .list-group-horizontal-xl li + .list-group-item.active, .list-group-horizontal-xl #component-archive-posts ul li + .list-group-item.active, #component-archive-posts ul .list-group-horizontal-xl li + .list-group-item.active, .list-group-horizontal-xl #component-archive-pages ul .list-group-item + li.active, #component-archive-pages ul .list-group-horizontal-xl .list-group-item + li.active, .list-group-horizontal-xl #component-archive-pages ul li + li.active, #component-archive-pages ul .list-group-horizontal-xl li + li.active, .list-group-horizontal-xl #component-archive-posts ul .list-group-item + li.active, #component-archive-posts ul .list-group-horizontal-xl .list-group-item + li.active, .list-group-horizontal-xl #component-archive-posts ul li + li.active, #component-archive-posts ul .list-group-horizontal-xl li + li.active, .list-group-horizontal-xl .component-navigation-breadcrumb ol li .list-group-item + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-xl .list-group-item + .list-group-item.active-breadcrumb, .list-group-horizontal-xl #component-archive-pages ul .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-xl #component-archive-pages ul li + .list-group-item.active-breadcrumb, #component-archive-pages ul .list-group-horizontal-xl .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-xl li + .list-group-item.active-breadcrumb, .list-group-horizontal-xl #component-archive-posts ul .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-xl #component-archive-posts ul li + .list-group-item.active-breadcrumb, #component-archive-posts ul .list-group-horizontal-xl .component-navigation-breadcrumb ol li li + .list-group-item.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-xl li + .list-group-item.active-breadcrumb, .list-group-horizontal-xl #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-item + li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal-xl .list-group-item + li.active-breadcrumb, .list-group-horizontal-xl #component-archive-pages ul .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-pages ul .list-group-horizontal-xl .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-pages ul .component-navigation-breadcrumb ol li .list-group-horizontal-xl li + li.active-breadcrumb, .list-group-horizontal-xl .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-item + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-xl .list-group-item + li.active-breadcrumb, .list-group-horizontal-xl .component-navigation-breadcrumb ol li #component-archive-pages ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-xl #component-archive-pages ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-pages ul .list-group-horizontal-xl li + li.active-breadcrumb, .list-group-horizontal-xl #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-item + li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal-xl .list-group-item + li.active-breadcrumb, .list-group-horizontal-xl #component-archive-posts ul .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-posts ul .list-group-horizontal-xl .component-navigation-breadcrumb ol li li + li.active-breadcrumb, #component-archive-posts ul .component-navigation-breadcrumb ol li .list-group-horizontal-xl li + li.active-breadcrumb, .list-group-horizontal-xl .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-item + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-xl .list-group-item + li.active-breadcrumb, .list-group-horizontal-xl .component-navigation-breadcrumb ol li #component-archive-posts ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li .list-group-horizontal-xl #component-archive-posts ul li + li.active-breadcrumb, .component-navigation-breadcrumb ol li #component-archive-posts ul .list-group-horizontal-xl li + li.active-breadcrumb {
     margin-left: -1px;
     border-left-width: 1px;
   }
@@ -5703,7 +5765,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #004085;
   background-color: #9fcdff;
 }
-.list-group-item-primary.list-group-item-action.active {
+.list-group-item-primary.list-group-item-action.active, .component-navigation-breadcrumb ol li .list-group-item-primary.list-group-item-action.active-breadcrumb {
   color: #fff;
   background-color: #004085;
   border-color: #004085;
@@ -5717,7 +5779,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #383d41;
   background-color: #c8cbcf;
 }
-.list-group-item-secondary.list-group-item-action.active {
+.list-group-item-secondary.list-group-item-action.active, .component-navigation-breadcrumb ol li .list-group-item-secondary.list-group-item-action.active-breadcrumb {
   color: #fff;
   background-color: #383d41;
   border-color: #383d41;
@@ -5731,7 +5793,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #155724;
   background-color: #b1dfbb;
 }
-.list-group-item-success.list-group-item-action.active {
+.list-group-item-success.list-group-item-action.active, .component-navigation-breadcrumb ol li .list-group-item-success.list-group-item-action.active-breadcrumb {
   color: #fff;
   background-color: #155724;
   border-color: #155724;
@@ -5745,7 +5807,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #0c5460;
   background-color: #abdde5;
 }
-.list-group-item-info.list-group-item-action.active {
+.list-group-item-info.list-group-item-action.active, .component-navigation-breadcrumb ol li .list-group-item-info.list-group-item-action.active-breadcrumb {
   color: #fff;
   background-color: #0c5460;
   border-color: #0c5460;
@@ -5759,7 +5821,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #856404;
   background-color: #ffe8a1;
 }
-.list-group-item-warning.list-group-item-action.active {
+.list-group-item-warning.list-group-item-action.active, .component-navigation-breadcrumb ol li .list-group-item-warning.list-group-item-action.active-breadcrumb {
   color: #fff;
   background-color: #856404;
   border-color: #856404;
@@ -5773,7 +5835,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #721c24;
   background-color: #f1b0b7;
 }
-.list-group-item-danger.list-group-item-action.active {
+.list-group-item-danger.list-group-item-action.active, .component-navigation-breadcrumb ol li .list-group-item-danger.list-group-item-action.active-breadcrumb {
   color: #fff;
   background-color: #721c24;
   border-color: #721c24;
@@ -5787,7 +5849,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #818182;
   background-color: #ececf6;
 }
-.list-group-item-light.list-group-item-action.active {
+.list-group-item-light.list-group-item-action.active, .component-navigation-breadcrumb ol li .list-group-item-light.list-group-item-action.active-breadcrumb {
   color: #fff;
   background-color: #818182;
   border-color: #818182;
@@ -5801,7 +5863,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #1b1e21;
   background-color: #b9bbbe;
 }
-.list-group-item-dark.list-group-item-action.active {
+.list-group-item-dark.list-group-item-action.active, .component-navigation-breadcrumb ol li .list-group-item-dark.list-group-item-action.active-breadcrumb {
   color: #fff;
   background-color: #1b1e21;
   border-color: #1b1e21;
@@ -6345,19 +6407,21 @@ a.close.disabled {
   }
 }
 
-.carousel-item.active,
+.carousel-item.active, .component-navigation-breadcrumb ol li .carousel-item.active-breadcrumb,
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
 }
 
 .carousel-item-next:not(.carousel-item-left),
-.active.carousel-item-right {
+.active.carousel-item-right,
+.component-navigation-breadcrumb ol li .carousel-item-right.active-breadcrumb {
   transform: translateX(100%);
 }
 
 .carousel-item-prev:not(.carousel-item-right),
-.active.carousel-item-left {
+.active.carousel-item-left,
+.component-navigation-breadcrumb ol li .carousel-item-left.active-breadcrumb {
   transform: translateX(-100%);
 }
 
@@ -6366,21 +6430,25 @@ a.close.disabled {
   transition-property: opacity;
   transform: none;
 }
-.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item.active, .carousel-fade .component-navigation-breadcrumb ol li .carousel-item.active-breadcrumb, .component-navigation-breadcrumb ol li .carousel-fade .carousel-item.active-breadcrumb,
 .carousel-fade .carousel-item-next.carousel-item-left,
 .carousel-fade .carousel-item-prev.carousel-item-right {
   z-index: 1;
   opacity: 1;
 }
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-right {
+.carousel-fade .active.carousel-item-left, .carousel-fade .component-navigation-breadcrumb ol li .carousel-item-left.active-breadcrumb, .component-navigation-breadcrumb ol li .carousel-fade .carousel-item-left.active-breadcrumb,
+.carousel-fade .active.carousel-item-right,
+.carousel-fade .component-navigation-breadcrumb ol li .carousel-item-right.active-breadcrumb,
+.component-navigation-breadcrumb ol li .carousel-fade .carousel-item-right.active-breadcrumb {
   z-index: 0;
   opacity: 0;
   transition: opacity 0s 0.6s;
 }
 @media (prefers-reduced-motion: reduce) {
-  .carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-right {
+  .carousel-fade .active.carousel-item-left, .carousel-fade .component-navigation-breadcrumb ol li .carousel-item-left.active-breadcrumb, .component-navigation-breadcrumb ol li .carousel-fade .carousel-item-left.active-breadcrumb,
+.carousel-fade .active.carousel-item-right,
+.carousel-fade .component-navigation-breadcrumb ol li .carousel-item-right.active-breadcrumb,
+.component-navigation-breadcrumb ol li .carousel-fade .carousel-item-right.active-breadcrumb {
     transition: none;
   }
 }
@@ -6473,7 +6541,7 @@ a.close.disabled {
     transition: none;
   }
 }
-.carousel-indicators .active {
+.carousel-indicators .active, .carousel-indicators .component-navigation-breadcrumb ol li .active-breadcrumb, .component-navigation-breadcrumb ol li .carousel-indicators .active-breadcrumb {
   opacity: 1;
 }
 
