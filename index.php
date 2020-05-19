@@ -30,9 +30,9 @@
                                 <?php 
                                         // is a post
                                 ?>
-                                
+
                                 <?php 
-                                        if( is_singular() ):
+                                        if( is_singular() && !is_front_page() ):
                                 ?>
                                         <?php require get_parent_theme_file_path('/include/templates/post/component-layout.php'); ?>
                                 <?php endif; ?>

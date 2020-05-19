@@ -27,14 +27,27 @@ header .main-section
 
 $breadcrumb-divider: quote(">");
 
+.component-navigation-breadcrumb
+{
+    background-color: $secondary-color;
+}
+
 .component-navigation-breadcrumb ol
 {
+    @extend .container;
     @extend .breadcrumb;
+
+    background-color: transparent !important;
 }
 
 .component-navigation-breadcrumb ol li 
 {
     @extend .breadcrumb-item;
+}
+
+.component-navigation-breadcrumb ol li::before
+{
+    color: white !important;
 }
 
 

@@ -1,54 +1,15 @@
+function showAnswer(element_id)
+{
+    console.log("show answer called");
+    
+    var element = document.getElementById(element_id);
 
-var componentFrequentlyAskedQuestions = new Vue
-(
+    if(!element.classList.contains('show'))
     {
-        el: '#component-frontpage-showcase',
-
-        data: 
-        {
-            tabs:[
-                {
-                    title: 'Programmering',
-                    summary:'',
-                    tagId:'tab-programming',
-                    isActive:true
-                },
-                
-                {
-                    title: 'Search Engine Optimisation',
-                    summary:'',
-                    tagId:'tab-seo',
-                    isActive:false
-                }
-            ],
-
-            contentdata:
-            [
-                {
-                    tagId:'tab-programming',
-                    isLoaded:false,
-                    data:'',
-                    retrieveUrl:'#'
-                },
-                
-                {
-                    tagId:'tab-seo',
-                    isLoaded:false,
-                    data:'',
-                    retrieveUrl:'#'
-
-                }
-
-            ]
-
-        },
-        methods:
-        {
-            loadTab: function(event)
-            {
-                console.log(event);
-                
-            }
-        }
+        element.className += 'show';
     }
-)
+    else 
+    {
+        element.className = '';
+    }
+}

@@ -22,6 +22,7 @@ html
 body 
 {
     background-color: $secondary-color;
+
     margin: 0px;
     padding: 0px;
 }
@@ -53,13 +54,53 @@ footer
 @import './heading.scss';
 @import './page.scss';
 
+#faq
+{
+    @extend .container;
+}
+
+#faq ul li 
+{
+    @extend .card-body;
+}
+
+
+#faq ul li h3
+{
+    @extend .py-3;
+    border-bottom:1px solid $secondary-color;
+}
+
+
+
+#faq ul li:hover h3 
+{
+    color: $color-2;
+    border-bottom:1px solid $color-2;
+}
+
+
+#faq ul li:hover
+{
+    cursor: pointer;
+}
+
+#faq ul li p
+{
+    @extend .card-text;
+    visibility: hidden;
+}
+
+.show p 
+{
+    visibility: visible !important;
+}
 
 
 #introduction-page-cover
 {
-    
-    @extend .bg-dark;
     position: relative;
+    background-color: $secondary-color;
 
     height: 500px;
 }

@@ -39,6 +39,18 @@ header .main-section {
   background-color: #344656;
 }
 
+.component-navigation-breadcrumb {
+  background-color: #344656;
+}
+
+.component-navigation-breadcrumb ol {
+  background-color: transparent !important;
+}
+
+.component-navigation-breadcrumb ol li::before {
+  color: white !important;
+}
+
 .component-navigation-breadcrumb ol li a {
   text-decoration: none !important;
 }
@@ -275,8 +287,30 @@ p {
   height: 100%;
 }
 
+#faq ul li h3 {
+  border-bottom: 1px solid #344656;
+}
+
+#faq ul li:hover h3 {
+  color: #f27405;
+  border-bottom: 1px solid #f27405;
+}
+
+#faq ul li:hover {
+  cursor: pointer;
+}
+
+#faq ul li p {
+  visibility: hidden;
+}
+
+.show p {
+  visibility: visible !important;
+}
+
 #introduction-page-cover {
   position: relative;
+  background-color: #344656;
   height: 500px;
 }
 
@@ -912,7 +946,7 @@ pre code {
   overflow-y: scroll;
 }
 
-.container, .page-generic-layout, #introduction-page-cover .elements, #page-contact {
+.container, .component-navigation-breadcrumb ol, .page-generic-layout, #faq, #introduction-page-cover .elements, #page-contact {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -920,22 +954,22 @@ pre code {
   margin-left: auto;
 }
 @media (min-width: 576px) {
-  .container, .page-generic-layout, #introduction-page-cover .elements, #page-contact {
+  .container, .component-navigation-breadcrumb ol, .page-generic-layout, #faq, #introduction-page-cover .elements, #page-contact {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container, .page-generic-layout, #introduction-page-cover .elements, #page-contact {
+  .container, .component-navigation-breadcrumb ol, .page-generic-layout, #faq, #introduction-page-cover .elements, #page-contact {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container, .page-generic-layout, #introduction-page-cover .elements, #page-contact {
+  .container, .component-navigation-breadcrumb ol, .page-generic-layout, #faq, #introduction-page-cover .elements, #page-contact {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container, .page-generic-layout, #introduction-page-cover .elements, #page-contact {
+  .container, .component-navigation-breadcrumb ol, .page-generic-layout, #faq, #introduction-page-cover .elements, #page-contact {
     max-width: 1140px;
   }
 }
@@ -949,22 +983,22 @@ pre code {
 }
 
 @media (min-width: 576px) {
-  .container-sm, .container, .page-generic-layout, #introduction-page-cover .elements, #page-contact {
+  .container-sm, .container, .component-navigation-breadcrumb ol, .page-generic-layout, #faq, #introduction-page-cover .elements, #page-contact {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container, .page-generic-layout, #introduction-page-cover .elements, #page-contact {
+  .container-md, .container-sm, .container, .component-navigation-breadcrumb ol, .page-generic-layout, #faq, #introduction-page-cover .elements, #page-contact {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container, .page-generic-layout, #introduction-page-cover .elements, #page-contact {
+  .container-lg, .container-md, .container-sm, .container, .component-navigation-breadcrumb ol, .page-generic-layout, #faq, #introduction-page-cover .elements, #page-contact {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container, .page-generic-layout, #introduction-page-cover .elements, #page-contact {
+  .container-xl, .container-lg, .container-md, .container-sm, .container, .component-navigation-breadcrumb ol, .page-generic-layout, #faq, #introduction-page-cover .elements, #page-contact {
     max-width: 1140px;
   }
 }
@@ -4465,12 +4499,12 @@ input[type=button].btn-block {
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
-.navbar .container, .navbar .page-generic-layout, .navbar #introduction-page-cover .elements, #introduction-page-cover .navbar .elements, .navbar #page-contact,
+.navbar .container, .navbar .component-navigation-breadcrumb ol, .component-navigation-breadcrumb .navbar ol, .navbar .page-generic-layout, .navbar #faq, .navbar #introduction-page-cover .elements, #introduction-page-cover .navbar .elements, .navbar #page-contact,
 .navbar .container-fluid,
 .navbar .container-sm,
 .navbar .container-md,
 .navbar .container-lg,
-.navbar .container-xl, #header-navigation .container, #header-navigation .page-generic-layout, #header-navigation #introduction-page-cover .elements, #introduction-page-cover #header-navigation .elements, #header-navigation #page-contact,
+.navbar .container-xl, #header-navigation .container, #header-navigation .component-navigation-breadcrumb ol, .component-navigation-breadcrumb #header-navigation ol, #header-navigation .page-generic-layout, #header-navigation #faq, #header-navigation #introduction-page-cover .elements, #introduction-page-cover #header-navigation .elements, #header-navigation #page-contact,
 #header-navigation .container-fluid,
 #header-navigation .container-sm,
 #header-navigation .container-md,
@@ -4545,7 +4579,7 @@ input[type=button].btn-block {
 }
 
 @media (max-width: 575.98px) {
-  .navbar-expand-sm > .container, .navbar-expand-sm > .page-generic-layout, #introduction-page-cover .navbar-expand-sm > .elements, .navbar-expand-sm > #page-contact,
+  .navbar-expand-sm > .container, .component-navigation-breadcrumb .navbar-expand-sm > ol, .navbar-expand-sm > .page-generic-layout, .navbar-expand-sm > #faq, #introduction-page-cover .navbar-expand-sm > .elements, .navbar-expand-sm > #page-contact,
 .navbar-expand-sm > .container-fluid,
 .navbar-expand-sm > .container-sm,
 .navbar-expand-sm > .container-md,
@@ -4570,7 +4604,7 @@ input[type=button].btn-block {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-sm > .container, .navbar-expand-sm > .page-generic-layout, #introduction-page-cover .navbar-expand-sm > .elements, .navbar-expand-sm > #page-contact,
+  .navbar-expand-sm > .container, .component-navigation-breadcrumb .navbar-expand-sm > ol, .navbar-expand-sm > .page-generic-layout, .navbar-expand-sm > #faq, #introduction-page-cover .navbar-expand-sm > .elements, .navbar-expand-sm > #page-contact,
 .navbar-expand-sm > .container-fluid,
 .navbar-expand-sm > .container-sm,
 .navbar-expand-sm > .container-md,
@@ -4587,7 +4621,7 @@ input[type=button].btn-block {
   }
 }
 @media (max-width: 767.98px) {
-  .navbar-expand-md > .container, .navbar-expand-md > .page-generic-layout, #introduction-page-cover .navbar-expand-md > .elements, .navbar-expand-md > #page-contact,
+  .navbar-expand-md > .container, .component-navigation-breadcrumb .navbar-expand-md > ol, .navbar-expand-md > .page-generic-layout, .navbar-expand-md > #faq, #introduction-page-cover .navbar-expand-md > .elements, .navbar-expand-md > #page-contact,
 .navbar-expand-md > .container-fluid,
 .navbar-expand-md > .container-sm,
 .navbar-expand-md > .container-md,
@@ -4612,7 +4646,7 @@ input[type=button].btn-block {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-md > .container, .navbar-expand-md > .page-generic-layout, #introduction-page-cover .navbar-expand-md > .elements, .navbar-expand-md > #page-contact,
+  .navbar-expand-md > .container, .component-navigation-breadcrumb .navbar-expand-md > ol, .navbar-expand-md > .page-generic-layout, .navbar-expand-md > #faq, #introduction-page-cover .navbar-expand-md > .elements, .navbar-expand-md > #page-contact,
 .navbar-expand-md > .container-fluid,
 .navbar-expand-md > .container-sm,
 .navbar-expand-md > .container-md,
@@ -4629,7 +4663,7 @@ input[type=button].btn-block {
   }
 }
 @media (max-width: 991.98px) {
-  .navbar-expand-lg > .container, .navbar-expand-lg #header-navigation > .container, .navbar-expand-lg > .page-generic-layout, .navbar-expand-lg #header-navigation > .page-generic-layout, #introduction-page-cover .navbar-expand-lg > .elements, #introduction-page-cover .navbar-expand-lg #header-navigation > .elements, .navbar-expand-lg > #page-contact, .navbar-expand-lg #header-navigation > #page-contact,
+  .navbar-expand-lg > .container, .navbar-expand-lg #header-navigation > .container, .component-navigation-breadcrumb .navbar-expand-lg > ol, .component-navigation-breadcrumb .navbar-expand-lg #header-navigation > ol, .navbar-expand-lg > .page-generic-layout, .navbar-expand-lg #header-navigation > .page-generic-layout, .navbar-expand-lg > #faq, .navbar-expand-lg #header-navigation > #faq, #introduction-page-cover .navbar-expand-lg > .elements, #introduction-page-cover .navbar-expand-lg #header-navigation > .elements, .navbar-expand-lg > #page-contact, .navbar-expand-lg #header-navigation > #page-contact,
 .navbar-expand-lg > .container-fluid,
 .navbar-expand-lg #header-navigation > .container-fluid,
 .navbar-expand-lg > .container-sm,
@@ -4639,7 +4673,7 @@ input[type=button].btn-block {
 .navbar-expand-lg > .container-lg,
 .navbar-expand-lg #header-navigation > .container-lg,
 .navbar-expand-lg > .container-xl,
-.navbar-expand-lg #header-navigation > .container-xl, #header-navigation .navbar-expand-lg > .container, #header-navigation > .container, #header-navigation .navbar-expand-lg > .page-generic-layout, #header-navigation > .page-generic-layout, #introduction-page-cover #header-navigation .navbar-expand-lg > .elements, #introduction-page-cover #header-navigation > .elements, #header-navigation .navbar-expand-lg > #page-contact, #header-navigation > #page-contact,
+.navbar-expand-lg #header-navigation > .container-xl, #header-navigation .navbar-expand-lg > .container, #header-navigation > .container, #header-navigation .component-navigation-breadcrumb .navbar-expand-lg > ol, .component-navigation-breadcrumb #header-navigation .navbar-expand-lg > ol, .component-navigation-breadcrumb #header-navigation > ol, #header-navigation .navbar-expand-lg > .page-generic-layout, #header-navigation > .page-generic-layout, #header-navigation .navbar-expand-lg > #faq, #header-navigation > #faq, #introduction-page-cover #header-navigation .navbar-expand-lg > .elements, #introduction-page-cover #header-navigation > .elements, #header-navigation .navbar-expand-lg > #page-contact, #header-navigation > #page-contact,
 #header-navigation .navbar-expand-lg > .container-fluid,
 #header-navigation > .container-fluid,
 #header-navigation .navbar-expand-lg > .container-sm,
@@ -4669,7 +4703,7 @@ input[type=button].btn-block {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-lg > .container, .navbar-expand-lg #header-navigation > .container, .navbar-expand-lg > .page-generic-layout, .navbar-expand-lg #header-navigation > .page-generic-layout, #introduction-page-cover .navbar-expand-lg > .elements, #introduction-page-cover .navbar-expand-lg #header-navigation > .elements, .navbar-expand-lg > #page-contact, .navbar-expand-lg #header-navigation > #page-contact,
+  .navbar-expand-lg > .container, .navbar-expand-lg #header-navigation > .container, .component-navigation-breadcrumb .navbar-expand-lg > ol, .component-navigation-breadcrumb .navbar-expand-lg #header-navigation > ol, .navbar-expand-lg > .page-generic-layout, .navbar-expand-lg #header-navigation > .page-generic-layout, .navbar-expand-lg > #faq, .navbar-expand-lg #header-navigation > #faq, #introduction-page-cover .navbar-expand-lg > .elements, #introduction-page-cover .navbar-expand-lg #header-navigation > .elements, .navbar-expand-lg > #page-contact, .navbar-expand-lg #header-navigation > #page-contact,
 .navbar-expand-lg > .container-fluid,
 .navbar-expand-lg #header-navigation > .container-fluid,
 .navbar-expand-lg > .container-sm,
@@ -4679,7 +4713,7 @@ input[type=button].btn-block {
 .navbar-expand-lg > .container-lg,
 .navbar-expand-lg #header-navigation > .container-lg,
 .navbar-expand-lg > .container-xl,
-.navbar-expand-lg #header-navigation > .container-xl, #header-navigation .navbar-expand-lg > .container, #header-navigation > .container, #header-navigation .navbar-expand-lg > .page-generic-layout, #header-navigation > .page-generic-layout, #introduction-page-cover #header-navigation .navbar-expand-lg > .elements, #introduction-page-cover #header-navigation > .elements, #header-navigation .navbar-expand-lg > #page-contact, #header-navigation > #page-contact,
+.navbar-expand-lg #header-navigation > .container-xl, #header-navigation .navbar-expand-lg > .container, #header-navigation > .container, #header-navigation .component-navigation-breadcrumb .navbar-expand-lg > ol, .component-navigation-breadcrumb #header-navigation .navbar-expand-lg > ol, .component-navigation-breadcrumb #header-navigation > ol, #header-navigation .navbar-expand-lg > .page-generic-layout, #header-navigation > .page-generic-layout, #header-navigation .navbar-expand-lg > #faq, #header-navigation > #faq, #introduction-page-cover #header-navigation .navbar-expand-lg > .elements, #introduction-page-cover #header-navigation > .elements, #header-navigation .navbar-expand-lg > #page-contact, #header-navigation > #page-contact,
 #header-navigation .navbar-expand-lg > .container-fluid,
 #header-navigation > .container-fluid,
 #header-navigation .navbar-expand-lg > .container-sm,
@@ -4701,7 +4735,7 @@ input[type=button].btn-block {
   }
 }
 @media (max-width: 1199.98px) {
-  .navbar-expand-xl > .container, .navbar-expand-xl > .page-generic-layout, #introduction-page-cover .navbar-expand-xl > .elements, .navbar-expand-xl > #page-contact,
+  .navbar-expand-xl > .container, .component-navigation-breadcrumb .navbar-expand-xl > ol, .navbar-expand-xl > .page-generic-layout, .navbar-expand-xl > #faq, #introduction-page-cover .navbar-expand-xl > .elements, .navbar-expand-xl > #page-contact,
 .navbar-expand-xl > .container-fluid,
 .navbar-expand-xl > .container-sm,
 .navbar-expand-xl > .container-md,
@@ -4726,7 +4760,7 @@ input[type=button].btn-block {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-xl > .container, .navbar-expand-xl > .page-generic-layout, #introduction-page-cover .navbar-expand-xl > .elements, .navbar-expand-xl > #page-contact,
+  .navbar-expand-xl > .container, .component-navigation-breadcrumb .navbar-expand-xl > ol, .navbar-expand-xl > .page-generic-layout, .navbar-expand-xl > #faq, #introduction-page-cover .navbar-expand-xl > .elements, .navbar-expand-xl > #page-contact,
 .navbar-expand-xl > .container-fluid,
 .navbar-expand-xl > .container-sm,
 .navbar-expand-xl > .container-md,
@@ -4746,7 +4780,7 @@ input[type=button].btn-block {
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
-.navbar-expand > .container, .navbar-expand > .page-generic-layout, #introduction-page-cover .navbar-expand > .elements, .navbar-expand > #page-contact,
+.navbar-expand > .container, .component-navigation-breadcrumb .navbar-expand > ol, .navbar-expand > .page-generic-layout, .navbar-expand > #faq, #introduction-page-cover .navbar-expand > .elements, .navbar-expand > #page-contact,
 .navbar-expand > .container-fluid,
 .navbar-expand > .container-sm,
 .navbar-expand > .container-md,
@@ -4765,7 +4799,7 @@ input[type=button].btn-block {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
-.navbar-expand > .container, .navbar-expand > .page-generic-layout, #introduction-page-cover .navbar-expand > .elements, .navbar-expand > #page-contact,
+.navbar-expand > .container, .component-navigation-breadcrumb .navbar-expand > ol, .navbar-expand > .page-generic-layout, .navbar-expand > #faq, #introduction-page-cover .navbar-expand > .elements, .navbar-expand > #page-contact,
 .navbar-expand > .container-fluid,
 .navbar-expand > .container-sm,
 .navbar-expand > .container-md,
@@ -4959,7 +4993,7 @@ input[type=button].btn-block {
   border-bottom-left-radius: 0.25rem;
 }
 
-.card-body {
+.card-body, #faq ul li {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
@@ -4974,7 +5008,7 @@ input[type=button].btn-block {
   margin-bottom: 0;
 }
 
-.card-text:last-child {
+.card-text:last-child, #faq ul li p:last-child {
   margin-bottom: 0;
 }
 
@@ -6716,15 +6750,13 @@ button.bg-light:focus {
   background-color: #dae0e5 !important;
 }
 
-.bg-dark, #introduction-page-cover {
+.bg-dark {
   background-color: #343a40 !important;
 }
 
-a.bg-dark:hover, a#introduction-page-cover:hover, a.bg-dark:focus, a#introduction-page-cover:focus,
+a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
-button#introduction-page-cover:hover,
-button.bg-dark:focus,
-button#introduction-page-cover:focus {
+button.bg-dark:focus {
   background-color: #1d2124 !important;
 }
 
@@ -8295,6 +8327,7 @@ h1,
 .py-3,
 .articles-container,
 .product-container,
+#faq ul li h3,
 #component-frontpage-showcase .component-container .tabs ul {
   padding-top: 1rem !important;
 }
@@ -8311,6 +8344,7 @@ h1,
 .py-3,
 .articles-container,
 .product-container,
+#faq ul li h3,
 #component-frontpage-showcase .component-container .tabs ul {
   padding-bottom: 1rem !important;
 }
@@ -10542,7 +10576,7 @@ h3 {
     min-width: 992px !important;
   }
 
-  .container, .page-generic-layout, #introduction-page-cover .elements, #page-contact {
+  .container, .component-navigation-breadcrumb ol, .page-generic-layout, #faq, #introduction-page-cover .elements, #page-contact {
     min-width: 992px !important;
   }
 
