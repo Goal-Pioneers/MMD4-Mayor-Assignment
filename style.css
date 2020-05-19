@@ -7981,6 +7981,7 @@ button#introduction-page-cover:focus {
 
 .mt-1,
 .my-1,
+label,
 #page-contact .contact-us-list li {
   margin-top: 0.25rem !important;
 }
@@ -7993,6 +7994,7 @@ button#introduction-page-cover:focus {
 
 .mb-1,
 .my-1,
+label,
 #page-contact .contact-us-list li {
   margin-bottom: 0.25rem !important;
 }
