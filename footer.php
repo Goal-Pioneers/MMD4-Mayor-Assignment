@@ -48,6 +48,7 @@
         </div>
     </footer>
 </body>
+
 </html>
 
 <?php if( getDebugState() ): ?>

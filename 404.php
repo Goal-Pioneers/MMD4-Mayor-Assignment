@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
         <main> 
-                <section class="base-section" id="component-info-404"> 
+                <section class="base-section" 
+                         id="component-info-404"> 
+                        
                         <div> 
                                 <h1> 
                                         Side 404.         
