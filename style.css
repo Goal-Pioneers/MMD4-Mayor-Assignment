@@ -149,7 +149,6 @@ footer .main-section .widgetizedArea ul li {
 }
 
 #menu-social {
-  justify-content: center !important;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -7021,7 +7020,7 @@ button.cover-section:focus {
   justify-content: flex-end !important;
 }
 
-.justify-content-center, #header-navigation {
+.justify-content-center, #header-navigation, #menu-social {
   justify-content: center !important;
 }
 

@@ -3,21 +3,9 @@
 <html <?php language_attributes(); ?> >
 
     <head>
-        <meta charset="<?php bloginfo( 'charset' );?>">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-        <link rel="profile" href="http://gmpg.org/xfn/11">
-
-        <!-- -->
-        <META HTTP-EQUIV="pragma" CONTENT="no-cache">
-
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
 
-        <?php 
-            wp_head();
-        ?>
+        <?php require get_parent_theme_file_path('/include/templates/generic/head.php'); ?>
     </head>
 
     <body>
@@ -39,89 +27,7 @@
                 ?>
             </div>
             
-            <?php while( have_posts() ): ?>
-                        <?php 
-                            the_post();
-                        ?>
-                        
-
-                <?php if(has_post_thumbnail()): ?>
-
-                    <?php if( is_front_page() ): ?>
-                        <div id="introduction-page-cover">
-                            <?php the_post_thumbnail( 'full', array('class' => 'header-cover-image') ); ?>
-                            
-                            <div class="elements"> 
-                                <div class="introduction aligns-items-center">
-                                    <div class="header">
-                                            <h1 class="title"><?php echo get_bloginfo('name'); ?></h1>
-                                            <p class="description"><?php echo get_bloginfo('description'); ?></p>
-                                            
-                                            <?php if( get_field('shortcut-contact')): ?> 
-                                                            <a href="<?php the_field('shortcut-contact') ?>" class="short-button"> 
-                                                                    Kontakt os
-                                                            </a>
-                                            <?php endif; ?>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    <?php endif; ?>
-
-                    <?php if(! is_front_page() ): ?>
-                        <div id="introduction-page-cover">
-                            <?php the_post_thumbnail( 'full', array('class' => 'header-cover-image') ); ?>
-                            
-                            <div class="elements"> 
-                                <div class="introduction aligns-items-center">
-                                    <div class="header">
-                                            <h1 class="title">
-                                               <?php the_title(); ?>
-                                            </h1>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    <?php endif; ?>
-
-                <?php endif; ?>
-
-            <?php endwhile;?>
-        
-            
-        <?php while( have_posts() ):
-                the_post();
-                
-                $currentId = $post->ID; 
-                $ancestor = get_post_ancestors( $currentId );
-        ?>
-
-        <?php if(! count($ancestor) == 0): ?>
-            <nav class="component-navigation-breadcrumb"> 
-            <ol> 
-                <?php
-
-                        foreach( $ancestor as &$value )
-                        {
-                            $title = get_the_title($value);
-                            $url = get_post_permalink($value);
-
-                            echo "<li>";
-                                echo "<a href='" . $url . "'>";
-                                    echo $title;
-                                echo "</a>";
-                            echo "</li>";
-                        }
-
-
-                    ?>
-                </ol>
-            </nav>
-        <?php endif;?>
-        
-        <?php endwhile; ?>
-        
+            <?php require get_parent_theme_file_path('/include/templates/pages/component-introduction.php'); ?>
+            <?php require get_parent_theme_file_path('/include/templates/header/breadcrumb.php'); ?>
         </header>
         
