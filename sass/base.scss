@@ -9,3 +9,8 @@ label
 {
     @extend .my-1;
 }
+
+a:hover
+{
+    text-decoration: none !important;
+}

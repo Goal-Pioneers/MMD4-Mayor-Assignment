@@ -1,13 +1,13 @@
 
 header .main-section 
 {
-    @extend .bg-dark;
     display: grid;
 
     grid-template-columns: auto;
     grid-gap: 16px;
 
     align-items: center;
+    background-color: $secondary-color;
 }
 
 #header-navigation
@@ -47,4 +47,11 @@ $breadcrumb-divider: quote(">");
 {
     @extend .active;
     text-decoration: none !important;
+    color:$color-4 !important;
+}
+
+.active-breadcrumb a, .active-breadcrumb a:hover, .active-breadcrumb a:active
+{
+    color:$color-3;
+    font-weight: bold;
 }

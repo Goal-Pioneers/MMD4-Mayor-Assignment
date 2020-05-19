@@ -8,7 +8,7 @@
 
                         <?php while( have_posts() ): ?>
                                 <?php 
-                                the_post();
+                                        the_post();
                                 ?>
                         
                                 <?php 
@@ -30,10 +30,10 @@
                                 <?php 
                                         // is a post
                                 ?>
+                                
                                 <?php 
                                         if( is_singular() ):
                                 ?>
-                                
                                         <?php require get_parent_theme_file_path('/include/templates/post/component-layout.php'); ?>
                                 <?php endif; ?>
 
