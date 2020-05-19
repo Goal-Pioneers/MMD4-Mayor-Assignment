@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-        <main> 
+        <main id="main-view"> 
         
 
 

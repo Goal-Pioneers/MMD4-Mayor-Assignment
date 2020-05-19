@@ -5,22 +5,33 @@ $background-color: #ecf0f1;
 $title_font: 'comfortaa', sans-serif;
 $body_font: 'open sans', sans-serif;
 
+html 
+{
+    height: 100%;
+}
+
 body 
 {
-    display: grid;
-
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-
     background-color: $background-color;
-
-    grid-gap: 0px;
-
     margin: 0px;
     padding: 0px;
-
-    min-width: 100%;
 }
+
+header 
+{
+    display: block;
+}
+
+main 
+{
+    display: block;
+}
+
+footer 
+{
+    @extend .bg-dark;
+}
+
 
 
 @import './base.scss';
@@ -33,10 +44,6 @@ body
 @import './page.scss';
 
 
-main 
-{
-    display: block;
-}
 
 #introduction-page-cover
 {

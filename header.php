@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> >
+<html <?php language_attributes(); ?> id="view" >
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
 
@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <header>
+        <header id="header-static-navigation">
             <div class="main-section">
                 <?php  
                     if ( has_nav_menu( 'ui-navigation-header-menu' ) )
