@@ -108,7 +108,7 @@ footer .main-section .widgetizedArea ul li
 
 #menu-social
 {
-    justify-content: center !important;
+    @extend .justify-content-center;
 
     padding-top: 8px;
     padding-bottom: 8px;
