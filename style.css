@@ -309,6 +309,22 @@ main {
   background-color: white;
 }
 
+#page-contact h2 {
+  text-align: center;
+}
+
+.mail {
+  text-decoration: none !important;
+}
+
+.required {
+  font-weight: bold;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
 #component-info-404 {
   min-height: 600px;
   display: flex;
@@ -2433,7 +2449,7 @@ textarea.form-control, #page-contact .ui-container .contact-us-form textarea.wpc
   height: auto;
 }
 
-.form-group, #page-contact .ui-container .contact-us-form label {
+.form-group, #page-contact .ui-container .contact-us-form span {
   margin-bottom: 1rem;
 }
 
@@ -2685,7 +2701,7 @@ textarea.form-control, #page-contact .ui-container .contact-us-form textarea.wpc
     justify-content: center;
     margin-bottom: 0;
   }
-  .form-inline .form-group, .form-inline #page-contact .ui-container .contact-us-form label, #page-contact .ui-container .contact-us-form .form-inline label {
+  .form-inline .form-group, .form-inline #page-contact .ui-container .contact-us-form span, #page-contact .ui-container .contact-us-form .form-inline span {
     display: flex;
     flex: 0 0 auto;
     flex-flow: row wrap;
@@ -8001,7 +8017,9 @@ h2 {
 }
 
 .mr-2,
-.mx-2 {
+.mx-2,
+#page-contact .ui-container .message,
+#page-contact .ui-container .contact-us-form {
   margin-right: 0.5rem !important;
 }
 
@@ -8012,7 +8030,9 @@ h2 {
 }
 
 .ml-2,
-.mx-2 {
+.mx-2,
+#page-contact .ui-container .message,
+#page-contact .ui-container .contact-us-form {
   margin-left: 0.5rem !important;
 }
 
@@ -8053,7 +8073,9 @@ h1,
 }
 
 .mt-4,
-.my-4 {
+.my-4,
+#page-contact .ui-container .message p,
+#page-contact .contact-us-list {
   margin-top: 1.5rem !important;
 }
 
@@ -8063,7 +8085,9 @@ h1,
 }
 
 .mb-4,
-.my-4 {
+.my-4,
+#page-contact .ui-container .message p,
+#page-contact .contact-us-list {
   margin-bottom: 1.5rem !important;
 }
 

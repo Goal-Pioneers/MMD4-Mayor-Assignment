@@ -3,6 +3,11 @@
     @extend .container;
 }
 
+#page-contact h2
+{
+    text-align: center;
+}
+
 #page-contact .ui-container
 {
     @extend .row;   
@@ -12,17 +17,31 @@
 {
     @extend .col-lg;
     @extend .my-3;
-
+    @extend .mx-2;
 }
+
+#page-contact .ui-container .message p
+{
+    @extend .my-4;
+}
+
+
+
+#page-contact .contact-us-list 
+{
+    @extend .my-4;
+}
+
 
 #page-contact .ui-container .contact-us-form
 {
     @extend .col-lg;
     @extend .my-3;
+    
+    @extend .mx-2;
 }
 
-
-#page-contact .ui-container .contact-us-form label
+#page-contact .ui-container .contact-us-form span
 {
     @extend .form-group;
 }
@@ -46,4 +65,20 @@
 #page-contact .contact-us-list li
 {
     @extend .my-1;
+}
+
+.mail 
+{
+    text-decoration: none !important;   
+    
+}
+
+.required
+{
+    font-weight: bold;
+}
+
+.highlight
+{
+    font-weight: bold;
 }
