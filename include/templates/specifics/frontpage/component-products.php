@@ -5,7 +5,9 @@
 
         <ul> 
                 <?php 
-                        $children = get_children( 17 );
+                        $post = get_page_by_title('produkter');
+
+                        $children = get_children( $post->ID );
                 ?>
                 <?php if(!($children == null)): ?>
                         <?php foreach($children as &$child): ?>
