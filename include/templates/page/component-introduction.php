@@ -5,7 +5,7 @@
                         ?>
                         
 
-                <?php if(has_post_thumbnail()): ?>
+                <?php if( has_post_thumbnail() ): ?>
 
                     <?php if( is_front_page() ): ?>
                         <div id="introduction-page-cover">

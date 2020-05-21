@@ -1,50 +1,25 @@
-
-
 <section class="base-section index-products-showcase"> 
-                        <h2> 
-                            Produkter
-                        </h2>
+        <h2> 
+                Produkter
+        </h2>
 
-                        <ul> 
+        <ul> 
+                <?php 
+                        $children = get_children( 17 );
+                ?>
+                <?php if(!($children == null)): ?>
+                        <?php foreach($children as &$child): ?>
                                 <li class="product"> 
-                                        <a href="#">
+                                        <a href="<?php echo get_post_permalink($child->ID); ?>">
                                                 <div class="product-container">
-                                                        <img src="" class="image" /> 
-                                                        <h3> A </h3>
-                                                        <p> description </p>
+                                                        <img src="<?php echo get_the_post_thumbnail_url($child->ID); ?>" class="image" /> 
+                                                        <h3> <?php echo get_the_title($child->ID); ?> </h3>
+                                                        <p> <?php echo get_the_excerpt($child->ID); ?> </p>
                                                 </div>
                                         </a>
                                 </li>
-
-                                <li class="product"> 
-                                        <a href="#">
-                                                <div class="product-container"> 
-                                                        <img src="" class="image" />
-                                                        <h3> B </h3>
-                                                        <p> description </p>
-                                                </div>
-                                        </a>
-                                </li>
-                                
-                                <li class="product"> 
-                                        <a href="#">
-                                                <div class="product-container"> 
-                                                        <img src="" class="image" />
-                                                        <h3> C </h3>
-                                                        <p> description </p>
-                                                </div>
-                                        </a>
-                                </li>
-                                
-                                <li class="product"> 
-                                        <a href="#">    
-                                                <div class="product-container"> 
-                                                        <img src="" class="image" />
-                                                        <h3> D </h3>
-                                                        <p> description </p>
-                                                </div>
-                                        </a>
-                                </li>
-                        </ul>
-                </section>
+                        <?php endforeach; ?>
+                <?php endif; ?>
+        </ul>
+</section>
                 

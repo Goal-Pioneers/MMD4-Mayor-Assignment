@@ -214,6 +214,21 @@ footer
     background-color: white;
 }
 
+.about-us
+{
+    @extend .container;
+}
+
+.about-us h1 
+{
+    @extend .my-3;
+}
+
+.about-us p 
+{
+    @extend .my-3;
+}
+
 .grecaptcha-badge { visibility: hidden; }
 
 

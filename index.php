@@ -21,7 +21,6 @@
                                         <?php require get_parent_theme_file_path('/include/templates/specifics/frontpage/component-services.php'); ?>
                                                 
                                         <?php require get_parent_theme_file_path('/include/templates/specifics/frontpage/component-articles.php'); ?>
-                                        <?php require get_parent_theme_file_path('/include/templates/specifics/frontpage/component-about-us.php'); ?>
                                         <?php require get_parent_theme_file_path('/include/templates/specifics/frontpage/component-contact.php'); ?>
                                 <?php 
                                         endif; 
