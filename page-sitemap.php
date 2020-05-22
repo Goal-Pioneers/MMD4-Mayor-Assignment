@@ -12,7 +12,7 @@
                         <section class="base-section cover-section">
                                 <div id="component-archive-pages"> 
                                         <h2> 
-                                                Pages 
+                                                Arkiv - Sider
                                         </h2>
 
                                         <ul> 
@@ -36,7 +36,7 @@
                         <section class="base-section"> 
                         <div id="component-archive-posts"> 
                                 <h2> 
-                                        Archive 
+                                        Arkiv - Post 
                                 </h2>
 
                                 <ul> 
