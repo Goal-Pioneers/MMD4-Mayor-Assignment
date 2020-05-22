@@ -1,5 +1,5 @@
 
-<section id="news-component" class="base-section"> 
+<section id="news-component" class=""> 
         <h2> 
                 Artikler
         </h2>

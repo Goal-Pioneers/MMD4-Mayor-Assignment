@@ -243,7 +243,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 0px;
 }
 
 #news-component ul .listed li {
@@ -279,7 +279,7 @@ p {
 }
 
 .listed li:hover img {
-  opacity: 0.45;
+  opacity: 0.15;
 }
 
 .listed li {
@@ -321,7 +321,7 @@ p {
 }
 
 .index-products-showcase ul li img {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .product-container {
@@ -8497,6 +8497,7 @@ h1,
 .pt-4,
 .py-4,
 .shortcuts,
+#news-component,
 .articles-container .text {
   padding-top: 1.5rem !important;
 }
@@ -8510,6 +8511,7 @@ h1,
 .pb-4,
 .py-4,
 .shortcuts,
+#news-component,
 .articles-container .text {
   padding-bottom: 1.5rem !important;
 }

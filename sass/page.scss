@@ -63,6 +63,7 @@ p
 
 #news-component
 {
+    @extend .py-4;
 
 }
 
@@ -97,7 +98,7 @@ p
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 
-    grid-gap: 16px;
+    grid-gap: 0px;
 }
 
 #news-component ul .listed li
@@ -150,7 +151,7 @@ p
 
 .listed li:hover img
 {
-    opacity: 0.45;
+    opacity: 0.15;
 
 }
 
@@ -223,7 +224,7 @@ p
 
 .index-products-showcase ul li img
 {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 
