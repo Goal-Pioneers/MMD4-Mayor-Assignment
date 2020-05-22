@@ -278,3 +278,12 @@ p
     }
     
 }
+
+@media only screen and (max-width: 1024px)
+{
+    #news-component ul .listed
+    {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}
