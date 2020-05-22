@@ -148,21 +148,21 @@ p
     object-fit: cover;
     top: 0px;
 
-    animation-duration: 0.2s;
+    animation-duration: 0.35s;
 
 }
 
 .listed li:hover img
 {
     
-    filter:grayscale(100%) opacity(15%);
+    filter:grayscale(100%) opacity(25%);
     
-    animation-duration: 0.2s;
+    animation-duration: 0.35s;
     
 
 }
 
-.listed li 
+.listed .entity
 {
     background: rgb(242,116,5);
     background: -moz-linear-gradient(128deg, rgba(242,116,5,1) 0%, rgba(191,66,21,1) 100%);

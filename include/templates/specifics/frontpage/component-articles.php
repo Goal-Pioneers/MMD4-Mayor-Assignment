@@ -32,14 +32,19 @@
                         ?>
 
                         <?php foreach($posts_array as &$element): ?>
-                                <li>
+                                <li class="entity">
                                         <a href="<?php echo the_permalink($element->ID); ?>"> 
                                                 <div> 
                                                         <img src="<?php echo get_the_post_thumbnail_url($element->ID, 'full'); ?>"/>                                                
                                                         <div class="text">
-                                                                <p> 
-                                                                        <?php /* echo get_the_category($element->ID); */ ?>
-                                                                        Test
+                                                                <p>
+                                                                        <?php foreach( get_the_category($element->ID) as &$category): ?>
+                                                                                <?php echo "<!--"; ?>
+                                                                                <?php var_dump($category); ?>
+                                                                                <?php echo "-->" ?>
+
+                                                                                <?php echo $category->name; ?>
+                                                                        <?php endforeach; ?>
                                                                 </p>
                                                                 <h3> 
                                                                         <?php echo get_the_title($element->ID); ?>

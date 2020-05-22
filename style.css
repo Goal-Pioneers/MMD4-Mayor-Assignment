@@ -268,15 +268,15 @@ p {
   filter: grayscale(100%) opacity(65%);
   object-fit: cover;
   top: 0px;
-  animation-duration: 0.2s;
+  animation-duration: 0.35s;
 }
 
 .listed li:hover img {
-  filter: grayscale(100%) opacity(15%);
-  animation-duration: 0.2s;
+  filter: grayscale(100%) opacity(25%);
+  animation-duration: 0.35s;
 }
 
-.listed li {
+.listed .entity {
   background: #f27405;
   background: -moz-linear-gradient(128deg, #f27405 0%, #bf4215 100%);
   background: -webkit-linear-gradient(128deg, #f27405 0%, #bf4215 100%);
