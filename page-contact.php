@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-        <main> 
+        <main id="main-view"> 
                 <?php 
                         while( have_posts() ):
                 ?>
@@ -9,7 +9,7 @@
 
                         <!-- Actully page content -->
                         <div id="page-contact"> 
-                            <div> 
+                            <div class="ui-container"> 
                                 <?php
                                     the_content();
                                 ?>

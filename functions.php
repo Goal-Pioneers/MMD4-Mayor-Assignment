@@ -5,6 +5,7 @@ require get_parent_theme_file_path('/include/menu/menu-base.php');
 require get_parent_theme_file_path('/include/menu/menu-footer.php');
 require get_parent_theme_file_path('/include/menu/menu-some.php');
 
+//
 function goalpioneers_theme_support() 
 {
     // Allows wordpress to set the <title> area
@@ -18,9 +19,17 @@ function goalpioneers_theme_support()
 
     // Registration
     register_menus();
-
 };
 
+function register_menus()
+{
+    register_nav_menus( array( 'ui-navigation-header-menu' => __( 'Header Main Area Menu', 'theme-menu' ),
+                               'ui-navigation-footer-menu' => __( 'Footer Main Area Menu', 'theme-menu' ),
+                               'ui-navigation-social-menu' => __( 'Social media menu', 'theme-menu' ) ) );
+    
+};
+
+// Register stylesheets in use
 function goalpioneers_register_styles() 
 {
 
@@ -32,27 +41,27 @@ function goalpioneers_register_styles()
 
 };
 
+//
 function register_widget_init()
 {
-    register_sidebar(array(
-        'name' => 'footer-area',
-        'before_widget' => '<div class = "widgetizedArea">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-    ) );
+    register_sidebar(
+        array(
+            'name' => 'footer-area',
+            'before_widget' => '<div class = "widgetizedArea">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3>',
+            'after_title' => '</h3>',
+        ) 
+    );
 
 };
 
-function register_menus()
+$is_debugging = true;
+
+function getDebugState()
 {
-    register_nav_menus( array( 'ui-navigation-header-menu' => __( 'Header Main Area Menu', 'theme-menu' ),
-                               'ui-navigation-footer-menu' => __( 'Footer Main Area Menu', 'theme-menu' ),
-                               'ui-navigation-social-menu' => __( 'Social media menu', 'theme-menu' ) ) );
-    
-};
-
-
+    return $GLOBALS["is_debugging"];
+}
 
 
 // Setup Widget Areas

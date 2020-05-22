@@ -1,8 +1,7 @@
-<?php get_header(); ?>
-
-        <main> 
-                <section class="base-section" id="component-info-404"> 
-                        <div> 
+<section class="base-section" 
+         id="component-info-404"> 
+                        
+    <div> 
                                 <h1> 
                                         Side 404.         
                                 </h1>
@@ -20,12 +19,6 @@
                                                 Gå til Hjem.
                                         </a>
                                 </nav>
-                        </div>
+    </div>
 
-                </section>
-
-                
-        </main>
-
-<?php get_footer(); ?>
-    
+</section>

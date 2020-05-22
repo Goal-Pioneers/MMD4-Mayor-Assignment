@@ -1,3 +1,4 @@
+/**
 var componentSitemap = new Vue
 (
     {
@@ -13,4 +14,4 @@ var componentSitemap = new Vue
             
         }
     }
-)
+)*/

@@ -1,17 +1,8 @@
-header 
-{
-    display: block;
-}
 
 header .main-section 
 {
-    @extend .bg-dark;
-    display: grid;
-
-    grid-template-columns: auto;
-    grid-gap: 16px;
-
     align-items: center;
+    background-color: $secondary-color;
 }
 
 #header-navigation
@@ -19,22 +10,77 @@ header .main-section
     @extend .navbar;
     @extend .navbar-expand-lg;
     @extend .navbar-light;
+
     @extend .justify-content-center;
 }
-
 
 #header-navigation li 
 {
     @extend .mx-1;
+    @extend .my-2;
+}
+
+#header-navigation li a
+{
+    display: inline !important;
+    @extend .nav-link;
+}
+
+
+$breadcrumb-divider: quote(">");
+
+.component-navigation-breadcrumb
+{
+    background-color: $secondary-color;
 }
 
 .component-navigation-breadcrumb ol
 {
+    @extend .container;
     @extend .breadcrumb;
 
+    background-color: transparent !important;
 }
 
 .component-navigation-breadcrumb ol li 
 {
     @extend .breadcrumb-item;
+}
+
+.component-navigation-breadcrumb ol li::before
+{
+    color: white !important;
+}
+
+
+.component-navigation-breadcrumb ol li a
+{
+    text-decoration: none !important;       
+}
+
+.component-navigation-breadcrumb ol li .active-breadcrumb
+{
+    @extend .active;
+    text-decoration: none !important;
+    color:$color-4 !important;
+}
+
+.active-breadcrumb a, .active-breadcrumb a:hover, .active-breadcrumb a:active
+{
+    color:$color-3;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    #header-navigation li 
+    {
+        width: 100%;
+        
+        text-align: center;
+    }
+
+    #header-navigation li a
+    {
+    }
 }

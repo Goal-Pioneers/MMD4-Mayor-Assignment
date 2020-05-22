@@ -1,0 +1,84 @@
+#page-contact 
+{
+    @extend .container;
+}
+
+#page-contact h2
+{
+    text-align: center;
+}
+
+#page-contact .ui-container
+{
+    @extend .row;   
+}
+
+#page-contact .ui-container .message
+{
+    @extend .col-lg;
+    @extend .my-3;
+    @extend .mx-2;
+}
+
+#page-contact .ui-container .message p
+{
+    @extend .my-4;
+}
+
+
+
+#page-contact .contact-us-list 
+{
+    @extend .my-4;
+}
+
+
+#page-contact .ui-container .contact-us-form
+{
+    @extend .col-lg;
+    @extend .my-3;
+    
+    @extend .mx-2;
+}
+
+#page-contact .ui-container .contact-us-form span
+{
+    @extend .form-group;
+}
+
+#page-contact .ui-container .contact-us-form .wpcf7-text
+{
+    @extend .form-control;
+}
+
+#page-contact .ui-container .contact-us-form .wpcf7-submit
+{
+    @extend .btn;
+    @extend .btn-primary;
+}
+
+#page-contact .ui-container .contact-us-form .wpcf7-textarea
+{
+    @extend .form-control;
+}
+
+#page-contact .contact-us-list li
+{
+    @extend .my-1;
+}
+
+.mail 
+{
+    text-decoration: none !important;   
+    
+}
+
+.required
+{
+    font-weight: bold;
+}
+
+.highlight
+{
+    font-weight: bold;
+}

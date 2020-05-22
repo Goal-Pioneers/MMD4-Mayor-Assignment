@@ -6,7 +6,7 @@
 
 .cover-section
 {
-    @extend .bg-dark;
+    background-color: $secondary-color;
 }
 
 .cover-section h2 
@@ -127,9 +127,79 @@ p
     @extend .py-3;   
 }
 
+.listed li div
+{
+    position: relative;
+
+    width: 100%;
+    height: 100%;   
+}
+
+.articles-container img
+{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    top: 0px;
+
+    opacity: 0.65;
+}
+
+.listed li:hover img
+{
+    opacity: 0.45;
+
+}
+
+.listed li 
+{
+    background: rgb(242,116,5);
+    background: -moz-linear-gradient(128deg, rgba(242,116,5,1) 0%, rgba(191,66,21,1) 100%);
+    background: -webkit-linear-gradient(128deg, rgba(242,116,5,1) 0%, rgba(191,66,21,1) 100%);
+    background: linear-gradient(128deg, rgba(242,116,5,1) 0%, rgba(191,66,21,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f27405",endColorstr="#bf4215",GradientType=1); 
+}
+
+.articles-container .text 
+{
+    
+    @extend .py-4;
+    @extend .px-1;
+    position: absolute;
+
+    width: 100%;
+    height: 300px;
+
+    color: white;
+}
+
+.text h3
+{
+    
+    text-align: left !important;
+    @extend .mx-2;
+}
+
+.text p 
+{
+    
+    text-align: left !important;
+    @extend .mx-2;
+}
+
+
 .index-products-showcase
 {
+    @extend .container;
 
+}
+
+.index-products-showcase h2
+{
+    @extend .my-3;
 }
 
 .index-products-showcase ul 
@@ -140,7 +210,8 @@ p
 
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 32px;
 }
 
@@ -150,27 +221,33 @@ p
     margin: 0px;
 }
 
+.index-products-showcase ul li img
+{
+    object-fit: cover;
+}
+
+
 .product-container
 {
     @extend .py-3;
     @extend .px-2;
 
-    border: 1px solid black;
     display: grid;
 
     grid-template-rows: 200px auto auto;
     grid-gap: 8px;
 }
 
-.product-container h3 
+.product-container h3
 {
+    @extend .my-2;
     text-align: center;
 
 }
 
 .product-container p 
 {
-    text-align: center;
+    
     
 }
 
@@ -181,21 +258,32 @@ p
 }
 
 .image 
-{
-    border: 1px solid black;
-    background-color: gray;
+{   
     width: 100%;
     height: 100%;
 }
 
-.contact-us-list
+.page-generic-layout
 {
-    padding: 0px;
-    margin: 0px;
-
+    @extend .container;
 }
 
-.contact-us-list li 
+@media only screen and (max-width: 768px) {
+    .index-products-showcase ul 
+    {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+        
+        grid-gap: 32px;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px)
 {
-    list-style: none;
+    #news-component ul .listed
+    {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
 }

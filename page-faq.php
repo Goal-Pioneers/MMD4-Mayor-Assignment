@@ -1,10 +1,16 @@
 <?php get_header(); ?>
-        <main> 
-        
+        <main id="main-view"> 
+                <section id="faq">
+                        <h1> <?php the_title(); ?> </h1>
 
-        <?php 
-                require get_parent_theme_file_path('/include/templates/template-posts.php');
-        ?>
+                        <div> 
+                                <?php the_content(); ?>
+                        </div>
+
+                </section>
+                       
+        <script type="text/javascript" src="<?php echo get_template_directory_uri() . '/content/javascript/component/component-faq.js'; ?>">
+        </script>
 
         </main>
 

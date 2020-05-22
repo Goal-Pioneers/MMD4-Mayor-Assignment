@@ -1,34 +1,45 @@
 <?php get_header(); ?>
-        <main> 
-                <?php while( have_posts() ): ?>
-                        <?php 
-                            the_post();
-                        ?>
-                
-                        <?php 
-                                if( is_front_page() ):
-                        ?>
+
+                <main id="main-view"> 
+                                <?php if( is_404() ): ?>
+                                        <?php require get_parent_theme_file_path('/include/templates/page/component-404.php'); ?>
+                                <?php endif; ?>
                         
-                                <?php require get_parent_theme_file_path('/include/templates/frontpage/component-products.php'); ?>
-                                <?php require get_parent_theme_file_path('/include/templates/frontpage/component-services.php'); ?>
-                                
-                                <?php require get_parent_theme_file_path('/include/templates/frontpage/component-articles.php'); ?>
-                                <?php require get_parent_theme_file_path('/include/templates/frontpage/component-about-us.php'); ?>
-                                <?php require get_parent_theme_file_path('/include/templates/frontpage/component-contact.php'); ?>
+
+                        <?php while( have_posts() ): ?>
+                                <?php 
+                                        the_post();
+                                ?>
                         
-                        <?php 
-                                endif; 
-                        ?>
-                
+                                <?php 
+                                        // is frontpage
+                                ?>
+                                <?php 
+                                        if( is_front_page() ):
+                                ?>
+                                        <?php require get_parent_theme_file_path('/include/templates/specifics/frontpage/component-products.php'); ?>
+                                        <?php require get_parent_theme_file_path('/include/templates/specifics/frontpage/component-services.php'); ?>
+                                                
+                                        <?php require get_parent_theme_file_path('/include/templates/specifics/frontpage/component-articles.php'); ?>
+                                        <?php require get_parent_theme_file_path('/include/templates/specifics/frontpage/component-contact.php'); ?>
+                                <?php 
+                                        endif; 
+                                ?>
+
+                                <?php 
+                                        // is a post
+                                ?>
+
+                                <?php 
+                                        if( is_singular() && !is_front_page() ):
+                                ?>
+                                        <?php require get_parent_theme_file_path('/include/templates/post/component-layout.php'); ?>
+                                <?php endif; ?>
+
+                        <?php endwhile; ?>
+                </main>
                 
 
-                
-               
-
-                
-                
-                <?php endwhile; ?>
-        </main>
 
 <?php get_footer(); ?>
     

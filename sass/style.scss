@@ -1,40 +1,106 @@
+$color-1: #f28705;
+$color-2: #f27405;
+$color-3: #f25c05;
+$color-4: #bf4215;
+
 $primary-color: #6ad1ff !default;
 $secondary-color: #344656 !default;
+
 $background-color: #ecf0f1;
+
+$primary: $color-3;
+$secondary:  $color-3;
 
 $title_font: 'comfortaa', sans-serif;
 $body_font: 'open sans', sans-serif;
 
+html 
+{
+    height: 100%;
+}
+
 body 
 {
-    display: grid;
-
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-
-    background-color: $background-color;
-
-    grid-gap: 0px;
+    background-color: $secondary-color;
 
     margin: 0px;
     padding: 0px;
-
-    min-width: 100%;
 }
 
-@import './header.scss';
-@import './ui.scss';
+header 
+{
+    display: block;
+}
 
 main 
 {
     display: block;
 }
 
+footer 
+{
+    background-color: $secondary-color;
+}
+
+
+
+
+@import './base.scss';
+@import './header.scss';
+@import './ui.scss';
+
+@import './footer.scss';
+
+@import './heading.scss';
+@import './page.scss';
+
+#faq
+{
+    @extend .container;
+}
+
+#faq ul li 
+{
+    @extend .card-body;
+}
+
+
+#faq ul li h3
+{
+    @extend .py-3;
+    border-bottom:1px solid $secondary-color;
+}
+
+
+
+#faq ul li:hover h3 
+{
+    color: $color-2;
+    border-bottom:1px solid $color-2;
+}
+
+
+#faq ul li:hover
+{
+    cursor: pointer;
+}
+
+#faq ul li p
+{
+    @extend .card-text;
+    visibility: hidden;
+}
+
+.show p 
+{
+    visibility: visible !important;
+}
+
+
 #introduction-page-cover
 {
-    
-    @extend .bg-dark;
     position: relative;
+    background-color: $secondary-color;
 
     height: 500px;
 }
@@ -148,17 +214,28 @@ main
     background-color: white;
 }
 
- 
+.about-us
+{
+    @extend .container;
+}
 
-@import './footer.scss';
+.about-us h1 
+{
+    @extend .my-3;
+}
+
+.about-us p 
+{
+    @extend .my-3;
+}
+
+.grecaptcha-badge { visibility: hidden; }
+
 
 @import './components/contact-us.scss';
 
 @import './components/archive.scss';
 
 @import './components/404.scss';
-
-@import './heading.scss';
-@import './page.scss';
 
 @import './framework/bootstrap/bootstrap.scss';

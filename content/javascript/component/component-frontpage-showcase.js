@@ -1,4 +1,8 @@
-var componentFrontpageShowcase = new Vue
+
+var componentFrontpageShowcase = null;
+
+/** 
+new Vue
 (
     {
         el: '#component-frontpage-showcase',
@@ -50,4 +54,4 @@ var componentFrontpageShowcase = new Vue
             }
         }
     }
-)
+)*/
