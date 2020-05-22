@@ -1010,7 +1010,7 @@ pre code {
   overflow-y: scroll;
 }
 
-.container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact {
+.container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact, #component-archive-pages, #component-archive-posts {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -1018,22 +1018,22 @@ pre code {
   margin-left: auto;
 }
 @media (min-width: 576px) {
-  .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact {
+  .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact, #component-archive-pages, #component-archive-posts {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact {
+  .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact, #component-archive-pages, #component-archive-posts {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact {
+  .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact, #component-archive-pages, #component-archive-posts {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact {
+  .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact, #component-archive-pages, #component-archive-posts {
     max-width: 1140px;
   }
 }
@@ -1047,22 +1047,22 @@ pre code {
 }
 
 @media (min-width: 576px) {
-  .container-sm, .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact {
+  .container-sm, .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact, #component-archive-pages, #component-archive-posts {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact {
+  .container-md, .container-sm, .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact, #component-archive-pages, #component-archive-posts {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact {
+  .container-lg, .container-md, .container-sm, .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact, #component-archive-pages, #component-archive-posts {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact {
+  .container-xl, .container-lg, .container-md, .container-sm, .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact, #component-archive-pages, #component-archive-posts {
     max-width: 1140px;
   }
 }
@@ -4573,16 +4573,36 @@ input[type=button].btn-block {
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
-.navbar .container, .navbar .component-navigation-breadcrumb ol, .component-navigation-breadcrumb .navbar ol, .navbar .index-products-showcase, .navbar .page-generic-layout, .navbar #faq, .navbar #introduction-page-cover .elements, #introduction-page-cover .navbar .elements, .navbar .about-us, .navbar #page-contact,
+.navbar > .container-xl, .navbar #header-navigation > .container-xl, .navbar > .container-lg, .navbar #header-navigation > .container-lg, .navbar > .container-md, .navbar #header-navigation > .container-md, .navbar > .container-sm, .navbar #header-navigation > .container-sm, .navbar .container, .navbar #header-navigation .container, #header-navigation .navbar .container, .navbar .component-navigation-breadcrumb ol, .component-navigation-breadcrumb .navbar ol, .navbar #header-navigation .component-navigation-breadcrumb ol, #header-navigation .component-navigation-breadcrumb .navbar ol, .navbar .component-navigation-breadcrumb #header-navigation ol, .component-navigation-breadcrumb #header-navigation .navbar ol, .navbar .index-products-showcase, .navbar #header-navigation .index-products-showcase, #header-navigation .navbar .index-products-showcase, .navbar .page-generic-layout, .navbar #header-navigation .page-generic-layout, #header-navigation .navbar .page-generic-layout, .navbar #faq, .navbar #header-navigation #faq, #header-navigation .navbar #faq, .navbar #introduction-page-cover .elements, #introduction-page-cover .navbar .elements, .navbar #header-navigation #introduction-page-cover .elements, #header-navigation #introduction-page-cover .navbar .elements, .navbar #introduction-page-cover #header-navigation .elements, #introduction-page-cover #header-navigation .navbar .elements, .navbar .about-us, .navbar #header-navigation .about-us, #header-navigation .navbar .about-us, .navbar #page-contact, .navbar #header-navigation #page-contact, #header-navigation .navbar #page-contact, .navbar #component-archive-pages, .navbar #header-navigation #component-archive-pages, #header-navigation .navbar #component-archive-pages, .navbar #component-archive-posts, .navbar #header-navigation #component-archive-posts, #header-navigation .navbar #component-archive-posts,
 .navbar .container-fluid,
+.navbar #header-navigation .container-fluid,
+#header-navigation .navbar .container-fluid,
 .navbar .container-sm,
+.navbar #header-navigation .container-sm,
+#header-navigation .navbar .container-sm,
 .navbar .container-md,
+.navbar #header-navigation .container-md,
+#header-navigation .navbar .container-md,
 .navbar .container-lg,
-.navbar .container-xl, #header-navigation .container, #header-navigation .component-navigation-breadcrumb ol, .component-navigation-breadcrumb #header-navigation ol, #header-navigation .index-products-showcase, #header-navigation .page-generic-layout, #header-navigation #faq, #header-navigation #introduction-page-cover .elements, #introduction-page-cover #header-navigation .elements, #header-navigation .about-us, #header-navigation #page-contact,
+.navbar #header-navigation .container-lg,
+#header-navigation .navbar .container-lg,
+.navbar .container-xl,
+.navbar #header-navigation .container-xl,
+#header-navigation .navbar .container-xl, #header-navigation .navbar > .container-xl, #header-navigation > .container-xl, #header-navigation .navbar > .container-lg, #header-navigation > .container-lg, #header-navigation .navbar > .container-md, #header-navigation > .container-md, #header-navigation .navbar > .container-sm, #header-navigation > .container-sm, #header-navigation .navbar .container, .navbar #header-navigation .container, #header-navigation .container, #header-navigation .navbar .component-navigation-breadcrumb ol, .navbar .component-navigation-breadcrumb #header-navigation ol, #header-navigation .component-navigation-breadcrumb .navbar ol, .component-navigation-breadcrumb .navbar #header-navigation ol, #header-navigation .component-navigation-breadcrumb ol, .component-navigation-breadcrumb #header-navigation ol, #header-navigation .navbar .index-products-showcase, .navbar #header-navigation .index-products-showcase, #header-navigation .index-products-showcase, #header-navigation .navbar .page-generic-layout, .navbar #header-navigation .page-generic-layout, #header-navigation .page-generic-layout, #header-navigation .navbar #faq, .navbar #header-navigation #faq, #header-navigation #faq, #header-navigation .navbar #introduction-page-cover .elements, .navbar #introduction-page-cover #header-navigation .elements, #header-navigation #introduction-page-cover .navbar .elements, #introduction-page-cover .navbar #header-navigation .elements, #header-navigation #introduction-page-cover .elements, #introduction-page-cover #header-navigation .elements, #header-navigation .navbar .about-us, .navbar #header-navigation .about-us, #header-navigation .about-us, #header-navigation .navbar #page-contact, .navbar #header-navigation #page-contact, #header-navigation #page-contact, #header-navigation .navbar #component-archive-pages, .navbar #header-navigation #component-archive-pages, #header-navigation #component-archive-pages, #header-navigation .navbar #component-archive-posts, .navbar #header-navigation #component-archive-posts, #header-navigation #component-archive-posts,
+#header-navigation .navbar .container-fluid,
+.navbar #header-navigation .container-fluid,
 #header-navigation .container-fluid,
+#header-navigation .navbar .container-sm,
+.navbar #header-navigation .container-sm,
 #header-navigation .container-sm,
+#header-navigation .navbar .container-md,
+.navbar #header-navigation .container-md,
 #header-navigation .container-md,
+#header-navigation .navbar .container-lg,
+.navbar #header-navigation .container-lg,
 #header-navigation .container-lg,
+#header-navigation .navbar .container-xl,
+.navbar #header-navigation .container-xl,
 #header-navigation .container-xl {
   display: flex;
   flex-wrap: wrap;
@@ -4653,7 +4673,7 @@ input[type=button].btn-block {
 }
 
 @media (max-width: 575.98px) {
-  .navbar-expand-sm > .container, .component-navigation-breadcrumb .navbar-expand-sm > ol, .navbar-expand-sm > .index-products-showcase, .navbar-expand-sm > .page-generic-layout, .navbar-expand-sm > #faq, #introduction-page-cover .navbar-expand-sm > .elements, .navbar-expand-sm > .about-us, .navbar-expand-sm > #page-contact,
+  .navbar-expand-sm > .container, .component-navigation-breadcrumb .navbar-expand-sm > ol, .navbar-expand-sm > .index-products-showcase, .navbar-expand-sm > .page-generic-layout, .navbar-expand-sm > #faq, #introduction-page-cover .navbar-expand-sm > .elements, .navbar-expand-sm > .about-us, .navbar-expand-sm > #page-contact, .navbar-expand-sm > #component-archive-pages, .navbar-expand-sm > #component-archive-posts,
 .navbar-expand-sm > .container-fluid,
 .navbar-expand-sm > .container-sm,
 .navbar-expand-sm > .container-md,
@@ -4678,7 +4698,7 @@ input[type=button].btn-block {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-sm > .container, .component-navigation-breadcrumb .navbar-expand-sm > ol, .navbar-expand-sm > .index-products-showcase, .navbar-expand-sm > .page-generic-layout, .navbar-expand-sm > #faq, #introduction-page-cover .navbar-expand-sm > .elements, .navbar-expand-sm > .about-us, .navbar-expand-sm > #page-contact,
+  .navbar-expand-sm > .container, .component-navigation-breadcrumb .navbar-expand-sm > ol, .navbar-expand-sm > .index-products-showcase, .navbar-expand-sm > .page-generic-layout, .navbar-expand-sm > #faq, #introduction-page-cover .navbar-expand-sm > .elements, .navbar-expand-sm > .about-us, .navbar-expand-sm > #page-contact, .navbar-expand-sm > #component-archive-pages, .navbar-expand-sm > #component-archive-posts,
 .navbar-expand-sm > .container-fluid,
 .navbar-expand-sm > .container-sm,
 .navbar-expand-sm > .container-md,
@@ -4695,7 +4715,7 @@ input[type=button].btn-block {
   }
 }
 @media (max-width: 767.98px) {
-  .navbar-expand-md > .container, .component-navigation-breadcrumb .navbar-expand-md > ol, .navbar-expand-md > .index-products-showcase, .navbar-expand-md > .page-generic-layout, .navbar-expand-md > #faq, #introduction-page-cover .navbar-expand-md > .elements, .navbar-expand-md > .about-us, .navbar-expand-md > #page-contact,
+  .navbar-expand-md > .container, .component-navigation-breadcrumb .navbar-expand-md > ol, .navbar-expand-md > .index-products-showcase, .navbar-expand-md > .page-generic-layout, .navbar-expand-md > #faq, #introduction-page-cover .navbar-expand-md > .elements, .navbar-expand-md > .about-us, .navbar-expand-md > #page-contact, .navbar-expand-md > #component-archive-pages, .navbar-expand-md > #component-archive-posts,
 .navbar-expand-md > .container-fluid,
 .navbar-expand-md > .container-sm,
 .navbar-expand-md > .container-md,
@@ -4720,7 +4740,7 @@ input[type=button].btn-block {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-md > .container, .component-navigation-breadcrumb .navbar-expand-md > ol, .navbar-expand-md > .index-products-showcase, .navbar-expand-md > .page-generic-layout, .navbar-expand-md > #faq, #introduction-page-cover .navbar-expand-md > .elements, .navbar-expand-md > .about-us, .navbar-expand-md > #page-contact,
+  .navbar-expand-md > .container, .component-navigation-breadcrumb .navbar-expand-md > ol, .navbar-expand-md > .index-products-showcase, .navbar-expand-md > .page-generic-layout, .navbar-expand-md > #faq, #introduction-page-cover .navbar-expand-md > .elements, .navbar-expand-md > .about-us, .navbar-expand-md > #page-contact, .navbar-expand-md > #component-archive-pages, .navbar-expand-md > #component-archive-posts,
 .navbar-expand-md > .container-fluid,
 .navbar-expand-md > .container-sm,
 .navbar-expand-md > .container-md,
@@ -4737,7 +4757,7 @@ input[type=button].btn-block {
   }
 }
 @media (max-width: 991.98px) {
-  .navbar-expand-lg > .container, .navbar-expand-lg #header-navigation > .container, .component-navigation-breadcrumb .navbar-expand-lg > ol, .component-navigation-breadcrumb .navbar-expand-lg #header-navigation > ol, .navbar-expand-lg > .index-products-showcase, .navbar-expand-lg #header-navigation > .index-products-showcase, .navbar-expand-lg > .page-generic-layout, .navbar-expand-lg #header-navigation > .page-generic-layout, .navbar-expand-lg > #faq, .navbar-expand-lg #header-navigation > #faq, #introduction-page-cover .navbar-expand-lg > .elements, #introduction-page-cover .navbar-expand-lg #header-navigation > .elements, .navbar-expand-lg > .about-us, .navbar-expand-lg #header-navigation > .about-us, .navbar-expand-lg > #page-contact, .navbar-expand-lg #header-navigation > #page-contact,
+  .navbar-expand-lg > .container, .navbar-expand-lg #header-navigation > .container, .component-navigation-breadcrumb .navbar-expand-lg > ol, .component-navigation-breadcrumb .navbar-expand-lg #header-navigation > ol, .navbar-expand-lg > .index-products-showcase, .navbar-expand-lg #header-navigation > .index-products-showcase, .navbar-expand-lg > .page-generic-layout, .navbar-expand-lg #header-navigation > .page-generic-layout, .navbar-expand-lg > #faq, .navbar-expand-lg #header-navigation > #faq, #introduction-page-cover .navbar-expand-lg > .elements, #introduction-page-cover .navbar-expand-lg #header-navigation > .elements, .navbar-expand-lg > .about-us, .navbar-expand-lg #header-navigation > .about-us, .navbar-expand-lg > #page-contact, .navbar-expand-lg #header-navigation > #page-contact, .navbar-expand-lg > #component-archive-pages, .navbar-expand-lg #header-navigation > #component-archive-pages, .navbar-expand-lg > #component-archive-posts, .navbar-expand-lg #header-navigation > #component-archive-posts,
 .navbar-expand-lg > .container-fluid,
 .navbar-expand-lg #header-navigation > .container-fluid,
 .navbar-expand-lg > .container-sm,
@@ -4747,7 +4767,7 @@ input[type=button].btn-block {
 .navbar-expand-lg > .container-lg,
 .navbar-expand-lg #header-navigation > .container-lg,
 .navbar-expand-lg > .container-xl,
-.navbar-expand-lg #header-navigation > .container-xl, #header-navigation .navbar-expand-lg > .container, #header-navigation > .container, #header-navigation .component-navigation-breadcrumb .navbar-expand-lg > ol, .component-navigation-breadcrumb #header-navigation .navbar-expand-lg > ol, .component-navigation-breadcrumb #header-navigation > ol, #header-navigation .navbar-expand-lg > .index-products-showcase, #header-navigation > .index-products-showcase, #header-navigation .navbar-expand-lg > .page-generic-layout, #header-navigation > .page-generic-layout, #header-navigation .navbar-expand-lg > #faq, #header-navigation > #faq, #introduction-page-cover #header-navigation .navbar-expand-lg > .elements, #introduction-page-cover #header-navigation > .elements, #header-navigation .navbar-expand-lg > .about-us, #header-navigation > .about-us, #header-navigation .navbar-expand-lg > #page-contact, #header-navigation > #page-contact,
+.navbar-expand-lg #header-navigation > .container-xl, #header-navigation .navbar-expand-lg > .container, #header-navigation > .container, #header-navigation .component-navigation-breadcrumb .navbar-expand-lg > ol, .component-navigation-breadcrumb #header-navigation .navbar-expand-lg > ol, .component-navigation-breadcrumb #header-navigation > ol, #header-navigation .navbar-expand-lg > .index-products-showcase, #header-navigation > .index-products-showcase, #header-navigation .navbar-expand-lg > .page-generic-layout, #header-navigation > .page-generic-layout, #header-navigation .navbar-expand-lg > #faq, #header-navigation > #faq, #introduction-page-cover #header-navigation .navbar-expand-lg > .elements, #introduction-page-cover #header-navigation > .elements, #header-navigation .navbar-expand-lg > .about-us, #header-navigation > .about-us, #header-navigation .navbar-expand-lg > #page-contact, #header-navigation > #page-contact, #header-navigation .navbar-expand-lg > #component-archive-pages, #header-navigation > #component-archive-pages, #header-navigation .navbar-expand-lg > #component-archive-posts, #header-navigation > #component-archive-posts,
 #header-navigation .navbar-expand-lg > .container-fluid,
 #header-navigation > .container-fluid,
 #header-navigation .navbar-expand-lg > .container-sm,
@@ -4777,7 +4797,7 @@ input[type=button].btn-block {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-lg > .container, .navbar-expand-lg #header-navigation > .container, .component-navigation-breadcrumb .navbar-expand-lg > ol, .component-navigation-breadcrumb .navbar-expand-lg #header-navigation > ol, .navbar-expand-lg > .index-products-showcase, .navbar-expand-lg #header-navigation > .index-products-showcase, .navbar-expand-lg > .page-generic-layout, .navbar-expand-lg #header-navigation > .page-generic-layout, .navbar-expand-lg > #faq, .navbar-expand-lg #header-navigation > #faq, #introduction-page-cover .navbar-expand-lg > .elements, #introduction-page-cover .navbar-expand-lg #header-navigation > .elements, .navbar-expand-lg > .about-us, .navbar-expand-lg #header-navigation > .about-us, .navbar-expand-lg > #page-contact, .navbar-expand-lg #header-navigation > #page-contact,
+  .navbar-expand-lg > .container, .navbar-expand-lg #header-navigation > .container, .component-navigation-breadcrumb .navbar-expand-lg > ol, .component-navigation-breadcrumb .navbar-expand-lg #header-navigation > ol, .navbar-expand-lg > .index-products-showcase, .navbar-expand-lg #header-navigation > .index-products-showcase, .navbar-expand-lg > .page-generic-layout, .navbar-expand-lg #header-navigation > .page-generic-layout, .navbar-expand-lg > #faq, .navbar-expand-lg #header-navigation > #faq, #introduction-page-cover .navbar-expand-lg > .elements, #introduction-page-cover .navbar-expand-lg #header-navigation > .elements, .navbar-expand-lg > .about-us, .navbar-expand-lg #header-navigation > .about-us, .navbar-expand-lg > #page-contact, .navbar-expand-lg #header-navigation > #page-contact, .navbar-expand-lg > #component-archive-pages, .navbar-expand-lg #header-navigation > #component-archive-pages, .navbar-expand-lg > #component-archive-posts, .navbar-expand-lg #header-navigation > #component-archive-posts,
 .navbar-expand-lg > .container-fluid,
 .navbar-expand-lg #header-navigation > .container-fluid,
 .navbar-expand-lg > .container-sm,
@@ -4787,7 +4807,7 @@ input[type=button].btn-block {
 .navbar-expand-lg > .container-lg,
 .navbar-expand-lg #header-navigation > .container-lg,
 .navbar-expand-lg > .container-xl,
-.navbar-expand-lg #header-navigation > .container-xl, #header-navigation .navbar-expand-lg > .container, #header-navigation > .container, #header-navigation .component-navigation-breadcrumb .navbar-expand-lg > ol, .component-navigation-breadcrumb #header-navigation .navbar-expand-lg > ol, .component-navigation-breadcrumb #header-navigation > ol, #header-navigation .navbar-expand-lg > .index-products-showcase, #header-navigation > .index-products-showcase, #header-navigation .navbar-expand-lg > .page-generic-layout, #header-navigation > .page-generic-layout, #header-navigation .navbar-expand-lg > #faq, #header-navigation > #faq, #introduction-page-cover #header-navigation .navbar-expand-lg > .elements, #introduction-page-cover #header-navigation > .elements, #header-navigation .navbar-expand-lg > .about-us, #header-navigation > .about-us, #header-navigation .navbar-expand-lg > #page-contact, #header-navigation > #page-contact,
+.navbar-expand-lg #header-navigation > .container-xl, #header-navigation .navbar-expand-lg > .container, #header-navigation > .container, #header-navigation .component-navigation-breadcrumb .navbar-expand-lg > ol, .component-navigation-breadcrumb #header-navigation .navbar-expand-lg > ol, .component-navigation-breadcrumb #header-navigation > ol, #header-navigation .navbar-expand-lg > .index-products-showcase, #header-navigation > .index-products-showcase, #header-navigation .navbar-expand-lg > .page-generic-layout, #header-navigation > .page-generic-layout, #header-navigation .navbar-expand-lg > #faq, #header-navigation > #faq, #introduction-page-cover #header-navigation .navbar-expand-lg > .elements, #introduction-page-cover #header-navigation > .elements, #header-navigation .navbar-expand-lg > .about-us, #header-navigation > .about-us, #header-navigation .navbar-expand-lg > #page-contact, #header-navigation > #page-contact, #header-navigation .navbar-expand-lg > #component-archive-pages, #header-navigation > #component-archive-pages, #header-navigation .navbar-expand-lg > #component-archive-posts, #header-navigation > #component-archive-posts,
 #header-navigation .navbar-expand-lg > .container-fluid,
 #header-navigation > .container-fluid,
 #header-navigation .navbar-expand-lg > .container-sm,
@@ -4809,7 +4829,7 @@ input[type=button].btn-block {
   }
 }
 @media (max-width: 1199.98px) {
-  .navbar-expand-xl > .container, .component-navigation-breadcrumb .navbar-expand-xl > ol, .navbar-expand-xl > .index-products-showcase, .navbar-expand-xl > .page-generic-layout, .navbar-expand-xl > #faq, #introduction-page-cover .navbar-expand-xl > .elements, .navbar-expand-xl > .about-us, .navbar-expand-xl > #page-contact,
+  .navbar-expand-xl > .container, .component-navigation-breadcrumb .navbar-expand-xl > ol, .navbar-expand-xl > .index-products-showcase, .navbar-expand-xl > .page-generic-layout, .navbar-expand-xl > #faq, #introduction-page-cover .navbar-expand-xl > .elements, .navbar-expand-xl > .about-us, .navbar-expand-xl > #page-contact, .navbar-expand-xl > #component-archive-pages, .navbar-expand-xl > #component-archive-posts,
 .navbar-expand-xl > .container-fluid,
 .navbar-expand-xl > .container-sm,
 .navbar-expand-xl > .container-md,
@@ -4834,7 +4854,7 @@ input[type=button].btn-block {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-xl > .container, .component-navigation-breadcrumb .navbar-expand-xl > ol, .navbar-expand-xl > .index-products-showcase, .navbar-expand-xl > .page-generic-layout, .navbar-expand-xl > #faq, #introduction-page-cover .navbar-expand-xl > .elements, .navbar-expand-xl > .about-us, .navbar-expand-xl > #page-contact,
+  .navbar-expand-xl > .container, .component-navigation-breadcrumb .navbar-expand-xl > ol, .navbar-expand-xl > .index-products-showcase, .navbar-expand-xl > .page-generic-layout, .navbar-expand-xl > #faq, #introduction-page-cover .navbar-expand-xl > .elements, .navbar-expand-xl > .about-us, .navbar-expand-xl > #page-contact, .navbar-expand-xl > #component-archive-pages, .navbar-expand-xl > #component-archive-posts,
 .navbar-expand-xl > .container-fluid,
 .navbar-expand-xl > .container-sm,
 .navbar-expand-xl > .container-md,
@@ -4854,7 +4874,7 @@ input[type=button].btn-block {
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
-.navbar-expand > .container, .component-navigation-breadcrumb .navbar-expand > ol, .navbar-expand > .index-products-showcase, .navbar-expand > .page-generic-layout, .navbar-expand > #faq, #introduction-page-cover .navbar-expand > .elements, .navbar-expand > .about-us, .navbar-expand > #page-contact,
+.navbar-expand > .container, .component-navigation-breadcrumb .navbar-expand > ol, .navbar-expand > .index-products-showcase, .navbar-expand > .page-generic-layout, .navbar-expand > #faq, #introduction-page-cover .navbar-expand > .elements, .navbar-expand > .about-us, .navbar-expand > #page-contact, .navbar-expand > #component-archive-pages, .navbar-expand > #component-archive-posts,
 .navbar-expand > .container-fluid,
 .navbar-expand > .container-sm,
 .navbar-expand > .container-md,
@@ -4873,7 +4893,7 @@ input[type=button].btn-block {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
-.navbar-expand > .container, .component-navigation-breadcrumb .navbar-expand > ol, .navbar-expand > .index-products-showcase, .navbar-expand > .page-generic-layout, .navbar-expand > #faq, #introduction-page-cover .navbar-expand > .elements, .navbar-expand > .about-us, .navbar-expand > #page-contact,
+.navbar-expand > .container, .component-navigation-breadcrumb .navbar-expand > ol, .navbar-expand > .index-products-showcase, .navbar-expand > .page-generic-layout, .navbar-expand > #faq, #introduction-page-cover .navbar-expand > .elements, .navbar-expand > .about-us, .navbar-expand > #page-contact, .navbar-expand > #component-archive-pages, .navbar-expand > #component-archive-posts,
 .navbar-expand > .container-fluid,
 .navbar-expand > .container-sm,
 .navbar-expand > .container-md,
@@ -8242,7 +8262,9 @@ footer .main-section .widgetizedArea ul li,
 .my-2,
 #header-navigation li,
 h2,
-.product-container h3 {
+.product-container h3,
+#component-archive-pages ul li,
+#component-archive-posts ul li {
   margin-top: 0.5rem !important;
 }
 
@@ -8259,7 +8281,9 @@ h2,
 .my-2,
 #header-navigation li,
 h2,
-.product-container h3 {
+.product-container h3,
+#component-archive-pages ul li,
+#component-archive-posts ul li {
   margin-bottom: 0.5rem !important;
 }
 
@@ -10707,7 +10731,7 @@ h3 {
     min-width: 992px !important;
   }
 
-  .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact {
+  .container, .component-navigation-breadcrumb ol, .index-products-showcase, .page-generic-layout, #faq, #introduction-page-cover .elements, .about-us, #page-contact, #component-archive-pages, #component-archive-posts {
     min-width: 992px !important;
   }
 
