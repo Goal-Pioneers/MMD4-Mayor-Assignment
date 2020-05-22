@@ -1,11 +1,6 @@
 
 header .main-section 
 {
-    display: grid;
-
-    grid-template-columns: auto;
-    grid-gap: 16px;
-
     align-items: center;
     background-color: $secondary-color;
 }
@@ -15,13 +10,20 @@ header .main-section
     @extend .navbar;
     @extend .navbar-expand-lg;
     @extend .navbar-light;
+
     @extend .justify-content-center;
 }
-
 
 #header-navigation li 
 {
     @extend .mx-1;
+    @extend .my-2;
+}
+
+#header-navigation li a
+{
+    display: inline !important;
+    @extend .nav-link;
 }
 
 
@@ -67,4 +69,18 @@ $breadcrumb-divider: quote(">");
 {
     color:$color-3;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    #header-navigation li 
+    {
+        width: 100%;
+        
+        text-align: center;
+    }
+
+    #header-navigation li a
+    {
+    }
 }

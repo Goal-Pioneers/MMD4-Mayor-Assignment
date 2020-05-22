@@ -24,9 +24,34 @@
         <?php endif; ?>
     </head>
 
+    
+    <header id="header-dynamic-navigation" hidden> 
+        <div class="main-section">
+                <?php  
+                    if ( has_nav_menu( 'ui-navigation-header-menu' ) )
+                    {
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'ui-navigation-header-menu',
+                                'menu_id' => 'header-navigation',
+                                'menu_class' => 'nav',
+                                'item_spacing' => 'preserve',
+                                'walker' => new ui_menu_walker_header_walker()
+                            )
+                        );  
+                    }
+                ?>
+        </div>
+    </header>
+
     <body>
         <header id="header-static-navigation">
             <div class="main-section">
+                <!-- Logo -->
+                <div> 
+
+                </div>
+
                 <?php  
                     if ( has_nav_menu( 'ui-navigation-header-menu' ) )
                     {

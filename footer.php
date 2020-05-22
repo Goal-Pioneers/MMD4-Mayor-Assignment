@@ -28,24 +28,7 @@
         </div>
 
 
-        <div id="ui-footer-misc"> 
-            <ul>
-                    <li v-for="link in links">
-                        <a v-bind:href="link.uri"> 
-                            {{link.name}}
-                        </a>
-                    </li>
-            </ul>
-
-            <div id="ui-footer-copyright"> 
-                <p> 
-                    {{copyright.content}}
-                    {{copyright.year}}
-                    {{copyright.company}}
-                </p> 
-            </div>   
-
-        </div>
+      
     </footer>
 </body>
 

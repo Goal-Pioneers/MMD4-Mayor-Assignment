@@ -138,17 +138,13 @@ footer .main-section .widgetizedArea ul li {
   text-transform: capitalize;
 }
 
-.ui-social-navigation ul {
+#menu-social {
   display: flex;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-.ui-social-navigation ul li {
-  flex-wrap: wrap;
-}
-
-.ui-social-navigation ul li a {
+#menu-social li a {
   font-size: 28px !important;
 }
 
@@ -158,7 +154,7 @@ footer .main-section .widgetizedArea ul li {
 }
 
 .miscellaneous-menu .miscellaneous-button .miscellaneous-link {
-  font-size: 12px;
+  font-size: 28px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -7275,7 +7271,7 @@ button.bg-dark:focus {
   justify-content: flex-end !important;
 }
 
-.justify-content-center, #header-navigation, .ui-social-navigation ul {
+.justify-content-center, #header-navigation, #menu-social {
   justify-content: center !important;
 }
 
@@ -10688,4 +10684,4 @@ h3 {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css1.map */
