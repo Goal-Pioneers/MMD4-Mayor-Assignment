@@ -5,9 +5,9 @@
                                 the_post();
                         ?>
 
-                        <div> 
+                        <section class="base-section"> 
                                 <?php the_content(); ?>
-                        </div>
+                        </section>
 
                         <section class="base-section cover-section">
                                 <div id="component-archive-pages"> 
@@ -19,12 +19,12 @@
                                                 <?php 
                                                         $all = get_pages();
 
-                                                        foreach($all as &$current)
+                                                        foreach( $all as &$current )
                                                         {
                                                                 echo "<a href='" . $current ->guid . "'>";
-                                                                echo "<li>";
-                                                                echo $current->post_title;
-                                                                echo "</li>";
+                                                                        echo "<li>";
+                                                                                echo $current->post_title;
+                                                                        echo "</li>";
                                                                 echo "</a>";
                                                                 
                                                         }
@@ -34,26 +34,26 @@
                         </section>
                         
                         <section class="base-section"> 
-                        <div id="component-archive-posts"> 
-                                <h2> 
-                                        Arkiv - Post 
-                                </h2>
+                                <div id="component-archive-posts"> 
+                                        <h2> 
+                                                Arkiv - Post 
+                                        </h2>
 
-                                <ul> 
-                                        <?php 
-                                                $all = get_posts();
-                                                
-                                                foreach($all as &$current)
-                                                {
-                                                        echo "<a href='" . $current ->guid . "'>";
-                                                        echo "<li>";
-                                                        echo $current->post_title;
-                                                        echo "</li>";
-                                                        echo "</a>";
+                                        <ul> 
+                                                <?php 
+                                                        $all = get_posts();
                                                         
-                                                }
-                                                ?>
-                                </ul>
+                                                        foreach( $all as &$current )
+                                                        {
+                                                                echo "<a href='" . $current ->guid . "'>";
+                                                                        echo "<li>";
+                                                                                echo $current->post_title;
+                                                                        echo "</li>";
+                                                                echo "</a>";
+                                                                
+                                                        }
+                                                        ?>
+                                        </ul>
                                 </div>
 
                         </section>
