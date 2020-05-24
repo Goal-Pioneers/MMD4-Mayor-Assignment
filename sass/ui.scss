@@ -38,7 +38,7 @@
     right: 0px;
 }
 
-.go-to-top
+.ui-sidebar-button
 {
     @extend .my-4;
     width: 80px;
@@ -48,12 +48,13 @@
     background-color: $primary-color;
 }
 
-.go-to-top:hover 
+.ui-sidebar-button:hover 
 {
     background-color: $secondary-color;
     cursor: pointer;
 
 }
+
 
 .sidebar div span 
 {
