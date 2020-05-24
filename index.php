@@ -1,10 +1,8 @@
-<?php get_header(); ?>
-
+<?php get_header(); ?>        
                 <main id="main-view"> 
-                                <?php if( is_404() ): ?>
-                                        <?php require get_parent_theme_file_path('/include/templates/page/component-404.php'); ?>
-                                <?php endif; ?>
-                        
+                        <?php if( is_404() ): ?>
+                                <?php require get_parent_theme_file_path('/include/templates/page/component-404.php'); ?>
+                        <?php endif; ?>                
 
                         <?php while( have_posts() ): ?>
                                 <?php 
@@ -38,8 +36,5 @@
 
                         <?php endwhile; ?>
                 </main>
-                
-
-
 <?php get_footer(); ?>
     

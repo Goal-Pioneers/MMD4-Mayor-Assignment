@@ -1,5 +1,6 @@
 #component-archive-pages
 {
+    @extend .container;
 
 }
 
@@ -12,12 +13,13 @@
 #component-archive-pages ul li
 {
     @extend .list-group-item;
+    @extend .my-2;
     
 }
 
 #component-archive-posts
 {
-
+    @extend .container;
 }
 
 #component-archive-posts ul
@@ -29,5 +31,6 @@
 #component-archive-posts ul li
 {
     @extend .list-group-item;
+    @extend .my-2;
     
 }

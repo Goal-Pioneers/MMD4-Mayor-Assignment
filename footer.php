@@ -17,7 +17,7 @@
         </nav>
     <?php endif; ?>
 
-    <footer> 
+    <footer id="footer-area"> 
         <?php 
             wp_footer();
         ?>
@@ -26,8 +26,8 @@
             <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( "footer-area" ) ) : ?>
             <?php endif;?>
         </div>
-
-
+        
+        <?php get_sidebar(); ?>
       
     </footer>
 </body>

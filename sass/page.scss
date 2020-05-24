@@ -63,6 +63,7 @@ p
 
 #news-component
 {
+    @extend .py-4;
 
 }
 
@@ -97,7 +98,7 @@ p
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 
-    grid-gap: 16px;
+    grid-gap: 0px;
 }
 
 #news-component ul .listed li
@@ -108,12 +109,12 @@ p
 
 #news-component ul .listed li:nth-child(2) 
 {
-    background-color: gray;
+    
 }
 
 #news-component ul .listed li:nth-child(3) 
 {
-    background-color: gray;
+    
 }
 
 #news-component ul li
@@ -142,19 +143,26 @@ p
     width: 100%;
     height: 100%;
 
+    filter:grayscale(100%) opacity(65%);
+
     object-fit: cover;
     top: 0px;
 
-    opacity: 0.65;
+    animation-duration: 0.35s;
+
 }
 
 .listed li:hover img
 {
-    opacity: 0.45;
+    
+    filter:grayscale(100%) opacity(25%);
+    
+    animation-duration: 0.35s;
+    
 
 }
 
-.listed li 
+.listed .entity
 {
     background: rgb(242,116,5);
     background: -moz-linear-gradient(128deg, rgba(242,116,5,1) 0%, rgba(191,66,21,1) 100%);
@@ -223,7 +231,7 @@ p
 
 .index-products-showcase ul li img
 {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 
@@ -267,6 +275,57 @@ p
 {
     @extend .container;
 }
+
+.services
+{
+    @extend .container;
+    @extend .my-2;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 0px;
+}
+
+.service-card
+{
+    @extend .py-3;
+    @extend .px-2;
+
+}
+
+.service-card h3
+{
+    @extend .my-2;
+    @extend .mx-1;
+
+}
+
+.service-card p
+{
+    @extend .my-2;
+    @extend .mx-1;
+    
+}
+
+.service-card div 
+{
+    
+    @extend .my-4;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-card div a
+{
+    @extend .btn;
+    @extend .btn-primary;
+    
+}
+
 
 @media only screen and (max-width: 768px) {
     .index-products-showcase ul 
