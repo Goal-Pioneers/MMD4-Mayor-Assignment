@@ -276,6 +276,57 @@ p
     @extend .container;
 }
 
+.services
+{
+    @extend .container;
+    @extend .my-2;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 0px;
+}
+
+.service-card
+{
+    @extend .py-3;
+    @extend .px-2;
+
+}
+
+.service-card h3
+{
+    @extend .my-2;
+    @extend .mx-1;
+
+}
+
+.service-card p
+{
+    @extend .my-2;
+    @extend .mx-1;
+    
+}
+
+.service-card div 
+{
+    
+    @extend .my-4;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-card div a
+{
+    @extend .btn;
+    @extend .btn-primary;
+    
+}
+
+
 @media only screen and (max-width: 768px) {
     .index-products-showcase ul 
     {

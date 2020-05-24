@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php get_header(); ?> 
+<?php get_sidebar(); ?>
+
         <main id="main-view"> 
                 <?php 
                         $post = get_page_by_title('ydelser');
@@ -6,27 +8,34 @@
                         $children = get_children( $post->ID );
                 ?>
 
-                <?php if( !( $children == null ) ): ?>
-                        <?php $n = 0; ?>
+                <?php ?>
 
-                        <?php foreach( $children as &$child ): ?>
-                                <?php 
-                                
-                                ?>
-                                
-                                <li class=""> 
-                                        <a href="<?php echo get_post_permalink( $child->ID ); ?>">
-                                                <div class="">
-                                                        <?php if( $child->post_type == 'page' ): ?>
+                <section class="base-section"> 
+                        <?php echo the_content(); ?>
+                </section>
+
+                <?php ?>
+
+                <?php if( !( $children == null ) ): ?>
+                        <ul class="services"> 
+                                <?php foreach( $children as &$child ): ?>
+                                        <?php if( $child->post_type == 'page' ): ?>
+                                                <li class="service-card"> 
                                                                 <h3>
                                                                         <?php echo get_the_title( $child->ID ); ?> 
                                                                 </h3>
-                                                                
-                                                        <?php endif; ?>
-                                                </div>
-                                        </a>
-                                </li>
-                        <?php endforeach; ?>
+
+                                                                <p> <?php echo get_the_excerpt( $child->ID ); ?> </p>
+
+                                                                <div> 
+                                                                        <a href="<?php echo get_post_permalink( $child->ID ); ?>"> 
+                                                                                Læs mere om det
+                                                                        </a>
+                                                                </div>
+                                                </li>
+                                        <?php endif; ?>
+                                <?php endforeach; ?>
+                        </ul>
                 <?php endif; ?>
         </main>
 

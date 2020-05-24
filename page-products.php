@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php get_header(); ?> 
+<?php get_sidebar(); ?>
+
         <main id="main-view">  
                 <?php 
                         $post = get_page_by_title('produkter');
