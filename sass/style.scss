@@ -14,6 +14,16 @@ $secondary:  $color-3;
 $title_font: 'comfortaa', sans-serif;
 $body_font: 'open sans', sans-serif;
 
+.hide-on-desktop
+{
+    display:none;
+}
+
+.hide-on-mobile
+{
+    display: block;
+}
+
 html 
 {
     height: 100%;
@@ -237,5 +247,17 @@ footer
 @import './components/archive.scss';
 
 @import './components/404.scss';
+
+@media only screen and (max-width: 768px) {
+    .hide-on-desktop
+    {
+        display: block !important;
+    }
+
+    .hide-on-mobile
+    {
+        display: none !important;
+    }
+}
 
 @import './framework/bootstrap/bootstrap.scss';

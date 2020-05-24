@@ -13,6 +13,16 @@ function goToTopOfPage()
     //var header = document.getElementById('header-static-navigation');
 }
 
+function showUINavigation()
+{
+
+}
+
+function adjustLight()
+{
+    
+}
+
 var screenY = 0;
 
 window.onscroll = function()
