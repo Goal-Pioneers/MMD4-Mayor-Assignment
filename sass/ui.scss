@@ -20,3 +20,54 @@
 {
     @extend .nav-link;
 }
+
+.sidebar
+{
+    @extend .mx-3;
+    display: flex;
+
+    justify-content: end;
+    flex-direction: column;
+
+    position: fixed;
+    
+    height: 100%;
+    width: 80px;
+
+    top:0px;
+    right: 0px;
+}
+
+.go-to-top
+{
+    @extend .my-4;
+    width: 80px;
+    height: 80px;
+
+    border-radius: 100%;
+    background-color: $primary-color;
+}
+
+.go-to-top:hover 
+{
+    background-color: $secondary-color;
+    cursor: pointer;
+
+}
+
+.sidebar div span 
+{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar div span i
+{
+    color: white;
+    font-size: 40px;
+    
+}

@@ -72,6 +72,42 @@ header .main-section {
     text-align: center;
   }
 }
+.sidebar {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  width: 80px;
+  top: 0px;
+  right: 0px;
+}
+
+.go-to-top {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #6ad1ff;
+}
+
+.go-to-top:hover {
+  background-color: #344656;
+  cursor: pointer;
+}
+
+.sidebar div span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar div span i {
+  color: white;
+  font-size: 40px;
+}
+
 footer .main-section {
   width: 100%;
   padding-left: 64px;
@@ -8401,6 +8437,7 @@ h1,
 
 .mr-3,
 .mx-3,
+.sidebar,
 #component-info-404 div .options-menu a {
   margin-right: 1rem !important;
 }
@@ -8418,6 +8455,7 @@ h1,
 
 .ml-3,
 .mx-3,
+.sidebar,
 #component-info-404 div .options-menu a {
   margin-left: 1rem !important;
 }
@@ -8428,6 +8466,7 @@ h1,
 
 .mt-4,
 .my-4,
+.go-to-top,
 .service-card div,
 #page-contact .ui-container .message p,
 #page-contact .contact-us-list {
@@ -8441,6 +8480,7 @@ h1,
 
 .mb-4,
 .my-4,
+.go-to-top,
 .service-card div,
 #page-contact .ui-container .message p,
 #page-contact .contact-us-list {
