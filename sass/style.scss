@@ -53,6 +53,48 @@ footer
 }
 
 
+.page-products-page
+{
+    @extend .container;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    margin: 0px;
+    padding:0px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .page-products-page
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;            
+    }
+    
+}
+
+.page-product-element
+{
+    @extend .my-2;
+    display: grid;
+    
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-gap: 32px;
+}
+
+.product-text-container
+{
+    grid-column: span 2;
+}
+
+.page-product-element img 
+{
+    
+}
 
 
 @import './base.scss';
