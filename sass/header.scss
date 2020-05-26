@@ -94,8 +94,17 @@ $breadcrumb-divider: quote(">");
 
 #header-mobile-navigation .main-section
 {
+    @extend .py-4;
+
     height: 100%;
     width: 100%;
+}
+
+#header-mobile-navigation #header-navigation li
+{
+    @extend .py-3;
+
+
 }
 
 
