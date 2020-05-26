@@ -76,13 +76,13 @@ function getDebugState()
 function theme_scripts()
 {
     wp_enqueue_script( 'ui-scripts', 
-                        get_template_directory_uri() . './content/javascript/ui.js', 
+                        get_template_directory_uri() . '/content/javascript/ui.js', 
                         null, 
                         null, 
                         false );
 
      wp_enqueue_script( 'fontawesome', 
-                        get_template_directory_uri() . './content/libraries/fontawesome/js/all.js', 
+                        get_template_directory_uri() . '/content/libraries/fontawesome/js/all.js', 
                         null, 
                         null, 
                         false );
