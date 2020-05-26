@@ -29,12 +29,6 @@ function goToTopOfPageOrDown()
 }
 
 // Event
-function showUINavigation()
-{
-
-}
-
-// Event
 function adjustLight()
 {
 
