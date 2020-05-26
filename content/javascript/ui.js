@@ -1,14 +1,16 @@
-
+// Global Variables
 var screenY = 0;
 
 var goToTop = false;
 var goToBottom = true;
 
+// Event
 function goBack()
 {
     window.history.back();
 }
 
+// Event
 function goToTopOfPageOrDown()
 {
     const zero = 0;
@@ -25,17 +27,20 @@ function goToTopOfPageOrDown()
     }
 }
 
+// Event
 function showUINavigation()
 {
 
 }
 
+// Event
 function adjustLight()
 {
     
 }
 
-window.onscroll = function()
+// Event
+function onScrollEvent()
 {
     screenY = window.pageYOffset;
 
@@ -54,30 +59,7 @@ window.onscroll = function()
         this.goToTop = true;
         this.goToBottom = false;
     }
-    
-    
 }
-
-// Fix
-function fix_screen_issues()
-{
-    screen_min_height();
-}
-
-
-function screen_min_height()
-{
-    var window_height = window.innerHeight;
-    var static_header = document.getElementById('header-static-navigation');
-    var difference = window_height - static_header.clientHeight;
-
-    console.log(difference);
-
-    var main = document.getElementById('main-view');
-    main.style.minHeight = difference.toString() + "px";
-}
-
-fix_screen_issues();
 
 // Faq
 function showAnswer(element_id)
@@ -95,3 +77,45 @@ function showAnswer(element_id)
         element.className = '';
     }
 }
+
+// Fix
+function fix()
+{
+    // console.log("fix Called");
+    screen_min_height();
+
+    return "success";
+}
+
+function screen_min_height()
+{
+    var window_height = window.innerHeight;
+
+    // console.log({"window height:": window_height});
+
+    var static_header = document.getElementById('header-static-navigation');
+
+    var static_header_height = static_header.clientHeight;
+    //console.log({"Static Header height": static_header_height});
+
+    var difference = window_height - static_header_height;
+    //console.log({"difference": difference});
+
+    var main = document.getElementById('main-view');
+    main.style.minHeight = difference.toString() + "px";
+}
+
+// Action part of the script, adding events. etc. execute this.
+
+// Executes, when the page is done loading the elements
+document.addEventListener('DOMContentLoaded', 
+    function() 
+    {
+        fix();
+    }, 
+false );
+
+ window.onscroll = function()
+ {
+     onScrollEvent();
+ }
