@@ -17,6 +17,16 @@ function goalpioneers_theme_support()
     // Adds Support for wordpress to handle thumbnails
     add_theme_support( 'post-thumbnails' );
 
+    add_theme_support('custom-logo', array(
+        'height'      => 400,
+        'width'       => 400,
+        
+        'flex-height' => true,
+        'flex-width'  => true,
+
+        'header-text' => array( 'site-title', 'site-description' ) ) 
+    );
+
     // Registration
     register_menus();
 };
@@ -63,6 +73,22 @@ function getDebugState()
     return $GLOBALS["is_debugging"];
 }
 
+function theme_scripts()
+{
+    wp_enqueue_script( 'ui-scripts', 
+                        get_template_directory_uri() . './content/javascript/ui.js', 
+                        null, 
+                        null, 
+                        false );
+
+     wp_enqueue_script( 'fontawesome', 
+                        get_template_directory_uri() . './content/libraries/fontawesome/js/all.js', 
+                        null, 
+                        null, 
+                        false );
+
+}
+
 
 // Setup Widget Areas
 add_action('widgets_init', 'register_widget_init');
@@ -70,5 +96,6 @@ add_action('widgets_init', 'register_widget_init');
 add_action( 'after_setup_theme', 'goalpioneers_theme_support' );
 
 add_action( 'wp_enqueue_scripts', 'goalpioneers_register_styles' );
+add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 
 ?>
