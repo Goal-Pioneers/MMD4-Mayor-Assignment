@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 
-<html <?php language_attributes(); ?> id="view" >
+<html <?php language_attributes(); ?> id="view">
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
-
         <?php require get_parent_theme_file_path('/include/templates/generic/head.php'); ?>
 
         <?php if( is_front_page() ): ?>
@@ -24,7 +22,7 @@
         <?php endif; ?>
     </head>
 
-    <body>
+    <body onload="">
         <header id="header-static-navigation">
             <?php // Static header for desktops ?>
             <div class="main-section hide-on-mobile">
