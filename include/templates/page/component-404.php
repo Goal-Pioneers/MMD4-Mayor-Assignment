@@ -1,21 +1,21 @@
-<section class="base-section" 
-         id="component-info-404"> 
-                        
-    <div> 
-                                <h1> 
-                                        Side 404.         
+<section class="base-section"
+         id="component-info-404">
+
+    <div>
+                                <h1>
+                                        Side 404.
                                 </h1>
 
-                                <p> 
+                                <p>
                                         Vi kunne ikke finde indholdet du søgte desværre.
                                 </p>
 
-                                <nav  class="options-menu"> 
+                                <nav  class="options-menu">
                                         <a onclick="goBack();"> 
                                                 Gå tilbage.
                                         </a>
 
-                                        <a href="<?php echo home_url(); ?>"> 
+                                        <a href="<?php echo home_url(); ?>">
                                                 Gå til Hjem.
                                         </a>
                                 </nav>
