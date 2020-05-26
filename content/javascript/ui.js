@@ -4,7 +4,6 @@ var screenY = 0;
 var goToTop = false;
 var goToBottom = true;
 
-
 function goBack()
 {
     window.history.back();
