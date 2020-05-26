@@ -12,12 +12,6 @@
 
                         <ul class="page-products-page"> 
                                 <?php foreach( $children as &$child ): ?>
-                                        <?php 
-                                                if ( $n == 3 )
-                                                {
-                                                        break;
-                                                }
-                                        ?>
                                         
                                                 <li class=""> 
                                                         <a href="<?php echo get_post_permalink( $child->ID ); ?>">
@@ -37,7 +31,6 @@
                                                         </a>
                                                 </li>
 
-                                        <?php $n = $n + 1; ?>
                                 <?php endforeach; ?>
                         </ul>
                 <?php endif; ?>
