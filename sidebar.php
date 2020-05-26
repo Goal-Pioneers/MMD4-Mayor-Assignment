@@ -2,8 +2,7 @@
 
     <div class="sidebar"> 
         <div class="ui-sidebar-button hide-on-desktop" 
-             id="ui-action-show-menu" 
-             onclick="showUINavigation();"> 
+             id="ui-action-show-menu" onclick="mobileNavigation.changeState;"> 
             <span> 
                 <i class="fas fa-bars">
                 </i>

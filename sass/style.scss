@@ -152,12 +152,13 @@ footer
 #faq ul li p
 {
     @extend .card-text;
-    visibility: hidden;
+    display: none;
 }
 
 .show p 
 {
-    visibility: visible !important;
+    display: block !important;
+    
 }
 
 

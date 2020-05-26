@@ -31,7 +31,7 @@
 
     <?php // Header for mobile devices ?>
         <header id="header-mobile-navigation"
-                class="hide-on-desktop" v-bind:class="{ showMobileNavigation: showNavigation }">
+                class="hide-on-desktop" v-bind:class="{ 'showMobileNavigation': showNavigation }">
 
             <div class="main-section"> 
             <?php 
@@ -53,6 +53,9 @@
             </div>
 
         </header>
+        
+        <script src="<?php echo get_template_directory_uri() . '/content/javascript/components.js';  ?>"> 
+        </script>
         
         <?php get_sidebar(); ?>
 </body>
