@@ -2,6 +2,7 @@
 
 <html <?php language_attributes(); ?> id="view">
     <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <?php require get_parent_theme_file_path('/include/templates/generic/head.php'); ?>
 
         <?php if( is_front_page() ): ?>
@@ -60,10 +61,4 @@
             <?php if( ! is_front_page() ): ?>
                 <?php require get_parent_theme_file_path('/include/templates/header/breadcrumb.php'); ?>
             <?php endif; ?>
-        </header>
-
-        <?php // Header for mobile devices ?>
-        <header id="header-mobile-navigation"
-                class="hide-on-desktop">
-
         </header>

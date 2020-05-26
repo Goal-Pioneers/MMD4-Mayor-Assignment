@@ -71,6 +71,30 @@ $breadcrumb-divider: quote(">");
     font-weight: bold;
 }
 
+#header-mobile-navigation
+{
+    position: fixed;
+    
+    top: 0px;
+
+    width: 100%;
+    height: 100%;
+
+    transform: translate(0px, 100%);
+}
+
+.showMobileNavigation
+{
+    transform: translate(0px, 0px) !important;
+}
+
+#header-mobile-navigation .main-section
+{
+    height: 100%;
+    width: 100%;
+}
+
+
 @media only screen and (max-width: 768px) {
     
     #header-navigation li 
