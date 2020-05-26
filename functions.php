@@ -75,6 +75,25 @@ function getDebugState()
 
 function theme_scripts()
 {
+    
+    wp_enqueue_script( 'jquery-3.5.1', 
+                        get_template_directory_uri() . '/content/libraries/javascript/jquery-3.5.1.min.js', 
+                        null, 
+                        null, 
+                        false );
+    
+    wp_enqueue_script( 'popper',
+                        get_template_directory_uri() . '/content/libraries/javascript/popper.min.js', 
+                        null, 
+                        null, 
+                        false );
+
+    wp_enqueue_script( 'bootstrap',
+                        get_template_directory_uri() . '/content/libraries/javascript/bootstrap.min.js', 
+                        null, 
+                        null, 
+                        false );
+                        
     wp_enqueue_script( 'ui-scripts', 
                         get_template_directory_uri() . '/content/javascript/ui.js', 
                         null, 
