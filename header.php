@@ -5,7 +5,7 @@
         <?php require get_parent_theme_file_path('/include/templates/generic/head.php'); ?>
 
         <?php if( is_front_page() ): ?>
-            
+
         <?php endif; ?>
 
         <?php if( is_page() ): ?>
@@ -13,6 +13,8 @@
             <meta name="DC.title" content="<?php echo the_title(); ?>" />
             <meta name="DC.language" content="da" />
             <meta name="keywords" content="" />
+
+            <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
         <?php endif; ?>
 
         <?php if( is_404() ): ?>
@@ -20,6 +22,8 @@
             <meta name="description" content="Fejl 404." />
             <meta name="DC.language" content="da" />
         <?php endif; ?>
+
+        <script src="//rum-static.pingdom.net/pa-5ecd62cb8e83fa00150001aa.js" async></script>
     </head>
 
     <body onload="">
@@ -27,11 +31,11 @@
             <?php // Static header for desktops ?>
             <div class="main-section hide-on-mobile">
                 <!-- Logo -->
-                <div> 
+                <div>
 
                 </div>
 
-                <?php  
+                <?php
                     if ( has_nav_menu( 'ui-navigation-header-menu' ) )
                     {
                         wp_nav_menu(
@@ -42,15 +46,15 @@
                                 'item_spacing' => 'preserve',
                                 'walker' => new ui_menu_walker_header_walker()
                             )
-                        );  
+                        );
                     }
                 ?>
             </div>
-            
+
             <?php if( is_page() ): ?>
                 <?php require get_parent_theme_file_path('/include/templates/page/component-introduction.php'); ?>
             <?php endif;?>
-            
+
             <?php if( is_single() ): ?>
                 <?php require get_parent_theme_file_path('/include/templates/post/component-introduction.php'); ?>
             <?php endif; ?>
@@ -61,8 +65,7 @@
         </header>
 
         <?php // Header for mobile devices ?>
-        <header id="header-mobile-navigation" 
-                class="hide-on-desktop"> 
+        <header id="header-mobile-navigation"
+                class="hide-on-desktop">
 
         </header>
-        

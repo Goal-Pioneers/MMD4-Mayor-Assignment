@@ -7,7 +7,8 @@ var goToBottom = true;
 // Event
 function goBack()
 {
-    window.history.back();
+  console.log("GoBack is called");
+  window.history.back();
 }
 
 // Event
@@ -18,7 +19,7 @@ function goToTopOfPageOrDown()
     if( goToBottom )
     {
         var footer = document.getElementById('footer-area');
-        footer.scrollIntoView(); 
+        footer.scrollIntoView();
     }
 
     if( goToTop )
@@ -36,7 +37,7 @@ function showUINavigation()
 // Event
 function adjustLight()
 {
-    
+
 }
 
 // Event
@@ -65,14 +66,14 @@ function onScrollEvent()
 function showAnswer(element_id)
 {
     console.log("show answer called");
-    
+
     var element = document.getElementById(element_id);
 
     if(!element.classList.contains('show'))
     {
         element.className += 'show';
     }
-    else 
+    else
     {
         element.className = '';
     }
@@ -108,11 +109,11 @@ function screen_min_height()
 // Action part of the script, adding events. etc. execute this.
 
 // Executes, when the page is done loading the elements
-document.addEventListener('DOMContentLoaded', 
-    function() 
+document.addEventListener('DOMContentLoaded',
+    function()
     {
         fix();
-    }, 
+    },
 false );
 
  window.onscroll = function()
