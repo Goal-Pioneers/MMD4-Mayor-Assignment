@@ -49,6 +49,12 @@ function goalpioneers_register_styles()
                         null, 
                         null );
 
+    wp_enqueue_style( 'fonts', 
+                        get_template_directory_uri() . '/content/font/stylesheet.css', 
+                        null, 
+                        null, 
+                        null );
+
 };
 
 //
