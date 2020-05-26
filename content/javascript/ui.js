@@ -12,6 +12,8 @@ function goBack()
 
 function goToTopOfPageOrDown()
 {
+    const zero = 0;
+
     if( goToBottom )
     {
         var footer = document.getElementById('footer-area');
@@ -20,7 +22,7 @@ function goToTopOfPageOrDown()
 
     if( goToTop )
     {
-        window.scrollTo(0, 0);
+        window.scrollTo( zero, zero );
     }
 }
 
