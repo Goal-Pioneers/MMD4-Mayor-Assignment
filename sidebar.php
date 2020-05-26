@@ -30,7 +30,7 @@
 
         <div class="ui-sidebar-button" 
              id="ui-action-go-to-top" 
-             onclick="goToTopOfPage();"> 
+             onclick="goToTopOfPageOrDown();"> 
             <span> 
                 <i class="fas fa-chevron-down">
                 </i>

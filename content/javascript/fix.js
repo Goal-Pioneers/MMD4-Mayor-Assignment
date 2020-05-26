@@ -1,6 +1,5 @@
 function fix_screen_issues()
 {
-    console.log('called fix.js');
     screen_min_height();
 }
 
