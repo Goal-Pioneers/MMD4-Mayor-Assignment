@@ -22,8 +22,6 @@
             <meta name="description" content="Fejl 404." />
             <meta name="DC.language" content="da" />
         <?php endif; ?>
-
-        <script src="//rum-static.pingdom.net/pa-5ecd62cb8e83fa00150001aa.js" async></script>
     </head>
 
     <body onload="">
