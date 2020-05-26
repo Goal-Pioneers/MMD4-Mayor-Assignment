@@ -26,7 +26,7 @@
     @extend .mx-3;
     display: flex;
 
-    justify-content: end;
+    justify-content: flex-end;
     flex-direction: column;
 
     position: fixed;
@@ -41,16 +41,17 @@
 .ui-sidebar-button
 {
     @extend .my-4;
+
     width: 80px;
     height: 80px;
 
     border-radius: 100%;
-    background-color: $primary-color;
+    background-color: $color-2;
 }
 
 .ui-sidebar-button:hover 
 {
-    background-color: $secondary-color;
+    background-color: $primary-color;
     cursor: pointer;
 
 }
@@ -62,6 +63,7 @@
     height: 100%;
 
     display: flex;
+
     justify-content: center;
     align-items: center;
 }

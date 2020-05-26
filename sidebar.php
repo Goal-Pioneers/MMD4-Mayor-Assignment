@@ -10,7 +10,7 @@
             </span>
         </div>
 
-        <div class="ui-sidebar-button" 
+        <div class="ui-sidebar-button not-developed" 
              id="ui-action-question" 
              onclick=""> 
             <span> 
@@ -19,7 +19,7 @@
             </span>
         </div>
 
-        <div class="ui-sidebar-button" 
+        <div class="ui-sidebar-button not-developed" 
              id="ui-action-adjust-light" 
              onclick="adjustLight();"> 
             <span> 
