@@ -1,7 +1,6 @@
-    
-    <?php
+<?php
     if ( has_nav_menu( 'ui-navigation-social-menu' ) ): 
-    ?>
+?>
         <nav class="ui-social-navigation"> 
                     <?php 
                             wp_nav_menu(
@@ -15,7 +14,7 @@
                         
                     ?>
         </nav>
-    <?php endif; ?>
+<?php endif; ?>
 
     <footer id="footer-area"> 
         <?php 
@@ -58,6 +57,32 @@
         </script>
         
         <?php get_sidebar(); ?>
+
+        <header id="header-dynamic-desktop">
+            <?php // Static header for desktops ?>
+            <div class="main-section hide-on-mobile">
+                <!-- Logo -->
+                <div>
+
+                </div>
+
+                <?php
+                    if ( has_nav_menu( 'ui-navigation-header-menu' ) )
+                    {
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'ui-navigation-header-menu',
+                                'menu_id' => 'header-navigation',
+                                'menu_class' => 'nav',
+                                'item_spacing' => 'preserve',
+                                'walker' => new ui_menu_walker_header_walker()
+                            )
+                        );
+                    }
+                ?>
+            </div>
+
+        </header>
 </body>
 
 </html>
