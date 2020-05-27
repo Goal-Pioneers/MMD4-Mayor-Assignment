@@ -126,6 +126,10 @@ $breadcrumb-divider: quote(">");
     background-color: rgba($color: $secondary-color, $alpha: 0.95);
 }
 
+#wpadminbar
+{
+    display: none;
+}
 
 @media only screen and (max-width: 768px) {
     

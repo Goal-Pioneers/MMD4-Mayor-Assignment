@@ -57,6 +57,7 @@ function goalpioneers_register_styles()
                         null,
                         null );
 
+
 };
 
 //
@@ -119,7 +120,8 @@ function theme_scripts()
                         null,
                         null,
                         false );
-
+    
+    remove_action('wp_head', '_admin_bar_bump_cb');
 }
 
 
