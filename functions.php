@@ -101,12 +101,12 @@ function theme_scripts()
                         null,
                         null,
                         false );
-/*
+
     wp_enqueue_script( 'vue',
                         get_template_directory_uri() . '/content/libraries/javascript/vue.min.js',
                         null,
                         null,
-                        false ); */
+                        false ); 
 
     wp_enqueue_script( 'ui-scripts',
                         get_template_directory_uri() . '/content/javascript/ui.js',

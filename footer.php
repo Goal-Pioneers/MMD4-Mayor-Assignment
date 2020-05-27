@@ -53,14 +53,11 @@
 
         </header>
         
-        <script src="<?php echo get_template_directory_uri() . '/content/javascript/components.js';  ?>"> 
-        </script>
-        
         <?php get_sidebar(); ?>
 
-        <header id="header-dynamic-desktop">
+        <header id="header-dynamic-desktop" class="hide-on-mobile" v-bind:class="{ 'showDynamicDesktop' : showNavigation }">
             <?php // Static header for desktops ?>
-            <div class="main-section hide-on-mobile">
+            <div class="main-section">
                 <!-- Logo -->
                 <div>
 
@@ -83,6 +80,9 @@
             </div>
 
         </header>
+
+        <script src="<?php echo get_template_directory_uri() . '/content/javascript/components.js';  ?>"> 
+        </script>
 </body>
 
 </html>

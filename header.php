@@ -2,7 +2,6 @@
 
 <html <?php language_attributes(); ?> id="view">
     <head>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <?php require get_parent_theme_file_path('/include/templates/generic/head.php'); ?>
 
         <?php if( is_front_page() ): ?>
@@ -14,8 +13,6 @@
             <meta name="DC.title" content="<?php echo the_title(); ?>" />
             <meta name="DC.language" content="da" />
             <meta name="keywords" content="" />
-
-            <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
         <?php endif; ?>
 
         <?php if( is_404() ): ?>
