@@ -57,6 +57,7 @@ function goalpioneers_register_styles()
                         null,
                         null );
 
+
 };
 
 //
@@ -101,12 +102,12 @@ function theme_scripts()
                         null,
                         null,
                         false );
-/*
+
     wp_enqueue_script( 'vue',
                         get_template_directory_uri() . '/content/libraries/javascript/vue.min.js',
                         null,
                         null,
-                        false ); */
+                        false ); 
 
     wp_enqueue_script( 'ui-scripts',
                         get_template_directory_uri() . '/content/javascript/ui.js',
@@ -119,7 +120,8 @@ function theme_scripts()
                         null,
                         null,
                         false );
-
+    
+    remove_action('wp_head', '_admin_bar_bump_cb');
 }
 
 

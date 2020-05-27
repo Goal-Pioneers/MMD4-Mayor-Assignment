@@ -103,10 +103,33 @@ $breadcrumb-divider: quote(">");
 #header-mobile-navigation #header-navigation li
 {
     @extend .py-3;
-
-
 }
 
+#header-dynamic-desktop
+{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    
+    transform: translate(0px, -100%);
+    transition-duration: 400ms;
+}
+
+.showDynamicDesktop
+{
+    transform: translate(0px, 0px) !important;
+    transition-duration: 400ms;
+}
+
+#header-dynamic-desktop .main-section
+{
+    background-color: rgba($color: $secondary-color, $alpha: 0.95);
+}
+
+#wpadminbar
+{
+    display: none;
+}
 
 @media only screen and (max-width: 768px) {
     

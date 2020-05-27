@@ -43,16 +43,34 @@ function onScrollEvent()
 
     var mid = size/2;
 
-    if(screenY < mid)
+    if( screenY < mid )
     {
         this.goToBottom = true;
         this.goToTop = false;
     }
 
-    if(screenY > mid)
+    if( screenY > mid )
     {
         this.goToTop = true;
         this.goToBottom = false;
+    }
+
+    if( screenY > 500 )
+    {
+        if( desktopDynamicNavigation.isHidden )
+        {
+            console.log("Is hidden -> Show");
+            desktopDynamicNavigation.changeState;
+        }
+    }
+    else 
+    {
+        if( desktopDynamicNavigation.currentState )
+        {
+            
+            console.log("Is shown -> Hide");
+            desktopDynamicNavigation.changeState;
+        }
     }
 }
 
