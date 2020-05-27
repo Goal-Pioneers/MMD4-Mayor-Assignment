@@ -22,6 +22,12 @@
                                                                     Kontakt os
                                                             </a>
                                             <?php endif; ?>
+
+                                            <?php if( get_field('shortcut-feedback')): ?> 
+                                                            <a href="<?php the_field('shortcut-feedback') ?>" class="short-button"> 
+                                                                    feedback
+                                                            </a>
+                                            <?php endif; ?>
                                     </div>
 
                                 </div>
