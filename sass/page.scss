@@ -47,7 +47,11 @@ section h2
 {
     @extend .px-3;
     margin: 0px;
-    
+}
+
+.shortcuts ul li a
+{
+@extend .my-2;
 }
 
 .shortcut-section p 
