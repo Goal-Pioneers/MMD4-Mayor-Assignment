@@ -18,14 +18,24 @@
                                             <p class="description"><?php echo get_bloginfo('description'); ?></p>
                                             
                                             <?php if( get_field('shortcut-contact')): ?> 
-                                                            <a href="<?php the_field('shortcut-contact') ?>" class="short-button"> 
-                                                                    Kontakt os
+                                                            <a href="<?php the_field('shortcut-contact') ?>" 
+                                                               class="short-button"> 
+                                                               <?php if( get_field( 'shortcut-contact-title' ) ): ?>
+                                                                    <?php the_field('shortcut-contact-title'); ?>
+                                                               <?php else: ?>
+                                                                    Contact
+                                                               <?php endif; ?>
                                                             </a>
                                             <?php endif; ?>
 
                                             <?php if( get_field('shortcut-feedback')): ?> 
-                                                            <a href="<?php the_field('shortcut-feedback') ?>" class="short-button"> 
-                                                                    feedback
+                                                            <a href="<?php the_field('shortcut-feedback') ?>" 
+                                                               class="short-button">
+                                                               <?php if( get_field( 'shortcut-feedback-title' ) ): ?> 
+                                                                    <?php the_field('shortcut-feedback-title') ?>
+                                                                <?php else: ?>
+                                                                    Feedback
+                                                               <?php endif; ?>
                                                             </a>
                                             <?php endif; ?>
                                     </div>

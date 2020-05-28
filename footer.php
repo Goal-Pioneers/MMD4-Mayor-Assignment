@@ -1,6 +1,6 @@
-<?php
-    if ( has_nav_menu( 'ui-navigation-social-menu' ) ): 
-?>
+    <?php
+        if ( has_nav_menu( 'ui-navigation-social-menu' ) ): 
+    ?>
         <nav class="ui-social-navigation"> 
                     <?php 
                             wp_nav_menu(
@@ -14,27 +14,25 @@
                         
                     ?>
         </nav>
-<?php endif; ?>
+    <?php endif; ?>
 
     <footer id="footer-area"> 
         <?php 
             wp_footer();
         ?>
-
         <div class="main-section"> 
             <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( "footer-area" ) ) : ?>
             <?php endif;?>
-        </div>
-      
+        </div>      
     </footer>
 
     <?php // Header for mobile devices ?>
-        <header id="header-mobile-navigation"
-                class="hide-on-desktop" v-bind:class="{ 'showMobileNavigation': showNavigation }">
+    <header id="header-mobile-navigation"
+            class="hide-on-desktop" 
+            v-bind:class="{ 'showMobileNavigation': showNavigation }">
 
-            <div class="main-section"> 
+        <div class="main-section"> 
             <?php 
-            
                 if ( has_nav_menu( 'ui-navigation-header-menu' ) )
                 {
                     wp_nav_menu(
@@ -47,42 +45,42 @@
                         )
                     );
                 }
-
-                ?>
-            </div>
-
-        </header>
+            ?>
+        </div>
+    </header>
         
-        <?php get_sidebar(); ?>
+    <header id="header-dynamic-desktop" 
+            class="hide-on-mobile" 
+            v-bind:class="{ 'showDynamicDesktop' : showNavigation }">
+        <?php // Static header for desktops ?>
 
-        <header id="header-dynamic-desktop" class="hide-on-mobile" v-bind:class="{ 'showDynamicDesktop' : showNavigation }">
-            <?php // Static header for desktops ?>
-            <div class="main-section">
+        <div class="main-section">
                 <!-- Logo -->
-                <div>
+            <div>
 
-                </div>
-
-                <?php
-                    if ( has_nav_menu( 'ui-navigation-header-menu' ) )
-                    {
-                        wp_nav_menu(
-                            array(
-                                'theme_location' => 'ui-navigation-header-menu',
-                                'menu_id' => 'header-navigation',
-                                'menu_class' => 'nav',
-                                'item_spacing' => 'preserve',
-                                'walker' => new ui_menu_walker_header_walker()
-                            )
-                        );
-                    }
-                ?>
             </div>
 
-        </header>
+            <?php
+                if ( has_nav_menu( 'ui-navigation-header-menu' ) )
+                {
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'ui-navigation-header-menu',
+                            'menu_id' => 'header-navigation',
+                            'menu_class' => 'nav',
+                            'item_spacing' => 'preserve',
+                            'walker' => new ui_menu_walker_header_walker()
+                        )
+                    );
+                }
+            ?>
+        </div>
+    </header>
 
-        <script src="<?php echo get_template_directory_uri() . '/content/javascript/components.js';  ?>"> 
-        </script>
+    <?php get_sidebar(); ?>
+
+    <script src="<?php echo get_template_directory_uri() . '/content/javascript/components.js'; ?>"> 
+    </script>
 </body>
 
 </html>
