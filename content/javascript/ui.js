@@ -43,23 +43,36 @@ function onScrollEvent()
 
     var mid = size/2;
 
+    var hideClass = 'hide-object';
+
+    var upArrow = document.getElementById('ui-state-arrow-up');
+    var downArrow = document.getElementById('ui-state-arrow-down');
+
+    
+    upArrow.classList.remove(hideClass);
+    downArrow.classList.remove(hideClass);
+
+
     if( screenY < mid )
     {
         this.goToBottom = true;
         this.goToTop = false;
+
+        upArrow.className += ' ' + hideClass;
     }
 
     if( screenY > mid )
     {
         this.goToTop = true;
         this.goToBottom = false;
+
+        downArrow.className += ' ' + hideClass;
     }
 
     if( screenY > 500 )
     {
         if( desktopDynamicNavigation.isHidden )
         {
-            console.log("Is hidden -> Show");
             desktopDynamicNavigation.changeState;
         }
     }
@@ -67,8 +80,6 @@ function onScrollEvent()
     {
         if( desktopDynamicNavigation.currentState )
         {
-            
-            console.log("Is shown -> Hide");
             desktopDynamicNavigation.changeState;
         }
     }
