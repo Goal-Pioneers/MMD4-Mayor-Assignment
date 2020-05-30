@@ -109,12 +109,6 @@ function theme_scripts()
                         null,
                         false ); 
 
-    wp_enqueue_script( 'ui-scripts',
-                        get_template_directory_uri() . '/content/javascript/ui.js',
-                        null,
-                        null,
-                        false );
-
      wp_enqueue_script( 'fontawesome',
                         get_template_directory_uri() . '/content/libraries/fontawesome/js/all.js',
                         null,
