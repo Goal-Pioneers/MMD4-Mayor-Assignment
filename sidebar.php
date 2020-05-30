@@ -30,7 +30,8 @@
         <div class="ui-sidebar-button" 
              id="ui-action-go-to-top" 
              onclick="goToTopOfPageOrDown();">  
-            <span id="ui-state-arrow-up" class="hide-object"> 
+            <span id="ui-state-arrow-up" 
+                  class="hide-object"> 
                 <i class="fas fa-chevron-up">
                 </i>
             </span>
