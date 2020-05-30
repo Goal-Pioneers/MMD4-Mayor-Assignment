@@ -79,7 +79,7 @@
 
     <?php get_sidebar(); ?>
 
-    <script src="<?php echo get_template_directory_uri() . '/content/javascript/components.js'; ?>"> 
+    <script async src="<?php echo get_template_directory_uri() . '/content/javascript/components.js'; ?>"> 
     </script>
 </body>
 
