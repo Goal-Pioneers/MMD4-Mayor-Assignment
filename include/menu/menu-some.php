@@ -58,6 +58,12 @@ class ui_menu_walker_some_walker
             $output .= '<i class="fab fa-medium"></i>';
         }
 
+        if($parsed['host'] == 'github.com')
+        {
+            $applied = true;
+            $output .= '<i class="fab fa-github"></i>';
+        }
+
         if( $applied == false )
         {
             $output .= '<i class="fas fa-link"></i>';

@@ -142,8 +142,35 @@ footer .main-section .widgetizedArea ul li
     @extend .my-1;
 }
 
+#miscellaneous-navigation
+{
+    justify-content: center;
+}
 
-@media only screen and (max-width: 768px) {
+#miscellaneous-navigation li 
+{
+    @extend .my-1;
+    @extend .mx-2;
+    
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 768px) 
+{
+    #miscellaneous-navigation
+    {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    #miscellaneous-navigation li 
+    {
+        text-align: center;
+        width: 100%;
+    }
+
+
     
     
     footer .main-section .widgetizedArea ul

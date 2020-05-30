@@ -37,7 +37,8 @@ function register_menus()
 {
     register_nav_menus( array( 'ui-navigation-header-menu' => __( 'Header Main Area Menu', 'theme-menu' ),
                                'ui-navigation-footer-menu' => __( 'Footer Main Area Menu', 'theme-menu' ),
-                               'ui-navigation-social-menu' => __( 'Social media menu', 'theme-menu' ) ) );
+                               'ui-navigation-social-menu' => __( 'Social media menu', 'theme-menu' ),
+                               'ui-navigation-misc-menu' => __( 'Misc menu', 'theme-menu' ) ) );
 
 };
 
