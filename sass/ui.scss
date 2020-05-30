@@ -47,6 +47,8 @@
 
     border-radius: 100%;
     background-color: $color-2;
+    
+    pointer-events: visibleFill;
 }
 
 .ui-sidebar-button:hover 
@@ -56,6 +58,10 @@
 
 }
 
+.sidebar 
+{
+    pointer-events: none;
+}
 
 .sidebar div span 
 {

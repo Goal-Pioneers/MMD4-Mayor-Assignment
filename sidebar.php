@@ -1,6 +1,6 @@
 <?php ?>
 
-    <div class="sidebar"> 
+    <div class="sidebar" aria-hidden="true"> 
         <div class="ui-sidebar-button hide-on-desktop" 
              id="ui-action-show-menu" onclick="mobileNavigation.changeState;"> 
             <span> 
