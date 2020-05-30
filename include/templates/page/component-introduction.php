@@ -14,6 +14,7 @@
                             <div class="elements"> 
                                 <div class="introduction aligns-items-center">
                                     <div class="header">
+                                    
                                             <h1 class="title"><?php echo get_bloginfo('name'); ?></h1>
                                             <p class="description"><?php echo get_bloginfo('description'); ?></p>
                                             
@@ -65,3 +66,4 @@
                 <?php endif; ?>
 
             <?php endwhile;?>            
+            <?php wp_reset_postdata(); ?>

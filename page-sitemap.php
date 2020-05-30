@@ -19,7 +19,6 @@
                                         <ul> 
                                                 <?php 
                                                         $all = get_pages();
-
                                                         foreach( $all as &$current )
                                                         {
                                                                 echo "<a href='" . $current ->guid . "'>";
@@ -29,6 +28,7 @@
                                                                 echo "</a>";
                                                                 
                                                         }
+                                                        wp_reset_postdata();
                                                 ?>
                                         </ul>
                                 </div> 
@@ -43,16 +43,15 @@
                                         <ul> 
                                                 <?php 
                                                         $all = get_posts();
-                                                        
                                                         foreach( $all as &$current )
                                                         {
                                                                 echo "<a href='" . $current ->guid . "'>";
                                                                         echo "<li>";
                                                                                 echo $current->post_title;
                                                                         echo "</li>";
-                                                                echo "</a>";
-                                                                
+                                                                echo "</a>";       
                                                         }
+                                                        wp_reset_postdata();
                                                         ?>
                                         </ul>
                                 </div>
@@ -60,7 +59,9 @@
                         </section>
                         
         
-                <?php endwhile; ?>
+                <?php endwhile; 
+                      wp_reset_postdata();
+                ?>
         </main>
 
 <?php get_footer(); ?>

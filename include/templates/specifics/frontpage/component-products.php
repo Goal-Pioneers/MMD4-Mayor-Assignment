@@ -39,6 +39,7 @@
                                 <?php $n = $n + 1; ?>
                         <?php endforeach; ?>
                 <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
         </ul>
 </section>
                 
