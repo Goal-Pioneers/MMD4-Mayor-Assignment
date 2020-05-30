@@ -88,10 +88,6 @@
     <script async src="<?php echo get_template_directory_uri() . '/content/libraries/javascript/popper.min.js' ?>"> 
     </script>
 
-    <script async src="<?php echo get_template_directory_uri() . '/content/libraries/javascript/jquery-3.5.1.min.js' ?>"> 
-    </script>
-
-
 </body>
 
 </html>
