@@ -1,0 +1,60 @@
+.ui-social-navigation ul
+{
+    @extend .my-3;
+
+    display: flex;
+    @extend .justify-content-center;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.ui-social-navigation ul li
+{
+    flex-wrap: wrap;
+}
+
+.ui-social-navigation ul li a
+{
+    font-size: 28px !important;
+}
+
+
+@media only screen and (max-width: 768px) 
+{
+    
+    .ui-social-navigation ul
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 24px;   
+    }
+
+    .ui-social-navigation ul li 
+    {
+
+    }
+
+    .ui-social-navigation ul li a 
+    {
+        
+        background-color: $secondary-color;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+
+        height: 80px;
+        width: 80px;
+
+        border-radius: 20px;
+    }
+
+    .ui-social-navigation ul li a svg 
+    {
+        height: 100%;
+        vertical-align: middle;
+
+    }
+}

@@ -93,25 +93,6 @@ footer .main-section .widgetizedArea ul li
     text-transform: capitalize;
 }
 
-.ui-social-navigation ul
-{
-    display: flex;
-    @extend .justify-content-center;
-
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
-.ui-social-navigation ul li
-{
-    flex-wrap: wrap;
-}
-
-.ui-social-navigation ul li a
-{
-    font-size: 28px !important;
-}
-
 #miscellaneous
 {
     display: flex;

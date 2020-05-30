@@ -93,8 +93,6 @@
         </div>
     </header>
 
-    <?php get_sidebar(); ?>
-
     <script src="<?php echo get_template_directory_uri() . '/content/javascript/components.js'; ?>"> 
     </script>
 
@@ -103,6 +101,9 @@
 
     <script async src="<?php echo get_template_directory_uri() . '/content/libraries/javascript/popper.min.js' ?>"> 
     </script>
+
+    
+<?php get_sidebar(); ?>
 
 </body>
 
