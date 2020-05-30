@@ -213,6 +213,7 @@ footer
     top: 0px;
 }
 
+
 .short-button
 {
     @extend .btn;
@@ -331,6 +332,11 @@ footer
         display: flex !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
+    }
+
+    #desktop-portal-navigation
+    {
+        display: none;
     }
 
     .shortcut-section .shortcuts ul li a

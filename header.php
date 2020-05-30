@@ -24,7 +24,6 @@
 
     <body onload="">
         <header id="header-static-navigation">
-        
             <?php // Static header for desktops ?>
             <div class="main-section hide-on-mobile">
                 <!-- Logo -->
