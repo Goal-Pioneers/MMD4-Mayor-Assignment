@@ -29,6 +29,7 @@
                 <?php endif; ?>
 
         <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
 </main>
 
 <?php get_footer(); ?>

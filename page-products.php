@@ -12,7 +12,6 @@
 
                         <ul class="page-products-page"> 
                                 <?php foreach( $children as &$child ): ?>
-                                        
                                                 <li class=""> 
                                                         <a href="<?php echo get_post_permalink( $child->ID ); ?>">
                                                                 <div class="page-product-element">
@@ -30,8 +29,9 @@
                                                                 </div>
                                                         </a>
                                                 </li>
-
-                                <?php endforeach; ?>
+                                <?php endforeach;
+                                      wp_reset_postdata(); 
+                                 ?>
                         </ul>
                 <?php endif; ?>
         </main>

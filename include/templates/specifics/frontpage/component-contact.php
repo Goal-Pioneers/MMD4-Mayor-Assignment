@@ -1,5 +1,3 @@
-
-<?php wp_reset_postdata(); ?>
 <section class="base-section shortcut-section"> 
         <h2> 
                 Hvad kan <?php echo get_bloginfo('name'); ?> gøre for dig ? 
