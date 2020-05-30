@@ -64,6 +64,12 @@ class ui_menu_walker_some_walker
             $output .= '<i class="fab fa-github"></i>';
         }
 
+        if($parsed['host'] == 'mastadon.social')
+        {
+            $applied = true;
+            $output .= '<i class="fab fa-mastodon"></i>';
+        }
+
         if( $applied == false )
         {
             $output .= '<i class="fas fa-link"></i>';
