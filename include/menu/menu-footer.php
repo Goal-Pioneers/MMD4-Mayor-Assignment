@@ -3,7 +3,11 @@
 class ui_menu_walker_footer_walker 
     extends Walker_Nav_Menu
 {
-    function start_el( &$output, $item, $depth=0, $args=array(), $id = 0 )
+    function start_el( &$output, 
+                       $item, 
+                       $depth=0, 
+                       $args=array(), 
+                       $id = 0 )
     {
         // Preparing variables
         // https://www.ibenic.com/how-to-create-wordpress-custom-menu-walker-nav-menu-class/
@@ -19,7 +23,9 @@ class ui_menu_walker_footer_walker
         if( $permalink && $permalink != '#' ) 
         {
             
-            if(in_array("menu-item-has-children", $item->classes, true))
+            if( in_array( "menu-item-has-children", 
+                $item->classes, 
+                true ) )
             {
                 $output .= "<a class='ui-menu-link' href='" . $permalink . "' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>";
             }
@@ -34,7 +40,9 @@ class ui_menu_walker_footer_walker
         }
         
         $output .= $title;
-        if( $description != '' && $depth == 0 ) 
+        
+        if( $description != '' && 
+            $depth == 0 ) 
         {
             $output .= '<small class="description">' . $description . '</small>';
         }
@@ -50,7 +58,9 @@ class ui_menu_walker_footer_walker
         
     }
     
-    function start_lvl( &$output, $depth = 0, $arg = Array() )
+    function start_lvl( &$output, 
+                        $depth = 0, 
+                        $arg = array() )
     {
         
         $output .= "\n<ul class='sub-menu'>\n";
@@ -58,7 +68,9 @@ class ui_menu_walker_footer_walker
         
     }
 
-    function end_lvl(&$output, $depth=0, $args=array()) 
+    function end_lvl( &$output, 
+                      $depth=0, 
+                      $args = array() ) 
     {
          
         $output .= "</div>\n";
