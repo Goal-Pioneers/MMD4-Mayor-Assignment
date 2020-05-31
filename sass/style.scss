@@ -167,39 +167,6 @@ footer
     height: 500px;
 }
 
-#introduction-page-cover .elements
-{
-    @extend .container;
-    height: 100% !important;
-}
-
-#introduction-page-cover .elements .introduction
-{
-    @extend .row;
-    @extend .h-100;
-    
-    align-content: center !important;
-}
-
-#introduction-page-cover .elements .introduction .header 
-{
-    @extend .col-12;
-    @extend .text-center;
-}
-
-#introduction-page-cover .elements .introduction .header .title
-{
-    @extend .font-weight-light;
-    color: white;
-    font-size: 3.0rem;
-}
-
-#introduction-page-cover .elements .introduction .header .description
-{
-    @extend .lead;
-    color: white;
-    font-size: 2.0rem;
-}
 
 .header-cover-image
 {
