@@ -1,17 +1,24 @@
-
-header .main-section 
+/* Desktop Header Navigation */
+// Static
+#header-static-navigation
 {
-    display: grid;
-    grid-template-columns: 100px auto;
-    background-color: $secondary-color;
+    
 }
 
-header .main-section .header-container
+#header-static-navigation .main-section
 {
-    display: flex;
-    align-items: center;
-
+    
 }
+
+/* Desktop Dynamic Navigation Header  */
+// On scroll
+
+/* Desktop Mobile Navigation  */
+// Pop up
+
+
+/** To be removed **/
+
 
 
 #header-navigation
