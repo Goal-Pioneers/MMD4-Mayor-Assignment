@@ -1,5 +1,3 @@
-
-
 footer .main-section
 {
     @extend .row;
@@ -117,7 +115,6 @@ footer .main-section .widgetizedArea ul li
     font-size: 12px;
 }
 
-
 footer .main-section .widgetizedArea ul li 
 {
     @extend .my-1;
@@ -136,7 +133,6 @@ footer .main-section .widgetizedArea ul li
     font-size: 14px;
 }
 
-
 @media only screen and (max-width: 768px) 
 {
     #miscellaneous-navigation
@@ -150,9 +146,6 @@ footer .main-section .widgetizedArea ul li
         text-align: center;
         width: 100%;
     }
-
-
-    
     
     footer .main-section .widgetizedArea ul
     {

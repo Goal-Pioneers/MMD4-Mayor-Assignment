@@ -1,0 +1,12 @@
+
+/* Removes the wordpress header menu, that's at the top of the page. When logged-in as admin or user. */ 
+#wpadminbar
+{
+    display: none;
+}
+
+/* Removal of components that isn't / hasn't been developed */
+.not-developed
+{
+    display: none !important;
+}
