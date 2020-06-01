@@ -10,3 +10,6 @@
 {
     display: none !important;
 }
+
+// Removes the capcha sign, that usually sits in the right cornor of the screen.
+.grecaptcha-badge { visibility: hidden; }
