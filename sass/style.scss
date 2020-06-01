@@ -31,6 +31,7 @@ $body_font: 'open sans', sans-serif;
 @import './components/404.scss';
 
 @import './some.scss';
+@import './settings.scss';
 
 .hide-on-desktop
 {
@@ -109,11 +110,6 @@ footer
     width: 100%;
 
     object-fit: contain;
-}
-
-.not-developed
-{
-    display: none !important;
 }
 
 #faq
