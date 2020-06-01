@@ -20,6 +20,12 @@
             <meta name="description" content="Fejl 404." />
             <meta name="DC.language" content="da" />
         <?php endif; ?>
+
+        
+        <?php 
+            require get_parent_theme_file_path('/include/analytics/google-analytics.php');
+            require get_parent_theme_file_path('/include/analytics/matomo-analytics.php');
+        ?>
     </head>
 
     <body onload="">
