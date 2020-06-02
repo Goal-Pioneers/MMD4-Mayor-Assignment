@@ -7,6 +7,49 @@
 
 #header-static-navigation .main-section
 {
+    @extend .px-2;
+    background-color: $secondary-color;
+    display: grid;
+
+    grid-template-columns: 140px auto;
+    grid-gap: 32px;   
+}
+
+#header-static-navigation .main-section
+{
+
+}
+
+#header-static-navigation .main-section .header-container .custom-logo-link img
+{
+    @extend .my-2;
+    @extend .mx-1;
+
+    max-width: 80px;
+    max-height: 80px;
+
+}
+
+#header-static-navigation .main-section .header-container
+{
+    display: flex;
+}
+
+#header-static-navigation .main-section .header-container:first-child
+{
+    @extend .justify-content-center;
+}
+
+#header-static-navigation .main-section .header-container:last-child
+{
+    @extend .justify-content-end;
+}
+
+
+#header-static-navigation .main-section .header-container:last-child .menu-header-main-container
+{
+    display: flex;
+    align-items: center;
     
 }
 
@@ -64,6 +107,22 @@
 
     height: 100%;
     width: 100%;
+}
+
+
+#header-mobile-navigation .main-section .header-container:first-child
+{
+    @extend .my-3;
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+#header-mobile-navigation .main-section .header-container .custom-logo-link img
+{
+    width: 200px;
+    height: 200px;    
 }
 
 /** To be removed **/

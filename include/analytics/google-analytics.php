@@ -2,7 +2,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160026683-1">
 </script>
 
-<script async>
+<script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
