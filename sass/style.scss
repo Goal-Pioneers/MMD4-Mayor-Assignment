@@ -8,8 +8,8 @@ $secondary-color: #344656 !default;
 
 $background-color: #ecf0f1;
 
-$primary: $color-3;
-$secondary:  $color-3;
+$primary  : $color-3;
+$secondary: $color-3;
 
 $title_font: 'comfortaa', sans-serif;
 $body_font: 'open sans', sans-serif;
@@ -23,8 +23,10 @@ $body_font: 'open sans', sans-serif;
 
 @import './heading.scss';
 @import './page.scss';
+@import './states.scss';
 
 @import './components/contact-us.scss';
+@import './components/breadcrumb.scss';
 
 @import './components/archive.scss';
 
@@ -32,16 +34,6 @@ $body_font: 'open sans', sans-serif;
 
 @import './some.scss';
 @import './settings.scss';
-
-.hide-on-desktop
-{
-    display:none;
-}
-
-.hide-on-mobile
-{
-    display: block;
-}
 
 html 
 {
@@ -271,16 +263,6 @@ footer
 }
 
 @media only screen and (max-width: 768px) {
-    .hide-on-desktop
-    {
-        display: block !important;
-    }
-
-    .hide-on-mobile
-    {
-        display: none !important;
-    }
-
     .shortcut-section .shortcuts ul
     {
         display: flex !important;
