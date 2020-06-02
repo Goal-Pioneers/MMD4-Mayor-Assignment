@@ -3,9 +3,9 @@
     <div class="main-section hide-on-mobile">
                 <!-- Logo -->
         <div class="header-container">
-                    <?php if( function_exists( 'the_custom_logo' ) ):?>
-                        <?php the_custom_logo(); ?>
-                    <?php endif;?>
+                <?php if( function_exists( 'the_custom_logo' ) ):?>
+                    <?php the_custom_logo(); ?>
+                <?php endif;?>
         </div>
 
         <div class="header-container"> 

@@ -4,7 +4,14 @@
             v-bind:class="{ 'showMobileNavigation': showNavigation }">
 
         <div class="main-section"> 
-            <?php 
+            <div class="header-container">
+                    <?php if( function_exists( 'the_custom_logo' ) ):?>
+                        <?php the_custom_logo(); ?>
+                    <?php endif;?>
+            </div>
+
+            <div class="header-container"> 
+                <?php 
                 if ( has_nav_menu( 'ui-navigation-header-menu' ) )
                 {
                     wp_nav_menu(
@@ -14,9 +21,10 @@
                             'menu_class' => 'nav',
                             'item_spacing' => 'preserve',
                             'walker' => new ui_menu_walker_header_walker()
-                        )
-                    );
-                }
-            ?>
+                            )
+                        );
+                    }
+                    ?>
+            </div>
         </div>
     </header>

@@ -7,6 +7,7 @@
 
 #header-static-navigation .main-section
 {
+    @extend .px-2;
     background-color: $secondary-color;
     display: grid;
 
@@ -47,7 +48,6 @@
 
 #header-static-navigation .main-section .header-container:last-child .menu-header-main-container
 {
-    @extend .mx-2;
     display: flex;
     align-items: center;
     
@@ -107,6 +107,22 @@
 
     height: 100%;
     width: 100%;
+}
+
+
+#header-mobile-navigation .main-section .header-container:first-child
+{
+    @extend .my-3;
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+#header-mobile-navigation .main-section .header-container .custom-logo-link img
+{
+    width: 200px;
+    height: 200px;    
 }
 
 /** To be removed **/

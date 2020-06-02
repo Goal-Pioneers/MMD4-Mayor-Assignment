@@ -1,6 +1,6 @@
-
 <!-- Matomo -->
-<script async type="text/javascript">
+<script type="text/javascript">
+
 var _paq = window._paq || []; 
 /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
 

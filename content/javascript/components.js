@@ -1,7 +1,8 @@
  // Vue Classes
+
     // Header Mobile Navigation
-    var mobileNavigation = new Vue(
-        {
+var mobileNavigation = new Vue(
+    {
         el: '#header-mobile-navigation',
         data: 
         {
@@ -21,9 +22,30 @@
                 {    
                     this.showNavigation =! this.showNavigation;
 
+                    if( this.showNavigation )
+                    {
+                        // Add NoScroll
+                    }
+                    else 
+                    {
+                        // Disable NoScroll
+                    }
+
                     return this.showNavigation;
                 }
             },
+
+            filterScroll:
+            {
+                cache: false,
+
+                get: function()
+                {
+                    return null;
+                }
+
+            }
+            ,
 
             isHidden: 
             {
@@ -45,7 +67,7 @@
                 }
             }
         }
-      }
+    }
 )
 
 var desktopDynamicNavigation = new Vue(
