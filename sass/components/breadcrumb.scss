@@ -1,0 +1,43 @@
+$breadcrumb-divider: quote(">");
+
+.component-navigation-breadcrumb
+{
+    background-color: $secondary-color;
+}
+
+.component-navigation-breadcrumb ol
+{
+    @extend .container;
+    @extend .breadcrumb;
+
+    background-color: transparent !important;
+}
+
+.component-navigation-breadcrumb ol li 
+{
+    @extend .breadcrumb-item;
+}
+
+.component-navigation-breadcrumb ol li::before
+{
+    color: white !important;
+}
+
+
+.component-navigation-breadcrumb ol li a
+{
+    text-decoration: none !important;       
+}
+
+.component-navigation-breadcrumb ol li .active-breadcrumb
+{
+    @extend .active;
+    text-decoration: none !important;
+    color:$color-4 !important;
+}
+
+.active-breadcrumb a, .active-breadcrumb a:hover, .active-breadcrumb a:active
+{
+    color:$color-3;
+    font-weight: bold;
+} 

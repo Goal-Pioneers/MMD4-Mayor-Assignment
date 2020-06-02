@@ -1,6 +1,7 @@
 <?php get_header(); ?>
         <main id="main-view" 
-              class="about-us"> 
+              class="pricing"> 
+                
             <div> 
                 <?php the_content(); ?>
             </div>
