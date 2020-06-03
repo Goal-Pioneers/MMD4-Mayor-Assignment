@@ -28,10 +28,6 @@
                                                         <h3>
                                                                 <?php echo get_the_title( $child->ID ); ?> 
                                                         </h3>
-
-                                                        <p>
-                                                                <?php echo get_the_excerpt( $child->ID ); ?>
-                                                        </p>
                                                 </div>
                                         </a>
                                 </li>
