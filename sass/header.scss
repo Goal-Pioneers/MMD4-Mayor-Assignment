@@ -77,6 +77,16 @@
     background-color: rgba($color: $secondary-color, $alpha: 0.90);
 }
 
+#header-dynamic-desktop .main-section .containment
+{
+    @extend .py-3;
+}
+
+#header-dynamic-desktop .main-section .containment .menu-header-main-container ul
+{
+    justify-content: center;
+}
+
 /* Desktop Mobile Navigation  */
 // Pop up
 #header-mobile-navigation
@@ -103,6 +113,7 @@
 #header-mobile-navigation .main-section
 {
     @extend .py-4;
+
     background-color: $secondary-color;
 
     height: 100%;
