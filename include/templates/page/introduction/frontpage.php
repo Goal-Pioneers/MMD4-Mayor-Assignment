@@ -1,10 +1,9 @@
-<?php if( is_front_page() ): ?>
-    <?php while( have_posts() ): ?>
-        <?php 
-            the_post();
-        ?>
+<?php while( have_posts() ): ?>
+    <?php 
+        the_post();
+    ?>
                         
-            <?php if( has_post_thumbnail() ): ?>
+        <?php if( has_post_thumbnail() ): ?>
                             <div id="introduction-page-cover">
                                 <?php the_post_thumbnail( 'full', array('class' => 'header-cover-image') ); ?>
                                 
@@ -47,9 +46,6 @@
                             </div>
         
                     <?php endif; ?>
-
-    <?php endwhile;?>
-
-<?php endif; ?>
+<?php endwhile;?>
 
 <?php wp_reset_postdata(); ?>
