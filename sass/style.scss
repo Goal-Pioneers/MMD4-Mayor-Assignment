@@ -15,6 +15,43 @@ $secondary: $color-3;
 $title_font: 'comfortaa', sans-serif;
 $body_font: 'open sans', sans-serif;
 
+.component-about-us-values 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 32px;
+}
+
+.component-about-us-values
+{
+    @extend .my-4;
+
+}
+
+.component-about-us-values .value div
+{
+    @extend .py-3;
+
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+
+    font-size: 86px;
+
+}
+
+
+
+.component-about-us-values .value p
+{
+    @extend .my-2;
+    text-align: center;
+    font-weight: bold;
+    font-style: 'comfortaa';
+
+}
+
 @import './page/faq.scss';
 @import './page/products.scss';
 
@@ -183,10 +220,22 @@ footer
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;            
     }
+
+    .component-about-us-values 
+{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
     
 }
 
 @media only screen and (max-width: 768px) {
+    .component-about-us-values 
+    {
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr  1fr 1fr;
+    }
+
     .shortcut-section .shortcuts ul
     {
         display: flex !important;

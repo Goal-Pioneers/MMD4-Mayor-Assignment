@@ -25,19 +25,30 @@
                 ?>
         </section>
 
-        <section>
-          <div>
-            <div>
-              <i class="fas fa-shield-alt"></i>
+        <section class="base-section">
+          <h2> 
+                Værdier 
+          </h2>
+
+          <div class="component-about-us-values">
+            <div class="value">
+                <div><i class="fas fa-shield-alt"></i></div>
+              <p>Sikkerhed</p>
             </div>
-            <div>
-              <i class="far fa-eye"></i>
+
+            <div class="value">
+                <div><i class="far fa-eye"></i></div>
+              <p>Åbenhed</p>
             </div>
-            <div>
-              <i class="fas fa-yin-yang"></i>
+
+            <div class="value">
+                <div><i class="fas fa-yin-yang"></i></div>
+              <p>Deciplin</p>
             </div>
-            <div>
-              <i class="fas fa-yin-yang"></i>
+
+            <div class="value">
+              <div> <i class="fas fa-bullseye"></i> </div>
+              <p>Mål Orientered</p>
             </div>
 
           </div>
