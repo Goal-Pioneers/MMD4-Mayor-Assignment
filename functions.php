@@ -4,8 +4,14 @@ require get_parent_theme_file_path('/include/menu/menu-base.php');
 require get_parent_theme_file_path('/include/menu/menu-footer.php');
 require get_parent_theme_file_path('/include/menu/menu-some.php');
 
+$register_widget = 'goalpioneers_register_widget_init';
+$theme_support = 'goalpioneers_theme_support';
+$register_styles = 'goalpioneers_register_styles';
+$register_scripts = 'theme_scripts';
+
+
 //
-if (! function_exists( 'goalpioneers_theme_support' ) )
+if (! function_exists( $theme_support ) )
 {
     function goalpioneers_theme_support()
     {
@@ -34,15 +40,24 @@ if (! function_exists( 'goalpioneers_theme_support' ) )
         // Registration
         register_menus();
     };
+    
+    function register_menus()
+    {
+            register_nav_menus( array( 'ui-navigation-header-menu' => __( 'Header Main Area Menu', 'theme-menu' ),
+                                       'ui-navigation-footer-menu' => __( 'Footer Main Area Menu', 'theme-menu' ),
+                                       'ui-navigation-social-menu' => __( 'Social media menu', 'theme-menu' ),
+                                       'ui-navigation-misc-menu'   => __( 'Misc menu', 'theme-menu' ) ) );
 
-    add_action( 'after_setup_theme', 'goalpioneers_theme_support' );
+    };
+
+    add_action( 'after_setup_theme', $theme_support );
 }
 else 
 {
 
 };
 
-if (! function_exists( 'theme_scripts' ) )
+if (! function_exists( $register_scripts ) )
 {
     function theme_scripts()
     {
@@ -68,24 +83,15 @@ if (! function_exists( 'theme_scripts' ) )
         remove_action('wp_head', '_admin_bar_bump_cb');
     }
 
-    add_action( 'wp_enqueue_scripts', 'theme_scripts' );
+    add_action( 'wp_enqueue_scripts', $register_scripts );
 }
 else 
 {
 
 };
 
-    function register_menus()
-{
-        register_nav_menus( array( 'ui-navigation-header-menu' => __( 'Header Main Area Menu', 'theme-menu' ),
-                                   'ui-navigation-footer-menu' => __( 'Footer Main Area Menu', 'theme-menu' ),
-                                   'ui-navigation-social-menu' => __( 'Social media menu', 'theme-menu' ),
-                                   'ui-navigation-misc-menu' => __( 'Misc menu', 'theme-menu' ) ) );
-
-};
-
 // Register stylesheets in use
-if (! function_exists( 'goalpioneers_register_styles' ) )
+if (! function_exists( $register_styles ) )
 {
     function goalpioneers_register_styles()
     {
@@ -103,7 +109,7 @@ if (! function_exists( 'goalpioneers_register_styles' ) )
                             null );
     };
     
-    add_action( 'wp_enqueue_scripts', 'goalpioneers_register_styles' );
+    add_action( 'wp_enqueue_scripts', $register_styles );
 }
 else 
 {
@@ -112,9 +118,9 @@ else
 }
 
 //
-if (! function_exists( 'register_widget_init' ) )
+if (! function_exists( $register_widget ) )
 {
-    function register_widget_init()
+    function goalpioneers_register_widget_init()
     {
         register_sidebar(
             array(
@@ -128,7 +134,7 @@ if (! function_exists( 'register_widget_init' ) )
 
     };
     
-    add_action('widgets_init', 'register_widget_init');
+    add_action('widgets_init', $register_widget);
 }
 else 
 {
