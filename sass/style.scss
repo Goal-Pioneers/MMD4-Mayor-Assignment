@@ -3,6 +3,7 @@ $color-2: #f27405;
 $color-3: #f25c05;
 $color-4: #bf4215;
 
+
 $primary-color: #6ad1ff !default;
 $secondary-color: #344656 !default;
 
@@ -14,6 +15,10 @@ $secondary: $color-3;
 $title_font: 'comfortaa', sans-serif;
 $body_font: 'open sans', sans-serif;
 
+@import './page/faq.scss';
+@import './page/products.scss';
+
+@import './attributes.scss';
 
 @import './base.scss';
 @import './header.scss';
@@ -64,82 +69,6 @@ footer
     background-color: $secondary-color;
 }
 
-
-.page-products-page
-{
-    @extend .container;
-    @extend .py-4;
-    
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    margin: 0px;
-    padding: 0px;
-}
-
-.page-product-element
-{
-    @extend .my-3;
-
-    display: grid;
-    
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    grid-gap: 32px;
-}
-
-.product-text-container
-{
-    grid-column: span 2;
-}
-
-.page-product-element img 
-{
-    height: 100%;
-    width: 100%;
-
-    object-fit: contain;
-}
-
-#faq
-{
-    @extend .container;
-}
-
-#faq ul li 
-{
-    @extend .card-body;
-}
-
-
-#faq ul li h3
-{
-    @extend .py-3;
-    border-bottom:1px solid $secondary-color;
-}
-
-
-
-#faq ul li:hover h3 
-{
-    color: $color-2;
-    border-bottom:1px solid $color-2;
-}
-
-
-#faq ul li:hover
-{
-    cursor: pointer;
-}
-
-#faq ul li p
-{
-    @extend .card-text;
-    display: none;
-}
 
 .show p 
 {
@@ -214,11 +143,6 @@ footer
 {
     
 
-}
-
-.clickable
-{
-    cursor: pointer;
 }
 
 .active

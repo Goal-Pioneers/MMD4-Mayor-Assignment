@@ -166,13 +166,40 @@ p
 
 }
 
-.listed .entity
+.listed .entity:nth-child(1)
 {
     background: rgb(242,116,5);
     background: -moz-linear-gradient(128deg, rgba(242,116,5,1) 0%, rgba(191,66,21,1) 100%);
     background: -webkit-linear-gradient(128deg, rgba(242,116,5,1) 0%, rgba(191,66,21,1) 100%);
     background: linear-gradient(128deg, rgba(242,116,5,1) 0%, rgba(191,66,21,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f27405",endColorstr="#bf4215",GradientType=1); 
+}
+
+.listed .entity:nth-child(4)
+{
+    background: rgb(242,116,5);
+    background: -moz-linear-gradient(128deg, rgba(242,116,5,1) 0%, rgba(191,66,21,1) 100%);
+    background: -webkit-linear-gradient(128deg, rgba(242,116,5,1) 0%, rgba(191,66,21,1) 100%);
+    background: linear-gradient(128deg, rgba(242,116,5,1) 0%, rgba(191,66,21,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f27405",endColorstr="#bf4215",GradientType=1); 
+}
+
+.listed .entity:nth-child(2)
+{
+    background: rgb(39,242,5);
+    background: -moz-linear-gradient(128deg, rgba(39,242,5,1) 0%, rgba(69,172,10,1) 100%);
+    background: -webkit-linear-gradient(128deg, rgba(39,242,5,1) 0%, rgba(69,172,10,1) 100%);
+    background: linear-gradient(128deg, rgba(39,242,5,1) 0%, rgba(69,172,10,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#27f205",endColorstr="#45ac0a",GradientType=1); 
+}
+
+.listed .entity:nth-child(3)
+{
+    background: rgb(39,242,5);
+    background: -moz-linear-gradient(128deg, rgba(39,242,5,1) 0%, rgba(69,172,10,1) 100%);
+    background: -webkit-linear-gradient(128deg, rgba(39,242,5,1) 0%, rgba(69,172,10,1) 100%);
+    background: linear-gradient(128deg, rgba(39,242,5,1) 0%, rgba(69,172,10,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#27f205",endColorstr="#45ac0a",GradientType=1); 
 }
 
 .articles-container .text 
@@ -368,7 +395,8 @@ p
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) 
+{
     .index-products-showcase ul 
     {
         grid-template-rows: auto auto auto;
