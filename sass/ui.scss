@@ -32,7 +32,7 @@
     position: fixed;
     
     height: 100%;
-    width: 80px;
+    width: 60px;
 
     top:0px;
     right: 0px;
@@ -42,8 +42,8 @@
 {
     @extend .my-4;
 
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 
     border-radius: 100%;
     background-color: $color-2;
@@ -77,6 +77,25 @@
 .sidebar div span svg
 {
     color: white;
-    font-size: 40px;
+    font-size: 35px;
     
+}
+
+.frontpage-about-us
+{
+    @extend .container;
+}
+
+.ui-middle-item
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.ui-button
+{
+    @extend .btn;
+    @extend .btn-primary;
 }

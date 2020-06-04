@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html <?php language_attributes(); ?> id="view">
     <head>
         <?php require get_parent_theme_file_path('/include/templates/generic/head.php'); ?>

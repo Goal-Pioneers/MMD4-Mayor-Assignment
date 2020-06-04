@@ -1,0 +1,36 @@
+
+.page-products-page
+{   
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.page-product-element
+{
+    @extend .my-3;
+
+    display: grid;
+    
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-gap: 32px;
+}
+
+.product-text-container
+{
+    grid-column: span 2;
+}
+
+.page-product-element img 
+{
+    height: 100%;
+    width: 100%;
+
+    object-fit: contain;
+}

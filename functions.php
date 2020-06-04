@@ -135,12 +135,13 @@ else
     // Error -> Function already exist
 }
 
-$is_debugging = true;
-
-function getDebugState()
+// Removes the [...] that is appended to exerpts, when using the_exerpt() function
+function goalpioneers_excerpt_more( $more )
 {
-    return $GLOBALS["is_debugging"];
+    return '';
 }
+
+add_filter('excerpt_more', 'goalpioneers_excerpt_more');
 
 
 // Setup Widget Areas

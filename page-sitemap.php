@@ -1,5 +1,4 @@
 <?php get_header(); ?> 
-
         <main id="main-view"> 
                 <?php while( have_posts() ): ?>
                         <?php 

@@ -1,12 +1,14 @@
 <?php ?>
-
-    <div class="sidebar" aria-hidden="true"> 
+    <div class="sidebar">
+    
+     
         <div class="ui-sidebar-button hide-on-desktop" 
-             id="ui-action-show-menu" onclick="mobileNavigation.changeState;"> 
-            <span> 
-                <i class="fas fa-bars">
-                </i>
-            </span>
+             id="ui-action-show-menu" 
+             onclick="mobileNavigation.changeState;"> 
+                <span> 
+                    <i class="fas fa-bars">
+                    </i>
+                </span>
         </div>
 
         <div class="ui-sidebar-button not-developed" 
@@ -29,7 +31,7 @@
 
         <div class="ui-sidebar-button" 
              id="ui-action-go-to-top" 
-             onclick="goToTopOfPageOrDown();">  
+             onclick="goToTopOfPageOrDown();">
             <span id="ui-state-arrow-up" 
                   class="hide-object"> 
                 <i class="fas fa-chevron-up">
@@ -41,6 +43,7 @@
                 </i>
             </span>
         </div>
-    </div>
 
+
+    </div>
 <?php ?>
