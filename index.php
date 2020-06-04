@@ -1,16 +1,16 @@
-<?php get_header(); ?>        
+<?php get_header(); ?>
 
-<main id="main-view"> 
+<main id="main-view">
         <?php if( is_404() ): ?>
                 <?php require get_parent_theme_file_path('/include/templates/page/component-404.php'); ?>
-        <?php endif; ?>                
+        <?php endif; ?>
 
         <?php while( have_posts() ): ?>
-                <?php 
+                <?php
                         the_post();
                 ?>
 
-                <?php 
+                <?php
                         // is frontpage
                         if( is_front_page() ):
                 ?>
@@ -18,11 +18,11 @@
                         <?php require get_parent_theme_file_path('/include/templates/specifics/frontpage/component-about-us.php'); ?>
                         <?php require get_parent_theme_file_path('/include/templates/specifics/frontpage/component-articles.php'); ?>
                         <?php require get_parent_theme_file_path('/include/templates/specifics/frontpage/component-contact.php'); ?>
-                <?php 
-                        endif; 
+                <?php
+                        endif;
                 ?>
 
-                <?php 
+                <?php
                         // is a post
                         if( is_singular() && !is_front_page() ):
                 ?>
@@ -34,4 +34,3 @@
 </main>
 
 <?php get_footer(); ?>
-    

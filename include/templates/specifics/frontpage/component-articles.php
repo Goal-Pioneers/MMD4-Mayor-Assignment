@@ -19,7 +19,7 @@
                                                 array(
                                                         "taxonomy" => "category",
                                                         "field"    => "slug",
-                                                        "terms"    => "artikel",
+                                                        "terms"    => "article",
                                                 )
                                         ),
                                         "orderBy" => "post_date",
