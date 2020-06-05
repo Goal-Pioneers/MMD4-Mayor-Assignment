@@ -157,6 +157,61 @@ function adjustLight()
 
 }
 
+function highligtPage()
+{
+    var currentUrl = window.location.href;
+
+    highligtPage_traverse_first( currentUrl );
+}
+
+function highligtPage_traverse_first( highlight )
+{
+    //
+    var static_header = document.getElementById( 'header-navigation' );
+    
+    highligtPage_traverse( static_header, highlight );
+
+    var dynamic_header = document.getElementById( 'header-navigation-dynamic' );
+    highligtPage_traverse( dynamic_header, highlight );
+
+    var mobile_header = document.getElementById( 'header-navigation-mobile' );
+    highligtPage_traverse( mobile_header, highlight );
+
+}
+
+function highligtPage_traverse( element, highlight )
+{
+    
+
+    var children = element.childNodes;
+    var idx = 0;
+
+    for( idx = 0; 
+         idx < children.length; 
+         idx++ )
+    {
+        var current = children[idx];
+
+
+        if(current.nodeName == 'LI')
+        {
+            highligtPage_traverse(current, highlight);
+        }
+
+        if(current.nodeName == 'A')
+        {
+            if( current.href === highlight )
+            {
+                current.classList.add("active");
+
+            }
+        }
+        
+    }
+    
+
+}
+
 // Event
 function onScrollEvent()
 {
@@ -172,8 +227,8 @@ function onScrollEvent()
     var downArrow = document.getElementById('ui-state-arrow-down');
 
     
-    upArrow.classList.remove(hideClass);
-    downArrow.classList.remove(hideClass);
+    upArrow.classList.remove( hideClass );
+    downArrow.classList.remove( hideClass );
 
 
     if( screenY < mid )
@@ -259,6 +314,7 @@ document.addEventListener('DOMContentLoaded',
     function()
     {
         fix();
+        highligtPage();
     },
 false );
 

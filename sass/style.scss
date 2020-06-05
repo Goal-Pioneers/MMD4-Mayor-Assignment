@@ -15,6 +15,11 @@ $secondary: $color-3;
 $title_font: 'comfortaa', sans-serif;
 $body_font: 'open sans', sans-serif;
 
+img 
+{
+    border: 0px;
+}
+
 .component-about-us-values 
 {
     display: grid;
