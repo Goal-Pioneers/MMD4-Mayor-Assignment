@@ -32,24 +32,32 @@
 
           <div class="component-about-us-values">
             <div class="value">
-                <div><i class="fas fa-shield-alt"></i></div>
+                <div>
+                        <i class="fas fa-shield-alt"></i>
+                </div>
               <p>Sikkerhed</p>
             </div>
 
             <div class="value">
-                <div><i class="far fa-eye"></i></div>
+                <div>
+                        <i class="fas fa-globe"></i>
+                </div>
               <p>Åbenhed</p>
             </div>
 
             <div class="value">
-                <div><i class="fas fa-yin-yang"></i></div>
+                <div>
+                        <i class="fas fa-yin-yang"></i>
+                </div>
               <p>Deciplin</p>
             </div>
 
             <div class="value">
-              <div> <i class="fas fa-bullseye"></i> </div>
+              <div> 
+                      <i class="fas fa-bullseye"></i> 
+                </div>
               <p>Mål Orientered</p>
             </div>
-
           </div>
-        </section>
+
+        </section> 

@@ -8,14 +8,17 @@
                 ?>
 
                 <?php if( !( $children == null ) ): ?>
-                        <?php $n = 0; ?>
-
                         <ul class="page-products-page"> 
+
                                 <?php foreach( $children as &$child ): ?>
+                                
+                                        <?php if( get_post_type( $child->ID ) == 'page' ): ?>
                                                 <li class=""> 
                                                         <a href="<?php echo get_post_permalink( $child->ID ); ?>">
+                                                                
                                                                 <div class="page-product-element">
-                                                                        <img src="<?php echo get_the_post_thumbnail_url( $child->ID ); ?>" class="image" />
+                                                                        <img src="<?php echo get_the_post_thumbnail_url( $child->ID ); ?>" 
+                                                                             class="image" />
                                                                         
                                                                         <div class="product-text-container"> 
                                                                                 <h3>
@@ -27,8 +30,11 @@
                                                                                 </p>
                                                                         </div>
                                                                 </div>
+
                                                         </a>
                                                 </li>
+                                        <?php endif; ?>
+                                        
                                 <?php endforeach;
                                       wp_reset_postdata(); 
                                  ?>
