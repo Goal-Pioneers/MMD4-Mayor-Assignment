@@ -33,7 +33,7 @@
                                                                         </div>
 
                                                                         <div class="page-product-actions-container"> 
-                                                                                <a class="btn btn-primary" href="<?php echo get_post_permalink( $child->ID ); ?>">
+                                                                                <a class="ui-button" href="<?php echo get_post_permalink( $child->ID ); ?>">
                                                                                         Læs mere
                                                                                 </a>
                                                                         </div>
