@@ -202,7 +202,7 @@ function highligtPage_traverse( element, highlight )
         {
             if( current.href === highlight )
             {
-                current.classList.add("active");
+                current.classList.add("active-link");
 
             }
         }
