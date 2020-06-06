@@ -193,12 +193,12 @@ function highligtPage_traverse( element, highlight )
         var current = children[idx];
 
 
-        if(current.nodeName == 'LI')
+        if( current.nodeName == 'LI' )
         {
             highligtPage_traverse(current, highlight);
         }
 
-        if(current.nodeName == 'A')
+        if( current.nodeName == 'A' )
         {
             if( current.href === highlight )
             {
