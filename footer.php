@@ -21,6 +21,8 @@
         <?php require get_parent_theme_file_path('/include/templates/header/component-dynamic-desktop.php'); ?>
         <?php require get_parent_theme_file_path('/include/templates/header/component-mobile.php'); ?>
 
+        <?php require get_parent_theme_file_path('/include/json/social.php'); ?>
+
         <script src="<?php echo get_template_directory_uri() . '/content/javascript/components.js'; ?>"> 
         </script>
 
