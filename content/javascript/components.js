@@ -307,6 +307,17 @@ function screen_min_height()
     main.style.minHeight = difference.toString() + "px";
 }
 
+function hideUIFirstpage()
+{
+    var imageSection = document.getElementById('header-ui-logo');
+
+    if( !(imageSection == null) )
+    {
+        
+    }
+
+}
+
 // Action part of the script, adding events. etc. execute this.
 
 // Executes, when the page is done loading the elements
@@ -315,6 +326,7 @@ document.addEventListener('DOMContentLoaded',
     {
         fix();
         highligtPage();
+        hideUIFirstpage();
     },
 false );
 

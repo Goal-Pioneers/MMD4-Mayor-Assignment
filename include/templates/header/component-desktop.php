@@ -2,11 +2,15 @@
     <?php // Static header for desktops ?>
     <div class="main-section hide-on-mobile">
                 <!-- Logo -->
-        <div class="header-container">
-                <?php if( function_exists( 'the_custom_logo' ) ):?>
-                    <?php the_custom_logo(); ?>
-                <?php endif;?>
-        </div>
+        <?php if( function_exists( 'the_custom_logo' ) && has_custom_logo() ):?>
+            <div class="header-container" 
+                 id="header-ui-logo">
+                        <?php the_custom_logo(); ?>
+            </div>
+        <?php else: ?>
+            <div class="header-container">
+            </div>
+        <?php endif;?>
 
         <div class="header-container"> 
             <?php

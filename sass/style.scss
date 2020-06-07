@@ -15,7 +15,18 @@ $secondary: $color-3;
 $title_font: 'comfortaa', sans-serif;
 $body_font: 'open sans', sans-serif;
 
+.hide-firstpage
+{
+    display: none;
+}
+
 .active-link
+{
+    color: #2ecc71;
+    text-decoration: none !important;
+}
+
+.active-link:hover
 {
     color: #2ecc71;
     text-decoration: none !important;
@@ -32,6 +43,41 @@ $body_font: 'open sans', sans-serif;
 {
     @extend .my-4;
 
+}
+
+.become-tester .wpcf7
+{
+    display: flex;
+    justify-content: center;
+}
+
+.become-tester span 
+{
+    @extend .form-group;
+}
+
+.become-tester span:last-child
+{
+    @extend .form-group;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.become-tester .ajax-loader
+{
+    display: none !important;
+}
+
+.become-tester .wpcf7-email
+{
+    @extend .form-control;
+}
+
+.become-tester .wpcf7-submit
+{
+    @extend .btn;
+    @extend .btn-primary;
 }
 
 .component-about-us-values .value div
