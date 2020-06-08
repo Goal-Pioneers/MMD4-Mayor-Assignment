@@ -82,10 +82,11 @@
     @extend .py-3;
 }
 
-#header-dynamic-desktop .main-section .containment .menu-header-main-container ul
+#header-navigation-dynamic
 {
-    justify-content: center;
+    @extend .justify-content-center;
 }
+
 
 /* Desktop Mobile Navigation  */
 // Pop up
