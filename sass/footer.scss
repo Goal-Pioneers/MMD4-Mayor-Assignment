@@ -133,6 +133,41 @@ footer .main-section .widgetizedArea ul li
     font-size: 14px;
 }
 
+#cookie-policy
+{
+    @extend .py-3;
+    @extend .px-2;
+    
+    position: fixed;
+    width: 100%;
+
+    bottom: 0px;
+    background-color: $secondary-color;
+}
+
+#cookie-policy p
+{
+    color: white;
+}
+
+#cookie-policy label
+{
+    color: white;
+}
+
+#cookie-policy div ul
+{
+    
+}
+
+#cookie-policy div li
+{
+    
+    color: white;
+    list-style:disc;
+    margin-left:20px;
+}
+
 @media only screen and (max-width: 768px) 
 {
     #miscellaneous-navigation
