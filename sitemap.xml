@@ -9,97 +9,117 @@
 
 <url>
   <loc>https://www.goalpioneers.dk/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.goalpioneers.dk/sitemap/about-us/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.goalpioneers.dk/sitemap/products/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.goalpioneers.dk/sitemap/about-us/contact/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.goalpioneers.dk/sitemap/faq/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <loc>https://www.goalpioneers.dk/sitemap/information/glossary/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.goalpioneers.dk/sitemap/information/faq/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.goalpioneers.dk/sitemap/about-us/become-tester/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.goalpioneers.dk/sitemap/products/munin/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.goalpioneers.dk/sitemap/products/forward/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.goalpioneers.dk/sitemap/products/dashboard/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.goalpioneers.dk/sitemap/products/synkron/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <loc>https://www.goalpioneers.dk/2020/06/04/wordpress-tema/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.goalpioneers.dk/sitemap/products/echo/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <loc>https://www.goalpioneers.dk/2020/05/30/sogemaskine-optimering-af-hjemmesider/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.goalpioneers.dk/2020/05/22/fourth/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <loc>https://www.goalpioneers.dk/2020/05/30/hvad-er-cms/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.goalpioneers.dk/2020/05/22/third/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.goalpioneers.dk/2020/05/22/second/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.goalpioneers.dk/2020/05/22/first/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <loc>https://www.goalpioneers.dk/2020/05/30/hvilket-cms-skal-jeg-vaelge/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.goalpioneers.dk/sitemap/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.goalpioneers.dk/sitemap/information/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <loc>https://www.goalpioneers.dk/sitemap/about-us/press-kit/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.goalpioneers.dk/sitemap/information/politikker/cookie-policy/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.goalpioneers.dk/sitemap/information/politikker/terms-of-service/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.goalpioneers.dk/sitemap/products/echo/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.goalpioneers.dk/sitemap/information/terms-of-service/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <loc>https://www.goalpioneers.dk/sitemap/information/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.goalpioneers.dk/sitemap/information/politikker/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.goalpioneers.dk/sitemap/information/politikker/cookie-policy/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.goalpioneers.dk/sitemap/about-us/testning/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.goalpioneers.dk/sitemap/about-us/vores-mal-og-mission/</loc>
-  <lastmod>2020-05-27T13:02:40+00:00</lastmod>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.goalpioneers.dk/2020/05/30/mariadb-and-cluster-setup/</loc>
+  <lastmod>2020-06-09T19:31:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
