@@ -1,15 +1,22 @@
-<footer id="footer-area"> 
-    <?php 
+<footer id="footer-area">
+    <div class="footer-ui-buttons-center">
+      <?php $page = get_page_by_title( 'sitemap' ); ?>
+      <?php if( !( $page == null ) ): ?>
+        <a href="<?php echo get_the_permalink($page->ID); ?>" hreflang="en" class="short-button"> Sitemap </a>
+      <?php endif; ?>
+    </div>
+
+    <?php
         wp_footer();
     ?>
 
-    <div class="main-section"> 
+    <div class="main-section">
         <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( "footer-area" ) ) : ?>
         <?php endif;?>
     </div>
 </footer>
 
-<?php 
+<?php
     if ( has_nav_menu( 'ui-navigation-misc-menu' ) )
     {
         wp_nav_menu(
