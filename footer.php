@@ -15,6 +15,11 @@
                         ?>
             </nav>
         <?php endif; ?>
+        
+        <?php
+            require get_parent_theme_file_path('/include/analytics/google-analytics.php');
+            require get_parent_theme_file_path('/include/analytics/matomo-analytics.php');
+        ?>
 
         <?php require get_parent_theme_file_path('/include/templates/footer/component-footer.php'); ?>
         <?php require get_parent_theme_file_path('/include/templates/footer/component-cookie.php'); ?>
