@@ -148,7 +148,7 @@ var cookiePolicy = new Vue
 
                     if( this.firstTime )
                     {
-                        document.cookie = "isAccepted=true;";
+                        document.cookie = "isAccepted=true; SameSite=Lax";
                     }
 
                     return this.showPolicy;
