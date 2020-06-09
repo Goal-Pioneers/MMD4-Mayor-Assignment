@@ -1,5 +1,4 @@
-<?php if( get_the_id() == 10 ): ?>
-  <script type="application/ld+json">
+<script type="application/ld+json">
   {
     "@context" : "http://schema.org",
     "@type" : "Organization",
@@ -15,5 +14,4 @@
       "https://mastodon.social/web/accounts/1190075"
     ]
   }
-  </script>
-<?php endif; ?>
+</script>
