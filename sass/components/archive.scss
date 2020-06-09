@@ -7,14 +7,14 @@
 #component-archive-pages ul
 {
     @extend .list-group;
-    
+
 }
 
 #component-archive-pages ul li
 {
     @extend .list-group-item;
     @extend .my-2;
-    
+
 }
 
 #component-archive-posts
@@ -25,12 +25,47 @@
 #component-archive-posts ul
 {
     @extend .list-group;
-    
+
 }
 
 #component-archive-posts ul li
 {
     @extend .list-group-item;
     @extend .my-2;
-    
+
+}
+
+#component-archive-elements
+{
+
+}
+
+#component-archive-elements .sitemap-elements
+{
+  display: flex;
+  justify-content: center;
+}
+
+#component-archive-elements .sitemap-elements a
+{
+  @extend .my-2;
+  @extend .mx-3;
+
+}
+
+#component-archive-elements .sitemap-elements a .button
+{
+  background-color: white;
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#component-archive-elements .sitemap-elements a .button i
+{
+  font-size: 32px;
 }
