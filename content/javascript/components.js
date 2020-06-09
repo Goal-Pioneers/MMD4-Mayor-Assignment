@@ -121,6 +121,76 @@ var desktopDynamicNavigation = new Vue(
     }
 )
 
+//
+var cookiePolicy = new Vue
+(
+    {
+        el: '#cookie-policy',
+        data: 
+        {
+            showPolicy: true,
+            firstTime: true
+        },
+        method:
+        {
+    
+        },
+        computed:
+        {
+            changeState: 
+            {
+                cache: false,
+
+                get: function()
+                {   
+                    console.log('Change Cookie Policy State');
+                    this.showPolicy = !this.showPolicy;
+
+                    if( this.firstTime )
+                    {
+                        document.cookie = "isAccepted=true;";
+                    }
+
+                    return this.showPolicy;
+                }
+            },
+
+            filterScroll:
+            {
+                cache: false,
+
+                get: function()
+                {
+                    return null;
+                }
+
+            }
+            ,
+
+            isHidden: 
+            {
+                cache: false,
+
+                get: function()
+                {
+                    return !(this.showPolicy);
+                }
+            }
+        },
+        created()
+        {
+            console.log("cookie policy has been created");
+            var allCookies = document.cookie;
+            
+            if( allCookies.includes( "isAccepted=true;" ) )
+            {
+                this.firstTime = false;
+                this.showPolicy = false;
+            }
+        }
+    }
+)
+
 // Global Variables
 var screenY = 0;
 

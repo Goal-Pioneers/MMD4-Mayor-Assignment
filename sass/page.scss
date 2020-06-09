@@ -207,6 +207,7 @@ p
     
     @extend .py-4;
     @extend .px-1;
+
     position: absolute;
 
     width: 100%;
@@ -243,6 +244,7 @@ p
 .index-products-showcase ul 
 {
     list-style: none;
+
     padding: 0px;
     margin: 0px;
 
@@ -347,7 +349,9 @@ p
     
     @extend .my-4;
     width: 100%;
+    
     display: flex;
+
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -355,8 +359,7 @@ p
 .service-card div a
 {
     @extend .btn;
-    @extend .btn-primary;
-    
+    @extend .btn-primary;   
 }
 
 

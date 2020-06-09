@@ -1,38 +1,35 @@
-<div id="cookie-policy">
-    <!-- -->
-    <div> 
-        <p> Vi anvender cookie på denne side. </p>
-        <ul> 
-            <li> til teknisk funktionalit til at have siden kørende. </li>
-            <li> til marketing for at finde ud af brugs adfærd </li>
-        </ul>
-    </div>
-
-    <form> 
+<div id="cookie-policy" 
+     v-bind:class="{'hide-cookie':isHidden}">
+     
+    <div class="main-section"> 
 
         <!-- -->
         <div> 
-            <input type="checkbox" id="cookies-func" name="functional" value="" checked>
-            <label for="functional"> Basis funktionalitet </label> 
+            <p> Vi anvender cookie på denne side. </p>
             
-            <input type="checkbox" id="cookies-marketing" name="marketing" value="">
-            <label for="marketing"> Marketing </label>
-            
+            <ul> 
+                <li> til teknisk funktionalit til at have siden kørende. </li>
+                <li> til marketing for at finde ud af brugs adfærd </li>
+            </ul>
         </div>
-            
-            <!-- -->
-        <div>
-            <div class="btn btn-primary"> 
-                Accept All
-            </div>  
         
-            <div class="btn btn-primary"> 
-                Accept
-            </div>
+        <div> 
+            <!-- -->
+            <div> 
+                <input type="checkbox" id="cookies-func" name="functional" value="" checked>
+                <label for="functional"> Basis funktionalitet </label> 
                 
-            <div class="btn btn-primary"> 
-                Deny All
+                </br>
+            
+                <input type="checkbox" id="cookies-marketing" name="marketing" value="">
+                <label for="marketing"> Marketing </label>
             </div>
         </div>
-    </form>
+    </div>
+    
+    <div class="position-action hide-on-mobile">
+        <div class="button" onclick="cookiePolicy.changeState;"> 
+            <i class="fas fa-cookie"></i>
+        </div> 
+    </div>
 </div>
