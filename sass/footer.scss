@@ -133,6 +133,97 @@ footer .main-section .widgetizedArea ul li
     font-size: 14px;
 }
 
+.hide-cookie
+{
+    transform: translate( calc(-100% + 90px), 0px ) !important;
+}
+
+#cookie-policy
+{
+    @extend .py-3;
+    @extend .px-2;
+
+    transform: translate( -10px, 0px );
+    
+    display: grid;
+
+    grid-template-columns: auto 75px;
+    grid-gap: 32px;
+
+    position: fixed;
+    width: 75%;
+
+    bottom: 0px;
+}
+
+#cookie-policy .main-section
+{
+    @extend .py-2;
+    @extend .px-4;
+
+    background-color: $secondary-color;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+}
+
+#cookie-policy .button 
+{
+    color: white;
+
+    background-color: $color-2;
+    border-radius: 100%;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+    width: 60px;
+
+    font-size: 35px;
+    
+}
+
+#cookie-policy .position-action
+{
+    height: 100%;
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;   
+}
+
+#cookie-policy p
+{
+    color: white;
+}
+
+#cookie-policy label
+{
+    color: white;
+}
+
+#cookie-policy div ul
+{
+    
+}
+
+#cookie-policy div li
+{
+    
+    color: white;
+    list-style:disc;
+    
+    margin-left:20px;
+}
+
 @media only screen and (max-width: 768px) 
 {
     #miscellaneous-navigation
@@ -161,5 +252,26 @@ footer .main-section .widgetizedArea ul li
     footer .main-section .widgetizedArea ul li a
     {
         
+    }
+
+    #cookie-policy
+    {
+        transform: translate( 0px, 0px );
+        width: 100%;
+        grid-template-columns: auto;
+    }
+
+    #cookie-policy .main-section
+    {
+        display: grid;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 24px;
+    }
+
+    .hide-cookie
+    {
+        display: none !important;
     }
 }

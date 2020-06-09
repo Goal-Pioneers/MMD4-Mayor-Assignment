@@ -1,7 +1,6 @@
 <?php ?>
     <div class="sidebar">
-    
-     
+        
         <div class="ui-sidebar-button hide-on-desktop" 
              id="ui-action-show-menu" 
              onclick="mobileNavigation.changeState;"> 
@@ -25,6 +24,15 @@
              onclick="adjustLight();"> 
             <span> 
                 <i class="fas fa-adjust">
+                </i>
+            </span>
+        </div>
+
+        <div class="ui-sidebar-button hide-on-desktop" 
+             id="ui-action-cookies" 
+             onclick="cookiePolicy.changeState;"> 
+            <span> 
+                <i class="fas fa-cookie">
                 </i>
             </span>
         </div>

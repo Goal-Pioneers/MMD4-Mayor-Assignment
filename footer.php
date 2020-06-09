@@ -17,7 +17,8 @@
         <?php endif; ?>
 
         <?php require get_parent_theme_file_path('/include/templates/footer/component-footer.php'); ?>
-        
+        <?php require get_parent_theme_file_path('/include/templates/footer/component-cookie.php'); ?>
+
         <?php require get_parent_theme_file_path('/include/templates/header/component-dynamic-desktop.php'); ?>
         <?php require get_parent_theme_file_path('/include/templates/header/component-mobile.php'); ?>
 
