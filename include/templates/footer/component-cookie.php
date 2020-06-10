@@ -1,5 +1,5 @@
 <div id="cookie-policy" 
-     v-bind:class="{'hide-cookie':isHidden}">
+     v-bind:class="{'hide-cookie':isHidden, loaded:true}">
      
     <div class="main-section"> 
 
