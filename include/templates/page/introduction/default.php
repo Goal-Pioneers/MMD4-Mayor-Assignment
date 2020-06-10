@@ -4,8 +4,15 @@
     ?>
 
     <div id="introduction-page-cover">
-        <?php the_post_thumbnail( 'full', 
+        <?php if( wp_is_mobile() ): ?>
+            <?php // Mobile version of the thumbnail ?>
+            <?php the_post_thumbnail( 'mobile-thumbnail', 
                                    array('class' => 'header-cover-image') ); ?>
+        <?php else: ?>
+            <?php // Desktop version of the thumbnail ?>
+            <?php the_post_thumbnail( 'full-desktop-thumbnail', 
+                                   array('class' => 'header-cover-image') ); ?>
+        <?php endif; ?>
                                 
         <div class="elements"> 
             <div class="introduction aligns-items-center">
