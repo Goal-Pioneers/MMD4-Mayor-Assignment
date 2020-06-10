@@ -37,16 +37,17 @@ if (! function_exists( $theme_support ) )
             )
         );
         
-        add_image_size( 'logo-thumbnail', 256, 0 );
-
-        add_image_size( 'mobile-thumbnail', 768, 0 );
-        add_image_size( 'small-desktop-thumbnail', 1024, 0 );
-        add_image_size( 'middle-desktop-thumbnail', 1472, 0 );
-        add_image_size( 'full-desktop-thumbnail', 1920, 0 );
-
         // Registration
         register_menus();
     };
+
+    
+    add_image_size( 'logo-thumbnail', 256, 0 );
+
+    add_image_size( 'mobile-thumbnail', 768, 0 );
+    add_image_size( 'small-desktop-thumbnail', 1024, 0 );
+    add_image_size( 'middle-desktop-thumbnail', 1472, 0 );
+    add_image_size( 'full-desktop-thumbnail', 1920, 0 );
     
     function register_menus()
     {
