@@ -7,12 +7,11 @@
 
     <?php if ( is_single() ): ?>
         <!-- -->
-        <div>
+        <div class="page-attributes">
             <!-- -->
             <div>
                 <?php ?>
-                <p>
-                    by
+                <p class="name">
                     <?php the_author();  ?>
                 </p>
                 <?php ?>
@@ -21,8 +20,8 @@
             <!-- -->
             <div>
                 <?php ?>
-                    <p>
-                        <?php the_date(); ?>
+                    <p class="registered">
+                        Registered: <?php the_date(); ?>
                     </p>
                 <?php ?>
             </div>

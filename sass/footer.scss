@@ -150,20 +150,22 @@ footer .main-section .widgetizedArea ul li
 
 #cookie-policy
 {
+    
     @extend .py-3;
     @extend .px-2;
-
+    
     transform: translate( -10px, 0px );
-
+    
     display: grid;
-
+    
     grid-template-columns: auto 75px;
     grid-gap: 32px;
-
+    
     position: fixed;
     width: 75%;
-
+    
     bottom: 0px;
+    visibility: hidden;
 }
 
 #cookie-policy .main-section
