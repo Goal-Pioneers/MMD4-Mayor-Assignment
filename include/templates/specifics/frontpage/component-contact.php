@@ -8,7 +8,7 @@
         <!-- Contact Links -->
         <div class="shortcuts"> 
                 <ul> 
-                        <?php if( get_field('shortcut-contact')): ?> 
+                        <?php if( get_field( 'shortcut-contact' ) ): ?> 
                                 <li>
                                         <a href="<?php the_field('shortcut-contact') ?>" 
                                            class="short-button"> 
@@ -20,6 +20,7 @@
                                         </a>
                                 </li>
                         <?php endif; ?>
+
                         <?php if( get_field('shortcut-feedback')): ?>
                                 <li> 
                                         <a href="<?php the_field('shortcut-feedback') ?>" 
