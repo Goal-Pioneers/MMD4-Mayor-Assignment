@@ -1,5 +1,5 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script src="https://www.googletagmanager.com/gtag/js?id=UA-160026683-1">
+<script asynch src="https://www.googletagmanager.com/gtag/js?id=UA-160026683-1">
 </script>
 
 <script>
