@@ -20,13 +20,13 @@
                                         }
                                 ?>
 
-                                <?php if(get_post_type($child->ID) == 'page'): ?>
+                                <?php if( get_post_type( $child->ID ) == 'page' ): ?>
                                   <li class="product">
                                           <a href="<?php echo get_post_permalink( $child->ID ); ?>">
                                                   <div class="product-container">
                                                           <img src="<?php echo get_the_post_thumbnail_url( $child->ID ); ?>"
-                                                               class="image" />
-
+                                                               class="image" 
+                                                               loading="lazy" />
                                                           <h3>
                                                                   <?php echo get_the_title( $child->ID ); ?>
                                                           </h3>

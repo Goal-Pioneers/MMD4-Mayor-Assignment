@@ -1,8 +1,13 @@
 <footer id="footer-area">
     <div class="footer-ui-buttons-center">
       <?php $page = get_page_by_title( 'sitemap' ); ?>
+      
       <?php if( !( $page == null ) ): ?>
-        <a href="<?php echo get_the_permalink($page->ID); ?>" hreflang="en" class="short-button"> Sitemap </a>
+        <a href="<?php echo get_the_permalink( $page->ID ); ?>" 
+           hreflang="en" 
+           class="short-button"> 
+            Sitemap 
+        </a>
       <?php endif; ?>
     </div>
 

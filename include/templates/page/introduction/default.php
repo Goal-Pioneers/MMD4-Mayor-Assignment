@@ -6,12 +6,14 @@
     <div id="introduction-page-cover">
         <?php if( wp_is_mobile() ): ?>
             <?php // Mobile version of the thumbnail ?>
-            <?php the_post_thumbnail( 'mobile-thumbnail', 
-                                   array('class' => 'header-cover-image') ); ?>
+            <img class="header-cover-image" 
+                 src="<?php echo get_the_post_thumbnail_url( $element->ID, 'mobile-thumbnail' ); ?>" 
+                 loading="lazy"/>
         <?php else: ?>
             <?php // Desktop version of the thumbnail ?>
-            <?php the_post_thumbnail( 'full-desktop-thumbnail', 
-                                   array('class' => 'header-cover-image') ); ?>
+            <img class="header-cover-image" 
+                 src="<?php echo get_the_post_thumbnail_url( $element->ID, 'full-desktop-thumbnail' ); ?>" 
+                 loading="lazy"/>
         <?php endif; ?>
                                 
         <div class="elements"> 

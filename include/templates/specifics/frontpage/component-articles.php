@@ -33,25 +33,30 @@
 
                         <?php foreach( $posts_array as &$element ): ?>
                                 <li class="entity">
-                                        <a href="<?php echo the_permalink($element->ID); ?>"> 
+                                        <a href="<?php echo the_permalink( $element->ID ); ?>"> 
                                                 <div> 
-                                                        <img src="<?php echo get_the_post_thumbnail_url($element->ID, 'full'); ?>"/>                                                
+                                                        <img src="<?php echo get_the_post_thumbnail_url( $element->ID, 'preview-thumbnail' ); ?>" 
+                                                             loading="lazy"/>                                                
+                                                        
                                                         <div class="text">
                                                                 <p>
-                                                                <?php $elements = get_the_category($element->ID);?>
-                                                                        <?php for($idx = 0; $idx < count($elements); $idx++): ?>
+                                                                <?php $elements = get_the_category( $element->ID );?>
+                                                                        <?php for( $idx = 0; 
+                                                                                   $idx < count( $elements ); 
+                                                                                   $idx++ ): ?>
                                                                                 <?php $category = $elements[$idx];?>
                                                                                 
                                                                                 <?php 
-                                                                                        if($idx == count($elements) - 1)
+                                                                                        if( $idx == count( $elements ) - 1)
                                                                                         {
                                                                                                 echo $category->name;
                                                                                         }
                                                                                 ?>
                                                                         <?php endfor; ?>
                                                                 </p>
+
                                                                 <h3> 
-                                                                        <?php echo get_the_title($element->ID); ?>
+                                                                        <?php echo get_the_title( $element->ID ); ?>
                                                                 </h3>
                                                                 
                                                         </div>
