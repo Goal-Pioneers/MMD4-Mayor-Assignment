@@ -3,6 +3,7 @@ $color-2: #f27405;
 $color-3: #f25c05;
 $color-4: #bf4215;
 
+$active-color: #2ecc71;
 
 $primary-color: #6ad1ff !default;
 $secondary-color: #344656 !default;
@@ -22,13 +23,13 @@ $body_font: 'open sans', sans-serif;
 
 .active-link
 {
-    color: #2ecc71;
+    color: $active-color;
     text-decoration: none !important;
 }
 
 .active-link:hover
 {
-    color: #2ecc71;
+    color: $active-color;
     text-decoration: none !important;
 }
 

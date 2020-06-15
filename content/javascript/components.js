@@ -1,4 +1,30 @@
  // Vue Classes
+ var relatedArticles = null;
+ 
+ if(!(document.getElementById('related-articles') == null))
+ {
+    relatedArticles= new Vue(
+    {
+        el: '#related-articles',
+        data: 
+        {
+            showNavigation: false
+        },
+        method:
+        {
+    
+        },
+        computed:
+        {
+            
+        },
+        created()
+        {
+            console.log('related articles created');
+        }
+    }
+)    
+}
 
     // Header Mobile Navigation
 var mobileNavigation = new Vue(
@@ -334,13 +360,13 @@ function onScrollEvent()
 }
 
 // Faq
-function showAnswer(element_id)
+function showAnswer( element_id )
 {
     console.log("show answer called");
 
-    var element = document.getElementById(element_id);
+    var element = document.getElementById( element_id );
 
-    if(!element.classList.contains('show'))
+    if( !element.classList.contains( 'show' ) )
     {
         element.className += 'show';
     }

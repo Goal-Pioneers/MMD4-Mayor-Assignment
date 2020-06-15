@@ -32,3 +32,7 @@
             the_content();
     ?>
 </div>
+
+<div id="related-articles"> 
+
+</div>
